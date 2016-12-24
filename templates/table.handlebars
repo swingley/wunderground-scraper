@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        margin: 1em auto;
+        width: 640px;
+      }
+      h3 {
+        margin: 0 0 0.5em 0;
+        text-align: center;
+      }
+      div.fixed {
+        background: #fff;
+        box-shadow: 0px 1px 10px 0px rgba(230,230,230,1);
+        height: 9em;
+        padding: 0.5em 0 0.5em 0;
+        position: fixed;
+        top: 0;
+        text-align: center;
+        width: 640px;
+      }
+      div.meta {
+        text-align: left;
+        padding: 0 1em 0.5em 1em;
+      }
+      div.fixed span {
+        display: inline-block;
+        float: left;
+        font-weight: bold;
+        width: 144px;
+      }
+      div.fixed div span:first-child {
+        width: 64px;
+      }
+      div.half {
+        float: left;
+        width: 50%;
+      }
+      div.half ul {
+        margin: 0;
+        padding-left: 1em;
+      }
+      div.cols {
+        float: left;
+        padding: 0.5em 0 0 0;
+      }
+      table { 
+        border-collapse: collapse; 
+        margin-top: 10.5em; 
+        width: 100%; 
+      }
+      tr {
+        border-bottom: 1px solid #ccc;
+      }
+      tr:last-child {
+        border: none;
+      }
+      td { 
+        text-align: center; 
+        width: 144px; 
+      }
+      td:first-child { 
+        text-align: center; 
+        width: 64px; 
+      }
+      .match,
+      .match a,
+      .match a:visited {
+        color: #2c7bb6;
+      }
+      .miss,
+      .miss a,
+      .miss a:visited {
+        color: #d7191c;
+      }
+      .noop,
+      .noop a,
+      .noop a:visited {
+        color: #ccc;
+      }
+    </style>
+  </head>
+
+<body>
+  <div class='fixed'>
+    <div class='meta'>
+      <h3>
+        <a href="https://www.wunderground.com/history/airport/{{meta.station}}">{{meta.station}}</a> record temperature data from <a href="https://www.wunderground.com/">Weather Underground</a>
+      </h3>
+      <div class='half'>
+        <strong>Highs</strong>
+        <ul>
+          <li>Mismatches on <strong>{{meta.conflictingHighs}}</strong> days
+          <li>Matches on <strong>{{meta.matchingHighs}}</strong> days
+          <li>Missing data for <strong>{{meta.missingHighs.count}}</strong> days
+          <li>Biggest mismatch on {{meta.biggestDifferenceHigh.day}} of {{meta.biggestDifferenceHigh.value}} degrees.
+        </ul>
+      </div>
+      <div class='half'>
+        <strong>Lows</strong>
+        <ul>
+          <li>Mismatches on <strong>{{meta.conflictingLows}}</strong> days
+          <li>Matches on <strong>{{meta.matchingLows}}</strong> days
+          <li>Missing data for <strong>{{meta.missingLows.count}}</strong> days
+          <li>Biggest mismatch on {{meta.biggestDifferenceLow.day}} of {{meta.biggestDifferenceLow.value}} degrees
+        </ul>
+      </div>
+    </div>
+    <div class='cols'>
+      {{#each cols}}
+      <span>{{this}}</span>
+      {{/each}}
+    </div>
+  </div>
+  <table>
+    <tbody>
+      {{#each data}}
+      <tr>
+        <td class='{{this.0.css}}'>{{this.0.value}}</td>
+        <td class='{{this.1.css}}'>{{buildLink this.[1]}}</td>
+        <td class='{{this.2.css}}'>{{buildLink this.[2]}}</td>
+        <td class='{{this.3.css}}'>{{buildLink this.[3]}}</td>
+        <td class='{{this.4.css}}'>{{buildLink this.[4]}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</body>
+</html>

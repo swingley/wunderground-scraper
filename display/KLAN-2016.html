@@ -1,0 +1,2687 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        margin: 1em auto;
+        width: 640px;
+      }
+      h3 {
+        margin: 0 0 0.5em 0;
+        text-align: center;
+      }
+      div.fixed {
+        background: #fff;
+        box-shadow: 0px 1px 10px 0px rgba(230,230,230,1);
+        height: 9em;
+        padding: 0.5em 0 0.5em 0;
+        position: fixed;
+        top: 0;
+        text-align: center;
+        width: 640px;
+      }
+      div.meta {
+        text-align: left;
+        padding: 0 1em 0.5em 1em;
+      }
+      div.fixed span {
+        display: inline-block;
+        float: left;
+        font-weight: bold;
+        width: 144px;
+      }
+      div.fixed div span:first-child {
+        width: 64px;
+      }
+      div.half {
+        float: left;
+        width: 50%;
+      }
+      div.half ul {
+        margin: 0;
+        padding-left: 1em;
+      }
+      div.cols {
+        float: left;
+        padding: 0.5em 0 0 0;
+      }
+      table { 
+        border-collapse: collapse; 
+        margin-top: 10.5em; 
+        width: 100%; 
+      }
+      tr {
+        border-bottom: 1px solid #ccc;
+      }
+      tr:last-child {
+        border: none;
+      }
+      td { 
+        text-align: center; 
+        width: 144px; 
+      }
+      td:first-child { 
+        text-align: center; 
+        width: 64px; 
+      }
+      .match,
+      .match a,
+      .match a:visited {
+        color: #2c7bb6;
+      }
+      .miss,
+      .miss a,
+      .miss a:visited {
+        color: #d7191c;
+      }
+      .noop,
+      .noop a,
+      .noop a:visited {
+        color: #ccc;
+      }
+    </style>
+  </head>
+
+<body>
+  <div class='fixed'>
+    <div class='meta'>
+      <h3>
+        <a href="https://www.wunderground.com/history/airport/KLAN">KLAN</a> record temperature data from <a href="https://www.wunderground.com/">Weather Underground</a>
+      </h3>
+      <div class='half'>
+        <strong>Highs</strong>
+        <ul>
+          <li>Mismatches on <strong>106</strong> days
+          <li>Matches on <strong>82</strong> days
+          <li>Missing data for <strong>178</strong> days
+          <li>Biggest mismatch on 12-20 of 26 degrees.
+        </ul>
+      </div>
+      <div class='half'>
+        <strong>Lows</strong>
+        <ul>
+          <li>Mismatches on <strong>79</strong> days
+          <li>Matches on <strong>23</strong> days
+          <li>Missing data for <strong>264</strong> days
+          <li>Biggest mismatch on 11-04 of 12 degrees
+        </ul>
+      </div>
+    </div>
+    <div class='cols'>
+      <span>Date</span>
+      <span>Record High</span>
+      <span>Actual High</span>
+      <span>Record Low</span>
+      <span>Actual Low</span>
+    </div>
+  </div>
+  <table>
+    <tbody>
+      <tr>
+        <td class=''>01-01</td>
+        <td class='noop'>65(1876)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1876/01/01/DailyHistory.html">unk(1876)</a></td>
+        <td class='noop'>-23(1864)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1864/01/01/DailyHistory.html">unk(1864)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-02</td>
+        <td class='noop'>62(1876)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1876/01/02/DailyHistory.html">unk(1876)</a></td>
+        <td class='noop'>-22(1864)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1864/01/02/DailyHistory.html">unk(1864)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-03</td>
+        <td class='miss'>58(1950)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1950/01/03/DailyHistory.html">57(1950)</a></td>
+        <td class='noop'>-16(1879)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1879/01/03/DailyHistory.html">unk(1879)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-04</td>
+        <td class='match'>61(1997)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1997/01/04/DailyHistory.html">61(1997)</a></td>
+        <td class='miss'>-29(1981)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1981/01/04/DailyHistory.html">-24(1981)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-05</td>
+        <td class='noop'>56(1890)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1890/01/05/DailyHistory.html">unk(1890)</a></td>
+        <td class='noop'>-11(1896)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1896/01/05/DailyHistory.html">unk(1896)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-06</td>
+        <td class='noop'>55(1946)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1946/01/06/DailyHistory.html">unk(1946)</a></td>
+        <td class='noop'>-26(1887)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1887/01/06/DailyHistory.html">unk(1887)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-07</td>
+        <td class='miss'>62(2008)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/2008/01/07/DailyHistory.html">61(2008)</a></td>
+        <td class='noop'>-24(1887)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1887/01/07/DailyHistory.html">unk(1887)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-08</td>
+        <td class='miss'>59(1965)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1965/01/08/DailyHistory.html">57(1965)</a></td>
+        <td class='noop'>-17(1870)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1870/01/08/DailyHistory.html">unk(1870)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-09</td>
+        <td class='noop'>56(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1939/01/09/DailyHistory.html">unk(1939)</a></td>
+        <td class='match'>-17(1977)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1977/01/09/DailyHistory.html">-17(1977)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-10</td>
+        <td class='match'>55(1975)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1975/01/10/DailyHistory.html">55(1975)</a></td>
+        <td class='miss'>-18(1984)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1984/01/10/DailyHistory.html">-15(1984)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-11</td>
+        <td class='noop'>63(1890)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1890/01/11/DailyHistory.html">unk(1890)</a></td>
+        <td class='match'>-18(1984)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1984/01/11/DailyHistory.html">-18(1984)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-12</td>
+        <td class='noop'>62(1890)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1890/01/12/DailyHistory.html">unk(1890)</a></td>
+        <td class='noop'>-17(1918)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1918/01/12/DailyHistory.html">unk(1918)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-13</td>
+        <td class='match'>59(1950)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1950/01/13/DailyHistory.html">59(1950)</a></td>
+        <td class='noop'>-17(1912)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1912/01/13/DailyHistory.html">unk(1912)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-14</td>
+        <td class='match'>55(1995)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1995/01/14/DailyHistory.html">55(1995)</a></td>
+        <td class='noop'>-16(1893)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1893/01/14/DailyHistory.html">unk(1893)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-15</td>
+        <td class='miss'>56(1953)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1953/01/15/DailyHistory.html">55(1953)</a></td>
+        <td class='miss'>-25(1984)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1984/01/15/DailyHistory.html">-24(1984)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-16</td>
+        <td class='match'>55(1949)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1949/01/16/DailyHistory.html">55(1949)</a></td>
+        <td class='match'>-17(1984)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1984/01/16/DailyHistory.html">-17(1984)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-17</td>
+        <td class='match'>59(1952)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1952/01/17/DailyHistory.html">59(1952)</a></td>
+        <td class='miss'>-18(1976)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1976/01/17/DailyHistory.html">-16(1976)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-18</td>
+        <td class='match'>60(1996)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1996/01/18/DailyHistory.html">60(1996)</a></td>
+        <td class='miss'>-25(1976)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1976/01/18/DailyHistory.html">-22(1976)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-19</td>
+        <td class='miss'>53(1949)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1949/01/19/DailyHistory.html">52(1949)</a></td>
+        <td class='noop'>-20(1892)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1892/01/19/DailyHistory.html">unk(1892)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-20</td>
+        <td class='noop'>62(1906)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1906/01/20/DailyHistory.html">unk(1906)</a></td>
+        <td class='noop'>-16(1888)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1888/01/20/DailyHistory.html">unk(1888)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-21</td>
+        <td class='noop'>60(1906)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1906/01/21/DailyHistory.html">unk(1906)</a></td>
+        <td class='noop'>-19(1883)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1883/01/21/DailyHistory.html">unk(1883)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-22</td>
+        <td class='noop'>56(1906)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1906/01/22/DailyHistory.html">unk(1906)</a></td>
+        <td class='miss'>-15(2000)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/2000/01/22/DailyHistory.html">-14(2000)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-23</td>
+        <td class='noop'>60(1909)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1909/01/23/DailyHistory.html">unk(1909)</a></td>
+        <td class='miss'>-14(1963)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1963/01/23/DailyHistory.html">-11(1963)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-24</td>
+        <td class='miss'>66(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1967/01/24/DailyHistory.html">60(1967)</a></td>
+        <td class='noop'>-22(1884)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1884/01/24/DailyHistory.html">unk(1884)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-25</td>
+        <td class='miss'>65(1950)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1950/01/25/DailyHistory.html">64(1950)</a></td>
+        <td class='miss'>-16(2004)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/2004/01/25/DailyHistory.html">-15(2004)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-26</td>
+        <td class='noop'>63(1944)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1944/01/26/DailyHistory.html">unk(1944)</a></td>
+        <td class='noop'>-14(1885)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1885/01/26/DailyHistory.html">unk(1885)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-27</td>
+        <td class='noop'>61(1916)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1916/01/27/DailyHistory.html">unk(1916)</a></td>
+        <td class='noop'>-22(1885)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1885/01/27/DailyHistory.html">unk(1885)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-28</td>
+        <td class='noop'>60(1864)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1864/01/28/DailyHistory.html">unk(1864)</a></td>
+        <td class='noop'>-22(1885)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1885/01/28/DailyHistory.html">unk(1885)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-29</td>
+        <td class='match'>57(2013)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2013/01/29/DailyHistory.html">57(2013)</a></td>
+        <td class='noop'>-28(1867)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1867/01/29/DailyHistory.html">unk(1867)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-30</td>
+        <td class='match'>56(2013)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2013/01/30/DailyHistory.html">56(2013)</a></td>
+        <td class='noop'>-22(1867)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1867/01/30/DailyHistory.html">unk(1867)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-31</td>
+        <td class='miss'>61(1989)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1989/01/31/DailyHistory.html">60(1989)</a></td>
+        <td class='noop'>-14(1899)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1899/01/31/DailyHistory.html">unk(1899)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-01</td>
+        <td class='match'>52(1968)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1968/02/01/DailyHistory.html">52(1968)</a></td>
+        <td class='noop'>-16(1918)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1918/02/01/DailyHistory.html">unk(1918)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-02</td>
+        <td class='miss'>51(1973)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1973/02/02/DailyHistory.html">50(1973)</a></td>
+        <td class='noop'>-37(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/02/02/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-03</td>
+        <td class='match'>53(1991)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1991/02/03/DailyHistory.html">53(1991)</a></td>
+        <td class='noop'>-29(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/02/03/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-04</td>
+        <td class='noop'>61(1890)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1890/02/04/DailyHistory.html">unk(1890)</a></td>
+        <td class='noop'>-24(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/02/04/DailyHistory.html">unk(1895)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-05</td>
+        <td class='noop'>61(1890)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1890/02/05/DailyHistory.html">unk(1890)</a></td>
+        <td class='noop'>-21(1918)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1918/02/05/DailyHistory.html">unk(1918)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-06</td>
+        <td class='noop'>55(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1938/02/06/DailyHistory.html">unk(1938)</a></td>
+        <td class='noop'>-31(1875)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1875/02/06/DailyHistory.html">unk(1875)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-07</td>
+        <td class='noop'>54(1900)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1900/02/07/DailyHistory.html">unk(1900)</a></td>
+        <td class='noop'>-28(1875)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1875/02/07/DailyHistory.html">unk(1875)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-08</td>
+        <td class='noop'>62(1900)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1900/02/08/DailyHistory.html">unk(1900)</a></td>
+        <td class='noop'>-33(1875)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1875/02/08/DailyHistory.html">unk(1875)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-09</td>
+        <td class='miss'>53(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1966/02/09/DailyHistory.html">52(1966)</a></td>
+        <td class='noop'>-32(1875)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1875/02/09/DailyHistory.html">unk(1875)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-10</td>
+        <td class='match'>60(2009)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2009/02/10/DailyHistory.html">60(2009)</a></td>
+        <td class='noop'>-28(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/02/10/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-11</td>
+        <td class='match'>69(1999)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1999/02/11/DailyHistory.html">69(1999)</a></td>
+        <td class='noop'>-22(1899)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1899/02/11/DailyHistory.html">unk(1899)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-12</td>
+        <td class='noop'>60(1869)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1869/02/12/DailyHistory.html">unk(1869)</a></td>
+        <td class='miss'>-24(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1967/02/12/DailyHistory.html">-23(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-13</td>
+        <td class='noop'>59(1876)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1876/02/13/DailyHistory.html">unk(1876)</a></td>
+        <td class='noop'>-25(1875)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1875/02/13/DailyHistory.html">unk(1875)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-14</td>
+        <td class='noop'>52(1918)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1918/02/14/DailyHistory.html">unk(1918)</a></td>
+        <td class='noop'>-21(1875)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1875/02/14/DailyHistory.html">unk(1875)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-15</td>
+        <td class='match'>60(1954)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1954/02/15/DailyHistory.html">60(1954)</a></td>
+        <td class='noop'>-24(1866)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1866/02/15/DailyHistory.html">unk(1866)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-16</td>
+        <td class='noop'>59(1921)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1921/02/16/DailyHistory.html">unk(1921)</a></td>
+        <td class='noop'>-22(1896)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1896/02/16/DailyHistory.html">unk(1896)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-17</td>
+        <td class='noop'>56(1880)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1880/02/17/DailyHistory.html">unk(1880)</a></td>
+        <td class='noop'>-27(1875)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1875/02/17/DailyHistory.html">unk(1875)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-18</td>
+        <td class='match'>56(2011)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2011/02/18/DailyHistory.html">56(2011)</a></td>
+        <td class='noop'>-26(1875)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1875/02/18/DailyHistory.html">unk(1875)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-19</td>
+        <td class='miss'>60(1994)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1994/02/19/DailyHistory.html">59(1994)</a></td>
+        <td class='miss'>-21(1978)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1978/02/19/DailyHistory.html">-20(1978)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-20</td>
+        <td class='match'>59(1983)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1983/02/20/DailyHistory.html">59(1983)</a></td>
+        <td class='noop'>-22(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1929/02/20/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-21</td>
+        <td class='noop'>62(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1930/02/21/DailyHistory.html">unk(1930)</a></td>
+        <td class='noop'>-22(1870)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1870/02/21/DailyHistory.html">unk(1870)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-22</td>
+        <td class='noop'>66(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1930/02/22/DailyHistory.html">unk(1930)</a></td>
+        <td class='noop'>-14(1936)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1936/02/22/DailyHistory.html">unk(1936)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-23</td>
+        <td class='match'>64(1984)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1984/02/23/DailyHistory.html">64(1984)</a></td>
+        <td class='noop'>-17(1894)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1894/02/23/DailyHistory.html">unk(1894)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-24</td>
+        <td class='noop'>57(1871)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1871/02/24/DailyHistory.html">unk(1871)</a></td>
+        <td class='noop'>-12(1881)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1881/02/24/DailyHistory.html">unk(1881)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-25</td>
+        <td class='miss'>63(1976)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1976/02/25/DailyHistory.html">62(1976)</a></td>
+        <td class='match'>-16(1993)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1993/02/25/DailyHistory.html">-16(1993)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-26</td>
+        <td class='noop'>61(1944)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1944/02/26/DailyHistory.html">unk(1944)</a></td>
+        <td class='miss'>-12(1963)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1963/02/26/DailyHistory.html">-9(1963)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-27</td>
+        <td class='noop'>64(1867)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1867/02/27/DailyHistory.html">unk(1867)</a></td>
+        <td class='match'>-20(1994)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1994/02/27/DailyHistory.html">-20(1994)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-28</td>
+        <td class='noop'>59(1880)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1880/02/28/DailyHistory.html">unk(1880)</a></td>
+        <td class='noop'>-18(1884)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1884/02/28/DailyHistory.html">unk(1884)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-29</td>
+        <td class='miss'>60(2000)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/2000/02/29/DailyHistory.html">52(2000)</a></td>
+        <td class='noop'>-15(1884)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1884/02/29/DailyHistory.html">unk(1884)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-01</td>
+        <td class='noop'>64(1882)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1882/03/01/DailyHistory.html">unk(1882)</a></td>
+        <td class='noop'>-13(1884)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1884/03/01/DailyHistory.html">unk(1884)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-02</td>
+        <td class='noop'>66(1882)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1882/03/02/DailyHistory.html">unk(1882)</a></td>
+        <td class='noop'>-25(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/03/02/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-03</td>
+        <td class='miss'>70(1974)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1974/03/03/DailyHistory.html">69(1974)</a></td>
+        <td class='noop'>-19(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/03/03/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-04</td>
+        <td class='noop'>64(1894)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1894/03/04/DailyHistory.html">unk(1894)</a></td>
+        <td class='noop'>-17(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/03/04/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-05</td>
+        <td class='miss'>68(1983)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1983/03/05/DailyHistory.html">66(1983)</a></td>
+        <td class='noop'>-7(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/03/05/DailyHistory.html">unk(1895)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-06</td>
+        <td class='miss'>65(1961)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1961/03/06/DailyHistory.html">60(1961)</a></td>
+        <td class='noop'>-6(1869)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1869/03/06/DailyHistory.html">unk(1869)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-07</td>
+        <td class='miss'>74(2000)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/2000/03/07/DailyHistory.html">73(2000)</a></td>
+        <td class='miss'>-13(1999)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1999/03/07/DailyHistory.html">-9(1999)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-08</td>
+        <td class='miss'>79(2000)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/2000/03/08/DailyHistory.html">78(2000)</a></td>
+        <td class='noop'>-15(1869)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1869/03/08/DailyHistory.html">unk(1869)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-09</td>
+        <td class='noop'>72(1878)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1878/03/09/DailyHistory.html">unk(1878)</a></td>
+        <td class='miss'>-11(1978)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1978/03/09/DailyHistory.html">-9(1978)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-10</td>
+        <td class='noop'>67(1878)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1878/03/10/DailyHistory.html">unk(1878)</a></td>
+        <td class='noop'>-15(1869)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1869/03/10/DailyHistory.html">unk(1869)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-11</td>
+        <td class='match'>69(1977)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1977/03/11/DailyHistory.html">69(1977)</a></td>
+        <td class='noop'>-6(1869)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1869/03/11/DailyHistory.html">unk(1869)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-12</td>
+        <td class='match'>75(1990)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1990/03/12/DailyHistory.html">75(1990)</a></td>
+        <td class='noop'>-3(1877)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1877/03/12/DailyHistory.html">unk(1877)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-13</td>
+        <td class='miss'>74(1990)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1990/03/13/DailyHistory.html">73(1990)</a></td>
+        <td class='match'>-5(2014)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2014/03/13/DailyHistory.html">-5(2014)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-14</td>
+        <td class='match'>79(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2012/03/14/DailyHistory.html">79(2012)</a></td>
+        <td class='noop'>-2(1877)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1877/03/14/DailyHistory.html">unk(1877)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-15</td>
+        <td class='match'>78(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2012/03/15/DailyHistory.html">78(2012)</a></td>
+        <td class='noop'>-10(1900)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1900/03/15/DailyHistory.html">unk(1900)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-16</td>
+        <td class='match'>78(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2012/03/16/DailyHistory.html">78(2012)</a></td>
+        <td class='noop'>-14(1877)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1877/03/16/DailyHistory.html">unk(1877)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-17</td>
+        <td class='match'>78(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2012/03/17/DailyHistory.html">78(2012)</a></td>
+        <td class='noop'>-10(1877)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1877/03/17/DailyHistory.html">unk(1877)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-18</td>
+        <td class='noop'>75(1894)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1894/03/18/DailyHistory.html">unk(1894)</a></td>
+        <td class='noop'>-3(1885)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1885/03/18/DailyHistory.html">unk(1885)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-19</td>
+        <td class='match'>79(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2012/03/19/DailyHistory.html">79(2012)</a></td>
+        <td class='noop'>-11(1885)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1885/03/19/DailyHistory.html">unk(1885)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-20</td>
+        <td class='match'>83(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2012/03/20/DailyHistory.html">83(2012)</a></td>
+        <td class='noop'>-12(1885)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1885/03/20/DailyHistory.html">unk(1885)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-21</td>
+        <td class='match'>86(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2012/03/21/DailyHistory.html">86(2012)</a></td>
+        <td class='noop'>-11(1875)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1875/03/21/DailyHistory.html">unk(1875)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-22</td>
+        <td class='match'>83(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2012/03/22/DailyHistory.html">83(2012)</a></td>
+        <td class='noop'>-10(1864)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1864/03/22/DailyHistory.html">unk(1864)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-23</td>
+        <td class='miss'>71(1994)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1994/03/23/DailyHistory.html">68(1994)</a></td>
+        <td class='miss'>-5(1965)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1965/03/23/DailyHistory.html">0(1965)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-24</td>
+        <td class='noop'>82(1910)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1910/03/24/DailyHistory.html">unk(1910)</a></td>
+        <td class='miss'>-10(1965)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1965/03/24/DailyHistory.html">-2(1965)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-25</td>
+        <td class='noop'>77(1945)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1945/03/25/DailyHistory.html">unk(1945)</a></td>
+        <td class='miss'>-3(1983)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1983/03/25/DailyHistory.html">-2(1983)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-26</td>
+        <td class='miss'>76(2007)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/2007/03/26/DailyHistory.html">75(2007)</a></td>
+        <td class='miss'>2(2001)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/2001/03/26/DailyHistory.html">1(2001)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-27</td>
+        <td class='miss'>78(1989)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1989/03/27/DailyHistory.html">75(1989)</a></td>
+        <td class='miss'>-6(1965)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1965/03/27/DailyHistory.html">-4(1965)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-28</td>
+        <td class='noop'>78(1910)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1910/03/28/DailyHistory.html">unk(1910)</a></td>
+        <td class='noop'>-4(1934)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1934/03/28/DailyHistory.html">unk(1934)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-29</td>
+        <td class='match'>78(1963)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1963/03/29/DailyHistory.html">78(1963)</a></td>
+        <td class='noop'>-1(1887)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1887/03/29/DailyHistory.html">unk(1887)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-30</td>
+        <td class='miss'>78(1998)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1998/03/30/DailyHistory.html">77(1998)</a></td>
+        <td class='miss'>6(1954)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1954/03/30/DailyHistory.html">8(1954)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-31</td>
+        <td class='noop'>78(1943)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1943/03/31/DailyHistory.html">unk(1943)</a></td>
+        <td class='noop'>4(1923)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1923/03/31/DailyHistory.html">unk(1923)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-01</td>
+        <td class='match'>80(2010)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2010/04/01/DailyHistory.html">80(2010)</a></td>
+        <td class='noop'>8(1923)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1923/04/01/DailyHistory.html">unk(1923)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-02</td>
+        <td class='miss'>81(1963)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1963/04/02/DailyHistory.html">80(1963)</a></td>
+        <td class='noop'>8(1869)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1869/04/02/DailyHistory.html">unk(1869)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-03</td>
+        <td class='miss'>79(1999)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1999/04/03/DailyHistory.html">78(1999)</a></td>
+        <td class='miss'>2(1965)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1965/04/03/DailyHistory.html">7(1965)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-04</td>
+        <td class='noop'>77(1921)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1921/04/04/DailyHistory.html">unk(1921)</a></td>
+        <td class='noop'>-6(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/04/04/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-05</td>
+        <td class='noop'>82(1873)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1873/04/05/DailyHistory.html">unk(1873)</a></td>
+        <td class='noop'>4(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/04/05/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-06</td>
+        <td class='noop'>82(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1929/04/06/DailyHistory.html">unk(1929)</a></td>
+        <td class='noop'>13(1920)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1920/04/06/DailyHistory.html">unk(1920)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-07</td>
+        <td class='miss'>81(1991)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1991/04/07/DailyHistory.html">80(1991)</a></td>
+        <td class='miss'>-2(1982)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1982/04/07/DailyHistory.html">0(1982)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-08</td>
+        <td class='noop'>80(1875)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1875/04/08/DailyHistory.html">unk(1875)</a></td>
+        <td class='noop'>2(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/04/08/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-09</td>
+        <td class='noop'>80(1931)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1931/04/09/DailyHistory.html">unk(1931)</a></td>
+        <td class='noop'>11(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/04/09/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-10</td>
+        <td class='match'>83(2011)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2011/04/10/DailyHistory.html">83(2011)</a></td>
+        <td class='miss'>14(1989)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1989/04/10/DailyHistory.html">15(1989)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-11</td>
+        <td class='miss'>82(1977)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1977/04/11/DailyHistory.html">81(1977)</a></td>
+        <td class='noop'>13(1874)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1874/04/11/DailyHistory.html">unk(1874)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-12</td>
+        <td class='miss'>83(1977)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1977/04/12/DailyHistory.html">82(1977)</a></td>
+        <td class='noop'>11(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/04/12/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-13</td>
+        <td class='noop'>82(1941)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1941/04/13/DailyHistory.html">unk(1941)</a></td>
+        <td class='match'>17(1950)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1950/04/13/DailyHistory.html">17(1950)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-14</td>
+        <td class='noop'>83(1883)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1883/04/14/DailyHistory.html">unk(1883)</a></td>
+        <td class='noop'>19(1885)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1885/04/14/DailyHistory.html">unk(1885)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-15</td>
+        <td class='match'>84(2002)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2002/04/15/DailyHistory.html">84(2002)</a></td>
+        <td class='noop'>14(1875)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1875/04/15/DailyHistory.html">unk(1875)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-16</td>
+        <td class='match'>86(2002)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2002/04/16/DailyHistory.html">86(2002)</a></td>
+        <td class='noop'>10(1875)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1875/04/16/DailyHistory.html">unk(1875)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-17</td>
+        <td class='miss'>85(1964)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1964/04/17/DailyHistory.html">84(1964)</a></td>
+        <td class='noop'>0(1875)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1875/04/17/DailyHistory.html">unk(1875)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-18</td>
+        <td class='match'>86(2002)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2002/04/18/DailyHistory.html">86(2002)</a></td>
+        <td class='noop'>8(1875)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1875/04/18/DailyHistory.html">unk(1875)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-19</td>
+        <td class='match'>81(1985)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1985/04/19/DailyHistory.html">81(1985)</a></td>
+        <td class='noop'>14(1897)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1897/04/19/DailyHistory.html">unk(1897)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-20</td>
+        <td class='miss'>82(1987)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1987/04/20/DailyHistory.html">81(1987)</a></td>
+        <td class='noop'>18(1904)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1904/04/20/DailyHistory.html">unk(1904)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-21</td>
+        <td class='match'>84(1985)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1985/04/21/DailyHistory.html">84(1985)</a></td>
+        <td class='noop'>15(1875)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1875/04/21/DailyHistory.html">unk(1875)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-22</td>
+        <td class='miss'>86(1980)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1980/04/22/DailyHistory.html">84(1980)</a></td>
+        <td class='noop'>21(1875)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1875/04/22/DailyHistory.html">unk(1875)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-23</td>
+        <td class='miss'>86(1960)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1960/04/23/DailyHistory.html">84(1960)</a></td>
+        <td class='noop'>21(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/04/23/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-24</td>
+        <td class='noop'>87(1915)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1915/04/24/DailyHistory.html">unk(1915)</a></td>
+        <td class='miss'>23(1999)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1999/04/24/DailyHistory.html">24(1999)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-25</td>
+        <td class='noop'>86(1915)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1915/04/25/DailyHistory.html">unk(1915)</a></td>
+        <td class='noop'>17(1909)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1909/04/25/DailyHistory.html">unk(1909)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-26</td>
+        <td class='noop'>88(1915)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1915/04/26/DailyHistory.html">unk(1915)</a></td>
+        <td class='noop'>22(1874)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1874/04/26/DailyHistory.html">unk(1874)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-27</td>
+        <td class='miss'>84(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1986/04/27/DailyHistory.html">82(1986)</a></td>
+        <td class='noop'>24(1867)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1867/04/27/DailyHistory.html">unk(1867)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-28</td>
+        <td class='miss'>82(1990)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1990/04/28/DailyHistory.html">81(1990)</a></td>
+        <td class='noop'>20(1874)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1874/04/28/DailyHistory.html">unk(1874)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-29</td>
+        <td class='noop'>86(1899)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1899/04/29/DailyHistory.html">unk(1899)</a></td>
+        <td class='noop'>22(1908)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1908/04/29/DailyHistory.html">unk(1908)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-30</td>
+        <td class='noop'>84(1942)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1942/04/30/DailyHistory.html">unk(1942)</a></td>
+        <td class='noop'>22(1876)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1876/04/30/DailyHistory.html">unk(1876)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-01</td>
+        <td class='miss'>84(1992)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1992/05/01/DailyHistory.html">82(1992)</a></td>
+        <td class='noop'>23(1903)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1903/05/01/DailyHistory.html">unk(1903)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-02</td>
+        <td class='match'>86(1959)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1959/05/02/DailyHistory.html">86(1959)</a></td>
+        <td class='noop'>20(1867)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1867/05/02/DailyHistory.html">unk(1867)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-03</td>
+        <td class='miss'>88(1959)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1959/05/03/DailyHistory.html">87(1959)</a></td>
+        <td class='miss'>27(2004)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/2004/05/03/DailyHistory.html">28(2004)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-04</td>
+        <td class='noop'>89(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/05/04/DailyHistory.html">unk(1895)</a></td>
+        <td class='noop'>25(1926)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1926/05/04/DailyHistory.html">unk(1926)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-05</td>
+        <td class='noop'>92(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/05/05/DailyHistory.html">unk(1895)</a></td>
+        <td class='miss'>27(1987)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1987/05/05/DailyHistory.html">28(1987)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-06</td>
+        <td class='miss'>89(1949)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1949/05/06/DailyHistory.html">88(1949)</a></td>
+        <td class='noop'>21(1874)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1874/05/06/DailyHistory.html">unk(1874)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-07</td>
+        <td class='noop'>87(1926)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1926/05/07/DailyHistory.html">unk(1926)</a></td>
+        <td class='miss'>22(1974)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1974/05/07/DailyHistory.html">21(1974)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-08</td>
+        <td class='noop'>90(1896)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1896/05/08/DailyHistory.html">unk(1896)</a></td>
+        <td class='noop'>26(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/05/08/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-09</td>
+        <td class='noop'>92(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/05/09/DailyHistory.html">unk(1895)</a></td>
+        <td class='noop'>25(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/05/09/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-10</td>
+        <td class='noop'>91(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/05/10/DailyHistory.html">unk(1895)</a></td>
+        <td class='miss'>19(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1966/05/10/DailyHistory.html">24(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-11</td>
+        <td class='noop'>88(1896)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1896/05/11/DailyHistory.html">unk(1896)</a></td>
+        <td class='noop'>27(1907)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1907/05/11/DailyHistory.html">unk(1907)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-12</td>
+        <td class='noop'>90(1879)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1879/05/12/DailyHistory.html">unk(1879)</a></td>
+        <td class='miss'>28(1996)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1996/05/12/DailyHistory.html">32(1996)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-13</td>
+        <td class='noop'>91(1879)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1879/05/13/DailyHistory.html">unk(1879)</a></td>
+        <td class='miss'>25(1996)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1996/05/13/DailyHistory.html">26(1996)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-14</td>
+        <td class='noop'>88(1870)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1870/05/14/DailyHistory.html">unk(1870)</a></td>
+        <td class='noop'>26(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/05/14/DailyHistory.html">unk(1895)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-15</td>
+        <td class='miss'>88(1991)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1991/05/15/DailyHistory.html">87(1991)</a></td>
+        <td class='noop'>24(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/05/15/DailyHistory.html">unk(1895)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-16</td>
+        <td class='miss'>90(1977)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1977/05/16/DailyHistory.html">88(1977)</a></td>
+        <td class='noop'>27(1866)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1866/05/16/DailyHistory.html">unk(1866)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-17</td>
+        <td class='miss'>89(1962)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1962/05/17/DailyHistory.html">87(1962)</a></td>
+        <td class='match'>28(1973)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1973/05/17/DailyHistory.html">28(1973)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-18</td>
+        <td class='noop'>89(1911)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1911/05/18/DailyHistory.html">unk(1911)</a></td>
+        <td class='noop'>23(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/05/18/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-19</td>
+        <td class='noop'>91(1911)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1911/05/19/DailyHistory.html">unk(1911)</a></td>
+        <td class='match'>26(2002)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2002/05/19/DailyHistory.html">26(2002)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-20</td>
+        <td class='miss'>93(1977)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1977/05/20/DailyHistory.html">91(1977)</a></td>
+        <td class='noop'>25(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/05/20/DailyHistory.html">unk(1895)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-21</td>
+        <td class='miss'>94(1977)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1977/05/21/DailyHistory.html">93(1977)</a></td>
+        <td class='noop'>27(1869)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1869/05/21/DailyHistory.html">unk(1869)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-22</td>
+        <td class='miss'>90(1964)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1964/05/22/DailyHistory.html">89(1964)</a></td>
+        <td class='noop'>27(1866)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1866/05/22/DailyHistory.html">unk(1866)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-23</td>
+        <td class='miss'>91(1977)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1977/05/23/DailyHistory.html">89(1977)</a></td>
+        <td class='noop'>26(1866)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1866/05/23/DailyHistory.html">unk(1866)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-24</td>
+        <td class='miss'>88(1975)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1975/05/24/DailyHistory.html">87(1975)</a></td>
+        <td class='noop'>30(1897)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1897/05/24/DailyHistory.html">unk(1897)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-25</td>
+        <td class='miss'>89(1977)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1977/05/25/DailyHistory.html">88(1977)</a></td>
+        <td class='miss'>29(1992)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1992/05/25/DailyHistory.html">28(1992)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-26</td>
+        <td class='noop'>90(1911)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1911/05/26/DailyHistory.html">unk(1911)</a></td>
+        <td class='noop'>31(1891)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1891/05/26/DailyHistory.html">unk(1891)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-27</td>
+        <td class='noop'>93(1911)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1911/05/27/DailyHistory.html">unk(1911)</a></td>
+        <td class='miss'>27(1961)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1961/05/27/DailyHistory.html">28(1961)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-28</td>
+        <td class='noop'>96(1874)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1874/05/28/DailyHistory.html">unk(1874)</a></td>
+        <td class='noop'>28(1884)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1884/05/28/DailyHistory.html">unk(1884)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-29</td>
+        <td class='noop'>94(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/05/29/DailyHistory.html">unk(1895)</a></td>
+        <td class='miss'>31(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1966/05/29/DailyHistory.html">32(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-30</td>
+        <td class='noop'>95(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/05/30/DailyHistory.html">unk(1895)</a></td>
+        <td class='miss'>31(1965)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1965/05/30/DailyHistory.html">33(1965)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-31</td>
+        <td class='noop'>95(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/05/31/DailyHistory.html">unk(1895)</a></td>
+        <td class='miss'>32(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1966/05/31/DailyHistory.html">36(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-01</td>
+        <td class='noop'>97(1934)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1934/06/01/DailyHistory.html">unk(1934)</a></td>
+        <td class='miss'>30(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1966/06/01/DailyHistory.html">35(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-02</td>
+        <td class='noop'>93(1919)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1919/06/02/DailyHistory.html">unk(1919)</a></td>
+        <td class='miss'>36(1964)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1964/06/02/DailyHistory.html">37(1964)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-03</td>
+        <td class='noop'>97(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/06/03/DailyHistory.html">unk(1895)</a></td>
+        <td class='match'>34(1986)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1986/06/03/DailyHistory.html">34(1986)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-04</td>
+        <td class='noop'>95(1934)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1934/06/04/DailyHistory.html">unk(1934)</a></td>
+        <td class='miss'>35(1998)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1998/06/04/DailyHistory.html">37(1998)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-05</td>
+        <td class='noop'>96(1925)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1925/06/05/DailyHistory.html">unk(1925)</a></td>
+        <td class='noop'>27(1869)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1869/06/05/DailyHistory.html">unk(1869)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-06</td>
+        <td class='noop'>95(1925)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1925/06/06/DailyHistory.html">unk(1925)</a></td>
+        <td class='noop'>31(1869)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1869/06/06/DailyHistory.html">unk(1869)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-07</td>
+        <td class='match'>93(2011)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2011/06/07/DailyHistory.html">93(2011)</a></td>
+        <td class='noop'>36(1901)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1901/06/07/DailyHistory.html">unk(1901)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-08</td>
+        <td class='match'>93(2011)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2011/06/08/DailyHistory.html">93(2011)</a></td>
+        <td class='miss'>33(1998)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1998/06/08/DailyHistory.html">34(1998)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-09</td>
+        <td class='match'>96(1964)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1964/06/09/DailyHistory.html">96(1964)</a></td>
+        <td class='match'>33(1994)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1994/06/09/DailyHistory.html">33(1994)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-10</td>
+        <td class='noop'>96(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/06/10/DailyHistory.html">unk(1895)</a></td>
+        <td class='noop'>33(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/06/10/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-11</td>
+        <td class='noop'>96(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/06/11/DailyHistory.html">unk(1895)</a></td>
+        <td class='miss'>32(1972)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1972/06/11/DailyHistory.html">35(1972)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-12</td>
+        <td class='noop'>95(1876)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1876/06/12/DailyHistory.html">unk(1876)</a></td>
+        <td class='noop'>31(1864)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1864/06/12/DailyHistory.html">unk(1864)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-13</td>
+        <td class='miss'>95(1956)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1956/06/13/DailyHistory.html">78(1956)</a></td>
+        <td class='noop'>35(1864)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1864/06/13/DailyHistory.html">unk(1864)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-14</td>
+        <td class='match'>97(1987)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1987/06/14/DailyHistory.html">97(1987)</a></td>
+        <td class='miss'>34(1978)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1978/06/14/DailyHistory.html">35(1978)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-15</td>
+        <td class='miss'>92(1954)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1954/06/15/DailyHistory.html">91(1954)</a></td>
+        <td class='match'>39(1999)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1999/06/15/DailyHistory.html">39(1999)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-16</td>
+        <td class='match'>95(1994)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1994/06/16/DailyHistory.html">95(1994)</a></td>
+        <td class='noop'>36(1869)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1869/06/16/DailyHistory.html">unk(1869)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-17</td>
+        <td class='miss'>95(1994)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1994/06/17/DailyHistory.html">93(1994)</a></td>
+        <td class='miss'>38(1972)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1972/06/17/DailyHistory.html">39(1972)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-18</td>
+        <td class='miss'>98(1994)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1994/06/18/DailyHistory.html">96(1994)</a></td>
+        <td class='match'>37(1999)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1999/06/18/DailyHistory.html">37(1999)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-19</td>
+        <td class='noop'>98(1870)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1870/06/19/DailyHistory.html">unk(1870)</a></td>
+        <td class='miss'>42(1970)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1970/06/19/DailyHistory.html">45(1970)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-20</td>
+        <td class='match'>97(1953)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1953/06/20/DailyHistory.html">97(1953)</a></td>
+        <td class='noop'>35(1897)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1897/06/20/DailyHistory.html">unk(1897)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-21</td>
+        <td class='match'>98(1988)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1988/06/21/DailyHistory.html">98(1988)</a></td>
+        <td class='noop'>37(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/06/21/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-22</td>
+        <td class='noop'>95(1894)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1894/06/22/DailyHistory.html">unk(1894)</a></td>
+        <td class='miss'>34(1992)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1992/06/22/DailyHistory.html">36(1992)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-23</td>
+        <td class='noop'>96(1864)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1864/06/23/DailyHistory.html">unk(1864)</a></td>
+        <td class='noop'>35(1918)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1918/06/23/DailyHistory.html">unk(1918)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-24</td>
+        <td class='noop'>96(1870)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1870/06/24/DailyHistory.html">unk(1870)</a></td>
+        <td class='noop'>41(1932)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1932/06/24/DailyHistory.html">unk(1932)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-25</td>
+        <td class='miss'>99(1988)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1988/06/25/DailyHistory.html">98(1988)</a></td>
+        <td class='miss'>38(1979)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1979/06/25/DailyHistory.html">37(1979)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-26</td>
+        <td class='noop'>96(1870)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1870/06/26/DailyHistory.html">unk(1870)</a></td>
+        <td class='noop'>40(1902)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1902/06/26/DailyHistory.html">unk(1902)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-27</td>
+        <td class='noop'>98(1870)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1870/06/27/DailyHistory.html">unk(1870)</a></td>
+        <td class='noop'>38(1866)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1866/06/27/DailyHistory.html">unk(1866)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-28</td>
+        <td class='match'>98(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2012/06/28/DailyHistory.html">98(2012)</a></td>
+        <td class='noop'>38(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/06/28/DailyHistory.html">unk(1895)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-29</td>
+        <td class='miss'>96(1964)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1964/06/29/DailyHistory.html">95(1964)</a></td>
+        <td class='noop'>41(1923)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1923/06/29/DailyHistory.html">unk(1923)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-30</td>
+        <td class='noop'>98(1913)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1913/06/30/DailyHistory.html">unk(1913)</a></td>
+        <td class='noop'>41(1943)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1943/06/30/DailyHistory.html">unk(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-01</td>
+        <td class='noop'>97(1910)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1910/07/01/DailyHistory.html">unk(1910)</a></td>
+        <td class='noop'>38(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/07/01/DailyHistory.html">unk(1895)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-02</td>
+        <td class='miss'>98(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1966/07/02/DailyHistory.html">96(1966)</a></td>
+        <td class='miss'>38(2001)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/2001/07/02/DailyHistory.html">39(2001)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-03</td>
+        <td class='miss'>99(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1966/07/03/DailyHistory.html">96(1966)</a></td>
+        <td class='noop'>43(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/07/03/DailyHistory.html">unk(1895)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-04</td>
+        <td class='match'>100(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2012/07/04/DailyHistory.html">100(2012)</a></td>
+        <td class='noop'>37(1894)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1894/07/04/DailyHistory.html">unk(1894)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-05</td>
+        <td class='miss'>99(1988)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1988/07/05/DailyHistory.html">97(1988)</a></td>
+        <td class='match'>37(1972)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1972/07/05/DailyHistory.html">37(1972)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-06</td>
+        <td class='match'>103(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2012/07/06/DailyHistory.html">103(2012)</a></td>
+        <td class='miss'>39(1972)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1972/07/06/DailyHistory.html">41(1972)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-07</td>
+        <td class='noop'>100(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/07/07/DailyHistory.html">unk(1895)</a></td>
+        <td class='noop'>38(1894)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1894/07/07/DailyHistory.html">unk(1894)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-08</td>
+        <td class='noop'>100(1897)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1897/07/08/DailyHistory.html">unk(1897)</a></td>
+        <td class='noop'>37(1894)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1894/07/08/DailyHistory.html">unk(1894)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-09</td>
+        <td class='noop'>100(1897)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1897/07/09/DailyHistory.html">unk(1897)</a></td>
+        <td class='noop'>42(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/07/09/DailyHistory.html">unk(1895)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-10</td>
+        <td class='noop'>100(1897)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1897/07/10/DailyHistory.html">unk(1897)</a></td>
+        <td class='noop'>39(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/07/10/DailyHistory.html">unk(1895)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-11</td>
+        <td class='noop'>98(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/07/11/DailyHistory.html">unk(1868)</a></td>
+        <td class='noop'>40(1898)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1898/07/11/DailyHistory.html">unk(1898)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-12</td>
+        <td class='noop'>99(1936)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1936/07/12/DailyHistory.html">unk(1936)</a></td>
+        <td class='noop'>36(1867)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1867/07/12/DailyHistory.html">unk(1867)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-13</td>
+        <td class='noop'>99(1936)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1936/07/13/DailyHistory.html">unk(1936)</a></td>
+        <td class='noop'>38(1865)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1865/07/13/DailyHistory.html">unk(1865)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-14</td>
+        <td class='noop'>101(1936)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1936/07/14/DailyHistory.html">unk(1936)</a></td>
+        <td class='match'>46(1950)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1950/07/14/DailyHistory.html">46(1950)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-15</td>
+        <td class='match'>99(1977)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1977/07/15/DailyHistory.html">99(1977)</a></td>
+        <td class='noop'>31(1863)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1863/07/15/DailyHistory.html">unk(1863)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-16</td>
+        <td class='match'>98(1988)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1988/07/16/DailyHistory.html">98(1988)</a></td>
+        <td class='noop'>39(1896)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1896/07/16/DailyHistory.html">unk(1896)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-17</td>
+        <td class='noop'>101(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/07/17/DailyHistory.html">unk(1868)</a></td>
+        <td class='noop'>41(1863)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1863/07/17/DailyHistory.html">unk(1863)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-18</td>
+        <td class='noop'>100(1894)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1894/07/18/DailyHistory.html">unk(1894)</a></td>
+        <td class='miss'>42(1971)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1971/07/18/DailyHistory.html">44(1971)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-19</td>
+        <td class='noop'>102(1894)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1894/07/19/DailyHistory.html">unk(1894)</a></td>
+        <td class='noop'>42(1910)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1910/07/19/DailyHistory.html">unk(1910)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-20</td>
+        <td class='noop'>99(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1930/07/20/DailyHistory.html">unk(1930)</a></td>
+        <td class='miss'>39(1965)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1965/07/20/DailyHistory.html">44(1965)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-21</td>
+        <td class='noop'>97(1934)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1934/07/21/DailyHistory.html">unk(1934)</a></td>
+        <td class='miss'>38(1974)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1974/07/21/DailyHistory.html">39(1974)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-22</td>
+        <td class='noop'>95(1914)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1914/07/22/DailyHistory.html">unk(1914)</a></td>
+        <td class='noop'>41(1863)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1863/07/22/DailyHistory.html">unk(1863)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-23</td>
+        <td class='match'>97(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2012/07/23/DailyHistory.html">97(2012)</a></td>
+        <td class='match'>43(1985)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1985/07/23/DailyHistory.html">43(1985)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-24</td>
+        <td class='noop'>102(1934)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1934/07/24/DailyHistory.html">unk(1934)</a></td>
+        <td class='noop'>43(1891)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1891/07/24/DailyHistory.html">unk(1891)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-25</td>
+        <td class='miss'>97(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1966/07/25/DailyHistory.html">93(1966)</a></td>
+        <td class='noop'>45(1913)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1913/07/25/DailyHistory.html">unk(1913)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-26</td>
+        <td class='miss'>97(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1966/07/26/DailyHistory.html">95(1966)</a></td>
+        <td class='noop'>42(1891)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1891/07/26/DailyHistory.html">unk(1891)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-27</td>
+        <td class='noop'>100(1894)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1894/07/27/DailyHistory.html">unk(1894)</a></td>
+        <td class='miss'>42(1977)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1977/07/27/DailyHistory.html">43(1977)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-28</td>
+        <td class='noop'>97(1916)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1916/07/28/DailyHistory.html">unk(1916)</a></td>
+        <td class='match'>43(1978)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1978/07/28/DailyHistory.html">43(1978)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-29</td>
+        <td class='noop'>102(1916)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1916/07/29/DailyHistory.html">unk(1916)</a></td>
+        <td class='miss'>44(1971)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1971/07/29/DailyHistory.html">46(1971)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-30</td>
+        <td class='noop'>101(1916)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1916/07/30/DailyHistory.html">unk(1916)</a></td>
+        <td class='match'>41(1965)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1965/07/30/DailyHistory.html">41(1965)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-31</td>
+        <td class='miss'>96(1955)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1955/07/31/DailyHistory.html">82(1955)</a></td>
+        <td class='noop'>42(1918)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1918/07/31/DailyHistory.html">unk(1918)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-01</td>
+        <td class='match'>100(1988)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1988/08/01/DailyHistory.html">100(1988)</a></td>
+        <td class='noop'>38(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/08/01/DailyHistory.html">unk(1895)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-02</td>
+        <td class='match'>100(1964)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1964/08/02/DailyHistory.html">100(1964)</a></td>
+        <td class='noop'>40(1927)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1927/08/02/DailyHistory.html">unk(1927)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-03</td>
+        <td class='miss'>98(1988)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1988/08/03/DailyHistory.html">97(1988)</a></td>
+        <td class='noop'>32(1894)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1894/08/03/DailyHistory.html">unk(1894)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-04</td>
+        <td class='match'>96(1988)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1988/08/04/DailyHistory.html">96(1988)</a></td>
+        <td class='noop'>37(1894)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1894/08/04/DailyHistory.html">unk(1894)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-05</td>
+        <td class='noop'>100(1881)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1881/08/05/DailyHistory.html">unk(1881)</a></td>
+        <td class='noop'>35(1864)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1864/08/05/DailyHistory.html">unk(1864)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-06</td>
+        <td class='noop'>102(1918)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1918/08/06/DailyHistory.html">unk(1918)</a></td>
+        <td class='noop'>35(1869)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1869/08/06/DailyHistory.html">unk(1869)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-07</td>
+        <td class='noop'>98(1918)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1918/08/07/DailyHistory.html">unk(1918)</a></td>
+        <td class='noop'>36(1884)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1884/08/07/DailyHistory.html">unk(1884)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-08</td>
+        <td class='noop'>99(1894)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1894/08/08/DailyHistory.html">unk(1894)</a></td>
+        <td class='noop'>36(1879)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1879/08/08/DailyHistory.html">unk(1879)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-09</td>
+        <td class='noop'>97(1891)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1891/08/09/DailyHistory.html">unk(1891)</a></td>
+        <td class='miss'>38(1964)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1964/08/09/DailyHistory.html">37(1964)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-10</td>
+        <td class='noop'>98(1864)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1864/08/10/DailyHistory.html">unk(1864)</a></td>
+        <td class='miss'>40(1972)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1972/08/10/DailyHistory.html">44(1972)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-11</td>
+        <td class='noop'>101(1874)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1874/08/11/DailyHistory.html">unk(1874)</a></td>
+        <td class='noop'>39(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/08/11/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-12</td>
+        <td class='noop'>96(1864)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1864/08/12/DailyHistory.html">unk(1864)</a></td>
+        <td class='noop'>37(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/08/12/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-13</td>
+        <td class='noop'>96(1918)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1918/08/13/DailyHistory.html">unk(1918)</a></td>
+        <td class='miss'>41(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1967/08/13/DailyHistory.html">43(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-14</td>
+        <td class='miss'>98(1965)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1965/08/14/DailyHistory.html">96(1965)</a></td>
+        <td class='miss'>40(1964)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1964/08/14/DailyHistory.html">39(1964)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-15</td>
+        <td class='match'>96(1965)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1965/08/15/DailyHistory.html">96(1965)</a></td>
+        <td class='noop'>36(1866)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1866/08/15/DailyHistory.html">unk(1866)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-16</td>
+        <td class='noop'>96(1913)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1913/08/16/DailyHistory.html">unk(1913)</a></td>
+        <td class='noop'>34(1879)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1879/08/16/DailyHistory.html">unk(1879)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-17</td>
+        <td class='match'>95(1988)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1988/08/17/DailyHistory.html">95(1988)</a></td>
+        <td class='noop'>36(1864)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1864/08/17/DailyHistory.html">unk(1864)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-18</td>
+        <td class='noop'>95(1947)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1947/08/18/DailyHistory.html">unk(1947)</a></td>
+        <td class='noop'>40(1896)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1896/08/18/DailyHistory.html">unk(1896)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-19</td>
+        <td class='miss'>98(1955)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1955/08/19/DailyHistory.html">80(1955)</a></td>
+        <td class='match'>37(1977)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1977/08/19/DailyHistory.html">37(1977)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-20</td>
+        <td class='noop'>98(1916)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1916/08/20/DailyHistory.html">unk(1916)</a></td>
+        <td class='noop'>33(1885)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1885/08/20/DailyHistory.html">unk(1885)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-21</td>
+        <td class='miss'>99(1955)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1955/08/21/DailyHistory.html">80(1955)</a></td>
+        <td class='noop'>38(1894)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1894/08/21/DailyHistory.html">unk(1894)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-22</td>
+        <td class='noop'>94(1936)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1936/08/22/DailyHistory.html">unk(1936)</a></td>
+        <td class='noop'>35(1875)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1875/08/22/DailyHistory.html">unk(1875)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-23</td>
+        <td class='noop'>96(1876)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1876/08/23/DailyHistory.html">unk(1876)</a></td>
+        <td class='noop'>35(1865)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1865/08/23/DailyHistory.html">unk(1865)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-24</td>
+        <td class='miss'>97(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1948/08/24/DailyHistory.html">96(1948)</a></td>
+        <td class='noop'>34(1866)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1866/08/24/DailyHistory.html">unk(1866)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-25</td>
+        <td class='miss'>96(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1948/08/25/DailyHistory.html">95(1948)</a></td>
+        <td class='miss'>38(1977)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1977/08/25/DailyHistory.html">39(1977)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-26</td>
+        <td class='miss'>96(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1948/08/26/DailyHistory.html">93(1948)</a></td>
+        <td class='noop'>32(1883)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1883/08/26/DailyHistory.html">unk(1883)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-27</td>
+        <td class='match'>98(1948)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1948/08/27/DailyHistory.html">98(1948)</a></td>
+        <td class='noop'>36(1888)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1888/08/27/DailyHistory.html">unk(1888)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-28</td>
+        <td class='miss'>99(1973)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1973/08/28/DailyHistory.html">98(1973)</a></td>
+        <td class='miss'>36(1982)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1982/08/28/DailyHistory.html">37(1982)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-29</td>
+        <td class='miss'>96(1973)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1973/08/29/DailyHistory.html">95(1973)</a></td>
+        <td class='noop'>26(1863)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1863/08/29/DailyHistory.html">unk(1863)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-30</td>
+        <td class='noop'>97(1881)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1881/08/30/DailyHistory.html">unk(1881)</a></td>
+        <td class='noop'>30(1863)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1863/08/30/DailyHistory.html">unk(1863)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-31</td>
+        <td class='miss'>96(1953)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1953/08/31/DailyHistory.html">93(1953)</a></td>
+        <td class='noop'>30(1869)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1869/08/31/DailyHistory.html">unk(1869)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-01</td>
+        <td class='match'>96(1953)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1953/09/01/DailyHistory.html">96(1953)</a></td>
+        <td class='noop'>30(1867)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1867/09/01/DailyHistory.html">unk(1867)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-02</td>
+        <td class='noop'>99(1894)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1894/09/02/DailyHistory.html">unk(1894)</a></td>
+        <td class='noop'>36(1867)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1867/09/02/DailyHistory.html">unk(1867)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-03</td>
+        <td class='miss'>97(1973)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1973/09/03/DailyHistory.html">96(1973)</a></td>
+        <td class='noop'>26(1863)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1863/09/03/DailyHistory.html">unk(1863)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-04</td>
+        <td class='noop'>93(1925)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1925/09/04/DailyHistory.html">unk(1925)</a></td>
+        <td class='miss'>33(1997)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1997/09/04/DailyHistory.html">36(1997)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-05</td>
+        <td class='noop'>96(1881)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1881/09/05/DailyHistory.html">unk(1881)</a></td>
+        <td class='miss'>34(1997)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1997/09/05/DailyHistory.html">37(1997)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-06</td>
+        <td class='noop'>97(1881)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1881/09/06/DailyHistory.html">unk(1881)</a></td>
+        <td class='miss'>34(1962)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1962/09/06/DailyHistory.html">37(1962)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-07</td>
+        <td class='miss'>94(1960)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1960/09/07/DailyHistory.html">91(1960)</a></td>
+        <td class='noop'>35(1873)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1873/09/07/DailyHistory.html">unk(1873)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-08</td>
+        <td class='noop'>95(1874)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1874/09/08/DailyHistory.html">unk(1874)</a></td>
+        <td class='noop'>28(1883)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1883/09/08/DailyHistory.html">unk(1883)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-09</td>
+        <td class='noop'>94(1897)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1897/09/09/DailyHistory.html">unk(1897)</a></td>
+        <td class='noop'>30(1879)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1879/09/09/DailyHistory.html">unk(1879)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-10</td>
+        <td class='match'>93(1978)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1978/09/10/DailyHistory.html">93(1978)</a></td>
+        <td class='noop'>32(1867)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1867/09/10/DailyHistory.html">unk(1867)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-11</td>
+        <td class='noop'>95(1874)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1874/09/11/DailyHistory.html">unk(1874)</a></td>
+        <td class='noop'>32(1898)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1898/09/11/DailyHistory.html">unk(1898)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-12</td>
+        <td class='noop'>94(1874)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1874/09/12/DailyHistory.html">unk(1874)</a></td>
+        <td class='noop'>25(1864)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1864/09/12/DailyHistory.html">unk(1864)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-13</td>
+        <td class='noop'>93(1874)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1874/09/13/DailyHistory.html">unk(1874)</a></td>
+        <td class='noop'>26(1873)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1873/09/13/DailyHistory.html">unk(1873)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-14</td>
+        <td class='noop'>94(1927)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1927/09/14/DailyHistory.html">unk(1927)</a></td>
+        <td class='noop'>28(1866)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1866/09/14/DailyHistory.html">unk(1866)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-15</td>
+        <td class='noop'>94(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1939/09/15/DailyHistory.html">unk(1939)</a></td>
+        <td class='miss'>35(1995)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1995/09/15/DailyHistory.html">37(1995)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-16</td>
+        <td class='noop'>92(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1939/09/16/DailyHistory.html">unk(1939)</a></td>
+        <td class='noop'>24(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/09/16/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-17</td>
+        <td class='miss'>93(1955)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1955/09/17/DailyHistory.html">72(1955)</a></td>
+        <td class='noop'>26(1875)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1875/09/17/DailyHistory.html">unk(1875)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-18</td>
+        <td class='miss'>93(1955)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1955/09/18/DailyHistory.html">72(1955)</a></td>
+        <td class='noop'>25(1863)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1863/09/18/DailyHistory.html">unk(1863)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-19</td>
+        <td class='noop'>94(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/09/19/DailyHistory.html">unk(1895)</a></td>
+        <td class='noop'>27(1896)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1896/09/19/DailyHistory.html">unk(1896)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-20</td>
+        <td class='noop'>94(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/09/20/DailyHistory.html">unk(1895)</a></td>
+        <td class='noop'>22(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/09/20/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-21</td>
+        <td class='noop'>94(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/09/21/DailyHistory.html">unk(1895)</a></td>
+        <td class='noop'>19(1863)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1863/09/21/DailyHistory.html">unk(1863)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-22</td>
+        <td class='noop'>94(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/09/22/DailyHistory.html">unk(1895)</a></td>
+        <td class='noop'>22(1896)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1896/09/22/DailyHistory.html">unk(1896)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-23</td>
+        <td class='noop'>90(1891)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1891/09/23/DailyHistory.html">unk(1891)</a></td>
+        <td class='miss'>26(1995)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1995/09/23/DailyHistory.html">27(1995)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-24</td>
+        <td class='noop'>90(1891)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1891/09/24/DailyHistory.html">unk(1891)</a></td>
+        <td class='miss'>26(1976)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1976/09/24/DailyHistory.html">27(1976)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-25</td>
+        <td class='noop'>91(1920)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1920/09/25/DailyHistory.html">unk(1920)</a></td>
+        <td class='noop'>23(1863)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1863/09/25/DailyHistory.html">unk(1863)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-26</td>
+        <td class='match'>89(1998)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1998/09/26/DailyHistory.html">89(1998)</a></td>
+        <td class='miss'>27(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1966/09/26/DailyHistory.html">28(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-27</td>
+        <td class='noop'>88(1891)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1891/09/27/DailyHistory.html">unk(1891)</a></td>
+        <td class='noop'>25(1869)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1869/09/27/DailyHistory.html">unk(1869)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-28</td>
+        <td class='noop'>88(1905)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1905/09/28/DailyHistory.html">unk(1905)</a></td>
+        <td class='miss'>22(1991)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1991/09/28/DailyHistory.html">24(1991)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-29</td>
+        <td class='match'>91(1953)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1953/09/29/DailyHistory.html">91(1953)</a></td>
+        <td class='noop'>22(1867)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1867/09/29/DailyHistory.html">unk(1867)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-30</td>
+        <td class='noop'>89(1897)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1897/09/30/DailyHistory.html">unk(1897)</a></td>
+        <td class='noop'>21(1899)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1899/09/30/DailyHistory.html">unk(1899)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-01</td>
+        <td class='noop'>89(1897)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1897/10/01/DailyHistory.html">unk(1897)</a></td>
+        <td class='miss'>27(1960)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1960/10/01/DailyHistory.html">30(1960)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-02</td>
+        <td class='noop'>86(1922)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1922/10/02/DailyHistory.html">unk(1922)</a></td>
+        <td class='miss'>25(1974)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1974/10/02/DailyHistory.html">27(1974)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-03</td>
+        <td class='noop'>90(1898)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1898/10/03/DailyHistory.html">unk(1898)</a></td>
+        <td class='miss'>22(1974)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1974/10/03/DailyHistory.html">23(1974)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-04</td>
+        <td class='match'>86(1951)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1951/10/04/DailyHistory.html">86(1951)</a></td>
+        <td class='noop'>23(1867)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1867/10/04/DailyHistory.html">unk(1867)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-05</td>
+        <td class='noop'>87(1922)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1922/10/05/DailyHistory.html">unk(1922)</a></td>
+        <td class='match'>24(2003)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2003/10/05/DailyHistory.html">24(2003)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-06</td>
+        <td class='match'>89(1963)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1963/10/06/DailyHistory.html">89(1963)</a></td>
+        <td class='noop'>22(1873)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1873/10/06/DailyHistory.html">unk(1873)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-07</td>
+        <td class='match'>86(2007)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2007/10/07/DailyHistory.html">86(2007)</a></td>
+        <td class='noop'>19(1896)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1896/10/07/DailyHistory.html">unk(1896)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-08</td>
+        <td class='match'>86(2007)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2007/10/08/DailyHistory.html">86(2007)</a></td>
+        <td class='noop'>20(1864)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1864/10/08/DailyHistory.html">unk(1864)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-09</td>
+        <td class='noop'>84(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1939/10/09/DailyHistory.html">unk(1939)</a></td>
+        <td class='match'>23(1989)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1989/10/09/DailyHistory.html">23(1989)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-10</td>
+        <td class='noop'>83(1879)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1879/10/10/DailyHistory.html">unk(1879)</a></td>
+        <td class='noop'>23(1876)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1876/10/10/DailyHistory.html">unk(1876)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-11</td>
+        <td class='noop'>84(1879)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1879/10/11/DailyHistory.html">unk(1879)</a></td>
+        <td class='noop'>19(1906)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1906/10/11/DailyHistory.html">unk(1906)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-12</td>
+        <td class='noop'>85(1879)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1879/10/12/DailyHistory.html">unk(1879)</a></td>
+        <td class='noop'>20(1869)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1869/10/12/DailyHistory.html">unk(1869)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-13</td>
+        <td class='miss'>83(1975)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1975/10/13/DailyHistory.html">82(1975)</a></td>
+        <td class='noop'>16(1874)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1874/10/13/DailyHistory.html">unk(1874)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-14</td>
+        <td class='miss'>83(1989)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1989/10/14/DailyHistory.html">82(1989)</a></td>
+        <td class='noop'>20(1894)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1894/10/14/DailyHistory.html">unk(1894)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-15</td>
+        <td class='noop'>86(1897)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1897/10/15/DailyHistory.html">unk(1897)</a></td>
+        <td class='noop'>21(1869)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1869/10/15/DailyHistory.html">unk(1869)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-16</td>
+        <td class='noop'>85(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1938/10/16/DailyHistory.html">unk(1938)</a></td>
+        <td class='noop'>22(1864)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1864/10/16/DailyHistory.html">unk(1864)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-17</td>
+        <td class='miss'>84(1956)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1956/10/17/DailyHistory.html">59(1956)</a></td>
+        <td class='noop'>13(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/10/17/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-18</td>
+        <td class='noop'>82(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1938/10/18/DailyHistory.html">unk(1938)</a></td>
+        <td class='miss'>17(1976)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1976/10/18/DailyHistory.html">18(1976)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-19</td>
+        <td class='noop'>82(1920)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1920/10/19/DailyHistory.html">unk(1920)</a></td>
+        <td class='match'>16(1972)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1972/10/19/DailyHistory.html">16(1972)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-20</td>
+        <td class='match'>82(1953)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1953/10/20/DailyHistory.html">82(1953)</a></td>
+        <td class='miss'>17(1972)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1972/10/20/DailyHistory.html">19(1972)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-21</td>
+        <td class='miss'>82(1953)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1953/10/21/DailyHistory.html">80(1953)</a></td>
+        <td class='noop'>10(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/10/21/DailyHistory.html">unk(1895)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-22</td>
+        <td class='miss'>82(1963)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1963/10/22/DailyHistory.html">81(1963)</a></td>
+        <td class='noop'>10(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/10/22/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-23</td>
+        <td class='match'>84(1963)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1963/10/23/DailyHistory.html">84(1963)</a></td>
+        <td class='noop'>11(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/10/23/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-24</td>
+        <td class='miss'>84(1963)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1963/10/24/DailyHistory.html">82(1963)</a></td>
+        <td class='noop'>15(1869)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1869/10/24/DailyHistory.html">unk(1869)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-25</td>
+        <td class='match'>81(1963)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1963/10/25/DailyHistory.html">81(1963)</a></td>
+        <td class='noop'>12(1887)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1887/10/25/DailyHistory.html">unk(1887)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-26</td>
+        <td class='match'>82(1963)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1963/10/26/DailyHistory.html">82(1963)</a></td>
+        <td class='noop'>14(1887)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1887/10/26/DailyHistory.html">unk(1887)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-27</td>
+        <td class='noop'>80(1927)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1927/10/27/DailyHistory.html">unk(1927)</a></td>
+        <td class='noop'>13(1869)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1869/10/27/DailyHistory.html">unk(1869)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-28</td>
+        <td class='miss'>74(1989)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1989/10/28/DailyHistory.html">73(1989)</a></td>
+        <td class='noop'>15(1869)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1869/10/28/DailyHistory.html">unk(1869)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-29</td>
+        <td class='miss'>76(1999)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1999/10/29/DailyHistory.html">75(1999)</a></td>
+        <td class='noop'>14(1869)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1869/10/29/DailyHistory.html">unk(1869)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-30</td>
+        <td class='miss'>77(1950)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1950/10/30/DailyHistory.html">75(1950)</a></td>
+        <td class='noop'>13(1869)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1869/10/30/DailyHistory.html">unk(1869)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-31</td>
+        <td class='miss'>77(1950)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1950/10/31/DailyHistory.html">75(1950)</a></td>
+        <td class='noop'>15(1879)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1879/10/31/DailyHistory.html">unk(1879)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-01</td>
+        <td class='match'>79(1950)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1950/11/01/DailyHistory.html">79(1950)</a></td>
+        <td class='noop'>18(1875)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1875/11/01/DailyHistory.html">unk(1875)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-02</td>
+        <td class='noop'>76(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1938/11/02/DailyHistory.html">unk(1938)</a></td>
+        <td class='noop'>13(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/11/02/DailyHistory.html">unk(1895)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-03</td>
+        <td class='match'>77(2015)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2015/11/03/DailyHistory.html">77(2015)</a></td>
+        <td class='miss'>13(1951)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1951/11/03/DailyHistory.html">14(1951)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-04</td>
+        <td class='match'>76(2015)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2015/11/04/DailyHistory.html">76(2015)</a></td>
+        <td class='miss'>9(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1966/11/04/DailyHistory.html">21(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-05</td>
+        <td class='miss'>75(1978)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1978/11/05/DailyHistory.html">73(1978)</a></td>
+        <td class='noop'>4(1877)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1877/11/05/DailyHistory.html">unk(1877)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-06</td>
+        <td class='miss'>77(1975)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1975/11/06/DailyHistory.html">75(1975)</a></td>
+        <td class='noop'>4(1877)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1877/11/06/DailyHistory.html">unk(1877)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-07</td>
+        <td class='noop'>72(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/11/07/DailyHistory.html">unk(1895)</a></td>
+        <td class='noop'>8(1877)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1877/11/07/DailyHistory.html">unk(1877)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-08</td>
+        <td class='noop'>71(1915)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1915/11/08/DailyHistory.html">unk(1915)</a></td>
+        <td class='miss'>11(1991)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1991/11/08/DailyHistory.html">12(1991)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-09</td>
+        <td class='miss'>73(1999)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1999/11/09/DailyHistory.html">72(1999)</a></td>
+        <td class='match'>12(1991)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1991/11/09/DailyHistory.html">12(1991)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-10</td>
+        <td class='match'>68(1999)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1999/11/10/DailyHistory.html">68(1999)</a></td>
+        <td class='noop'>9(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/11/10/DailyHistory.html">unk(1895)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-11</td>
+        <td class='noop'>71(1909)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1909/11/11/DailyHistory.html">unk(1909)</a></td>
+        <td class='noop'>8(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/11/11/DailyHistory.html">unk(1895)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-12</td>
+        <td class='miss'>71(1964)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1964/11/12/DailyHistory.html">70(1964)</a></td>
+        <td class='noop'>7(1873)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1873/11/12/DailyHistory.html">unk(1873)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-13</td>
+        <td class='noop'>75(1879)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1879/11/13/DailyHistory.html">unk(1879)</a></td>
+        <td class='noop'>1(1873)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1873/11/13/DailyHistory.html">unk(1873)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-14</td>
+        <td class='noop'>69(1909)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1909/11/14/DailyHistory.html">unk(1909)</a></td>
+        <td class='noop'>4(1873)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1873/11/14/DailyHistory.html">unk(1873)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-15</td>
+        <td class='match'>69(1990)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1990/11/15/DailyHistory.html">69(1990)</a></td>
+        <td class='noop'>6(1893)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1893/11/15/DailyHistory.html">unk(1893)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-16</td>
+        <td class='noop'>67(1896)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1896/11/16/DailyHistory.html">unk(1896)</a></td>
+        <td class='noop'>5(1933)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1933/11/16/DailyHistory.html">unk(1933)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-17</td>
+        <td class='miss'>69(1971)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1971/11/17/DailyHistory.html">66(1971)</a></td>
+        <td class='miss'>7(1959)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1959/11/17/DailyHistory.html">9(1959)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-18</td>
+        <td class='match'>72(2016)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2016/11/18/DailyHistory.html">72(2016)</a></td>
+        <td class='noop'>3(1867)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1867/11/18/DailyHistory.html">unk(1867)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-19</td>
+        <td class='miss'>70(1953)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1953/11/19/DailyHistory.html">69(1953)</a></td>
+        <td class='noop'>4(1867)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1867/11/19/DailyHistory.html">unk(1867)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-20</td>
+        <td class='miss'>67(1953)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1953/11/20/DailyHistory.html">66(1953)</a></td>
+        <td class='noop'>5(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/11/20/DailyHistory.html">unk(1895)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-21</td>
+        <td class='noop'>69(1913)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1913/11/21/DailyHistory.html">unk(1913)</a></td>
+        <td class='noop'>-4(1880)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1880/11/21/DailyHistory.html">unk(1880)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-22</td>
+        <td class='noop'>65(1913)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1913/11/22/DailyHistory.html">unk(1913)</a></td>
+        <td class='noop'>-2(1880)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1880/11/22/DailyHistory.html">unk(1880)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-23</td>
+        <td class='miss'>67(1999)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1999/11/23/DailyHistory.html">66(1999)</a></td>
+        <td class='noop'>-3(1869)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1869/11/23/DailyHistory.html">unk(1869)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-24</td>
+        <td class='noop'>64(1931)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1931/11/24/DailyHistory.html">unk(1931)</a></td>
+        <td class='miss'>-1(1950)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1950/11/24/DailyHistory.html">0(1950)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-25</td>
+        <td class='noop'>63(1908)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1908/11/25/DailyHistory.html">unk(1908)</a></td>
+        <td class='miss'>-2(1950)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1950/11/25/DailyHistory.html">0(1950)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-26</td>
+        <td class='noop'>64(1896)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1896/11/26/DailyHistory.html">unk(1896)</a></td>
+        <td class='miss'>-5(1949)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1949/11/26/DailyHistory.html">-4(1949)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-27</td>
+        <td class='miss'>65(1990)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1990/11/27/DailyHistory.html">64(1990)</a></td>
+        <td class='noop'>5(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1930/11/27/DailyHistory.html">unk(1930)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-28</td>
+        <td class='noop'>71(1905)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1905/11/28/DailyHistory.html">unk(1905)</a></td>
+        <td class='noop'>0(1891)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1891/11/28/DailyHistory.html">unk(1891)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-29</td>
+        <td class='miss'>65(1998)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1998/11/29/DailyHistory.html">64(1998)</a></td>
+        <td class='noop'>0(1867)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1867/11/29/DailyHistory.html">unk(1867)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-30</td>
+        <td class='match'>63(1998)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1998/11/30/DailyHistory.html">63(1998)</a></td>
+        <td class='noop'>-1(1867)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1867/11/30/DailyHistory.html">unk(1867)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-01</td>
+        <td class='miss'>65(1970)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1970/12/01/DailyHistory.html">64(1970)</a></td>
+        <td class='noop'>-1(1886)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1886/12/01/DailyHistory.html">unk(1886)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-02</td>
+        <td class='match'>66(1982)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1982/12/02/DailyHistory.html">66(1982)</a></td>
+        <td class='noop'>-13(1869)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1869/12/02/DailyHistory.html">unk(1869)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-03</td>
+        <td class='match'>66(1982)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1982/12/03/DailyHistory.html">66(1982)</a></td>
+        <td class='miss'>-18(2002)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/2002/12/03/DailyHistory.html">-16(2002)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-04</td>
+        <td class='noop'>64(1941)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1941/12/04/DailyHistory.html">unk(1941)</a></td>
+        <td class='noop'>-13(1886)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1886/12/04/DailyHistory.html">unk(1886)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-05</td>
+        <td class='miss'>69(2001)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/2001/12/05/DailyHistory.html">68(2001)</a></td>
+        <td class='noop'>-11(1886)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1886/12/05/DailyHistory.html">unk(1886)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-06</td>
+        <td class='miss'>65(1998)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1998/12/06/DailyHistory.html">64(1998)</a></td>
+        <td class='miss'>-17(1964)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1964/12/06/DailyHistory.html">-15(1964)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-07</td>
+        <td class='match'>63(1951)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1951/12/07/DailyHistory.html">63(1951)</a></td>
+        <td class='noop'>-5(1885)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1885/12/07/DailyHistory.html">unk(1885)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-08</td>
+        <td class='miss'>65(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1966/12/08/DailyHistory.html">63(1966)</a></td>
+        <td class='noop'>-25(1864)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1864/12/08/DailyHistory.html">unk(1864)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-09</td>
+        <td class='noop'>58(1946)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1946/12/09/DailyHistory.html">unk(1946)</a></td>
+        <td class='noop'>-17(1864)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1864/12/09/DailyHistory.html">unk(1864)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-10</td>
+        <td class='miss'>63(1971)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1971/12/10/DailyHistory.html">62(1971)</a></td>
+        <td class='noop'>-24(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/12/10/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-11</td>
+        <td class='miss'>62(1949)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1949/12/11/DailyHistory.html">61(1949)</a></td>
+        <td class='noop'>-16(1868)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1868/12/11/DailyHistory.html">unk(1868)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-12</td>
+        <td class='miss'>62(1949)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1949/12/12/DailyHistory.html">60(1949)</a></td>
+        <td class='noop'>-24(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/12/12/DailyHistory.html">unk(1895)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-13</td>
+        <td class='match'>63(2015)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2015/12/13/DailyHistory.html">63(2015)</a></td>
+        <td class='noop'>-10(1867)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1867/12/13/DailyHistory.html">unk(1867)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-14</td>
+        <td class='miss'>60(1975)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1975/12/14/DailyHistory.html">59(1975)</a></td>
+        <td class='noop'>-18(1904)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1904/12/14/DailyHistory.html">unk(1904)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-15</td>
+        <td class='miss'>64(1971)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1971/12/15/DailyHistory.html">57(1971)</a></td>
+        <td class='noop'>-13(1917)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1917/12/15/DailyHistory.html">unk(1917)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-16</td>
+        <td class='miss'>61(1984)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1984/12/16/DailyHistory.html">60(1984)</a></td>
+        <td class='noop'>-11(1876)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1876/12/16/DailyHistory.html">unk(1876)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-17</td>
+        <td class='noop'>53(1921)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1921/12/17/DailyHistory.html">unk(1921)</a></td>
+        <td class='noop'>-14(1884)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1884/12/17/DailyHistory.html">unk(1884)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-18</td>
+        <td class='noop'>55(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1895/12/18/DailyHistory.html">unk(1895)</a></td>
+        <td class='noop'>-25(1884)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1884/12/18/DailyHistory.html">unk(1884)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-19</td>
+        <td class='noop'>58(1877)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1877/12/19/DailyHistory.html">unk(1877)</a></td>
+        <td class='noop'>-17(1884)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1884/12/19/DailyHistory.html">unk(1884)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-20</td>
+        <td class='miss'>59(1957)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1957/12/20/DailyHistory.html">33(1957)</a></td>
+        <td class='noop'>-10(1901)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1901/12/20/DailyHistory.html">unk(1901)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-21</td>
+        <td class='miss'>61(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1967/12/21/DailyHistory.html">59(1967)</a></td>
+        <td class='noop'>-15(1864)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1864/12/21/DailyHistory.html">unk(1864)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-22</td>
+        <td class='miss'>57(1957)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1957/12/22/DailyHistory.html">32(1957)</a></td>
+        <td class='noop'>-15(1870)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1870/12/22/DailyHistory.html">unk(1870)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-23</td>
+        <td class='match'>60(2015)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2015/12/23/DailyHistory.html">60(2015)</a></td>
+        <td class='noop'>-16(1896)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1896/12/23/DailyHistory.html">unk(1896)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-24</td>
+        <td class='noop'>62(1893)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1893/12/24/DailyHistory.html">unk(1893)</a></td>
+        <td class='noop'>-13(1897)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1897/12/24/DailyHistory.html">unk(1897)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-25</td>
+        <td class='miss'>65(1982)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1982/12/25/DailyHistory.html">64(1982)</a></td>
+        <td class='miss'>-17(2000)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/2000/12/25/DailyHistory.html">-15(2000)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-26</td>
+        <td class='noop'>52(1891)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1891/12/26/DailyHistory.html">unk(1891)</a></td>
+        <td class='noop'>-15(1914)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1914/12/26/DailyHistory.html">unk(1914)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-27</td>
+        <td class='match'>60(2008)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/2008/12/27/DailyHistory.html">60(2008)</a></td>
+        <td class='noop'>-10(1894)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1894/12/27/DailyHistory.html">unk(1894)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-28</td>
+        <td class='match'>62(1984)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1984/12/28/DailyHistory.html">62(1984)</a></td>
+        <td class='miss'>-18(2000)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/2000/12/28/DailyHistory.html">-17(2000)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-29</td>
+        <td class='match'>62(1984)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KLAN/1984/12/29/DailyHistory.html">62(1984)</a></td>
+        <td class='noop'>-15(1880)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1880/12/29/DailyHistory.html">unk(1880)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-30</td>
+        <td class='noop'>60(1875)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1875/12/30/DailyHistory.html">unk(1875)</a></td>
+        <td class='miss'>-17(1976)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1976/12/30/DailyHistory.html">-16(1976)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-31</td>
+        <td class='noop'>70(1875)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KLAN/1875/12/31/DailyHistory.html">unk(1875)</a></td>
+        <td class='miss'>-15(1976)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KLAN/1976/12/31/DailyHistory.html">-11(1976)</a></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

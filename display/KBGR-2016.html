@@ -1,0 +1,2687 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        margin: 1em auto;
+        width: 640px;
+      }
+      h3 {
+        margin: 0 0 0.5em 0;
+        text-align: center;
+      }
+      div.fixed {
+        background: #fff;
+        box-shadow: 0px 1px 10px 0px rgba(230,230,230,1);
+        height: 9em;
+        padding: 0.5em 0 0.5em 0;
+        position: fixed;
+        top: 0;
+        text-align: center;
+        width: 640px;
+      }
+      div.meta {
+        text-align: left;
+        padding: 0 1em 0.5em 1em;
+      }
+      div.fixed span {
+        display: inline-block;
+        float: left;
+        font-weight: bold;
+        width: 144px;
+      }
+      div.fixed div span:first-child {
+        width: 64px;
+      }
+      div.half {
+        float: left;
+        width: 50%;
+      }
+      div.half ul {
+        margin: 0;
+        padding-left: 1em;
+      }
+      div.cols {
+        float: left;
+        padding: 0.5em 0 0 0;
+      }
+      table { 
+        border-collapse: collapse; 
+        margin-top: 10.5em; 
+        width: 100%; 
+      }
+      tr {
+        border-bottom: 1px solid #ccc;
+      }
+      tr:last-child {
+        border: none;
+      }
+      td { 
+        text-align: center; 
+        width: 144px; 
+      }
+      td:first-child { 
+        text-align: center; 
+        width: 64px; 
+      }
+      .match,
+      .match a,
+      .match a:visited {
+        color: #2c7bb6;
+      }
+      .miss,
+      .miss a,
+      .miss a:visited {
+        color: #d7191c;
+      }
+      .noop,
+      .noop a,
+      .noop a:visited {
+        color: #ccc;
+      }
+    </style>
+  </head>
+
+<body>
+  <div class='fixed'>
+    <div class='meta'>
+      <h3>
+        <a href="https://www.wunderground.com/history/airport/KBGR">KBGR</a> record temperature data from <a href="https://www.wunderground.com/">Weather Underground</a>
+      </h3>
+      <div class='half'>
+        <strong>Highs</strong>
+        <ul>
+          <li>Mismatches on <strong>93</strong> days
+          <li>Matches on <strong>155</strong> days
+          <li>Missing data for <strong>118</strong> days
+          <li>Biggest mismatch on 08-14 of 26 degrees.
+        </ul>
+      </div>
+      <div class='half'>
+        <strong>Lows</strong>
+        <ul>
+          <li>Mismatches on <strong>115</strong> days
+          <li>Matches on <strong>92</strong> days
+          <li>Missing data for <strong>159</strong> days
+          <li>Biggest mismatch on 02-01 of 16 degrees
+        </ul>
+      </div>
+    </div>
+    <div class='cols'>
+      <span>Date</span>
+      <span>Record High</span>
+      <span>Actual High</span>
+      <span>Record Low</span>
+      <span>Actual Low</span>
+    </div>
+  </div>
+  <table>
+    <tbody>
+      <tr>
+        <td class=''>01-01</td>
+        <td class='match'>54(1966)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1966/01/01/DailyHistory.html">54(1966)</a></td>
+        <td class='match'>-19(2014)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2014/01/01/DailyHistory.html">-19(2014)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-02</td>
+        <td class='match'>50(1979)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1979/01/02/DailyHistory.html">50(1979)</a></td>
+        <td class='miss'>-28(1999)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1999/01/02/DailyHistory.html">-15(1999)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-03</td>
+        <td class='match'>52(1979)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1979/01/03/DailyHistory.html">52(1979)</a></td>
+        <td class='match'>-20(2008)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2008/01/03/DailyHistory.html">-20(2008)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-04</td>
+        <td class='noop'>57(1950)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1950/01/04/DailyHistory.html">unk(1950)</a></td>
+        <td class='miss'>-23(1981)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1981/01/04/DailyHistory.html">-24(1981)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-05</td>
+        <td class='noop'>59(1950)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1950/01/05/DailyHistory.html">unk(1950)</a></td>
+        <td class='match'>-15(1981)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1981/01/05/DailyHistory.html">-15(1981)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-06</td>
+        <td class='match'>58(2007)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2007/01/06/DailyHistory.html">58(2007)</a></td>
+        <td class='match'>-13(2015)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2015/01/06/DailyHistory.html">-13(2015)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-07</td>
+        <td class='noop'>54(1932)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1932/01/07/DailyHistory.html">unk(1932)</a></td>
+        <td class='miss'>-13(1942)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1942/01/07/DailyHistory.html">-7(1942)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-08</td>
+        <td class='match'>55(2008)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2008/01/08/DailyHistory.html">55(2008)</a></td>
+        <td class='miss'>-21(1942)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1942/01/08/DailyHistory.html">-19(1942)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-09</td>
+        <td class='noop'>50(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1930/01/09/DailyHistory.html">unk(1930)</a></td>
+        <td class='miss'>-23(1942)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1942/01/09/DailyHistory.html">-20(1942)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-10</td>
+        <td class='match'>52(2016)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2016/01/10/DailyHistory.html">52(2016)</a></td>
+        <td class='noop'>-21(1947)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1947/01/10/DailyHistory.html">unk(1947)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-11</td>
+        <td class='miss'>52(1983)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1983/01/11/DailyHistory.html">57(1983)</a></td>
+        <td class='miss'>-25(1945)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1945/01/11/DailyHistory.html">-19(1945)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-12</td>
+        <td class='match'>51(1980)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1980/01/12/DailyHistory.html">51(1980)</a></td>
+        <td class='miss'>-18(1945)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1945/01/12/DailyHistory.html">-9(1945)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-13</td>
+        <td class='noop'>54(1932)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1932/01/13/DailyHistory.html">unk(1932)</a></td>
+        <td class='miss'>-17(1971)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1971/01/13/DailyHistory.html">-16(1971)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-14</td>
+        <td class='noop'>63(1932)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1932/01/14/DailyHistory.html">unk(1932)</a></td>
+        <td class='match'>-22(1957)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1957/01/14/DailyHistory.html">-22(1957)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-15</td>
+        <td class='noop'>58(1932)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1932/01/15/DailyHistory.html">unk(1932)</a></td>
+        <td class='match'>-20(1957)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1957/01/15/DailyHistory.html">-20(1957)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-16</td>
+        <td class='noop'>54(1932)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1932/01/16/DailyHistory.html">unk(1932)</a></td>
+        <td class='match'>-25(2009)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2009/01/16/DailyHistory.html">-25(2009)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-17</td>
+        <td class='match'>52(1995)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1995/01/17/DailyHistory.html">52(1995)</a></td>
+        <td class='miss'>-22(1974)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1974/01/17/DailyHistory.html">-19(1974)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-18</td>
+        <td class='match'>55(1990)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1990/01/18/DailyHistory.html">55(1990)</a></td>
+        <td class='match'>-24(1957)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1957/01/18/DailyHistory.html">-24(1957)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-19</td>
+        <td class='noop'>50(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/01/19/DailyHistory.html">unk(1929)</a></td>
+        <td class='miss'>-28(1971)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1971/01/19/DailyHistory.html">-27(1971)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-20</td>
+        <td class='miss'>54(1996)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1996/01/20/DailyHistory.html">50(1996)</a></td>
+        <td class='miss'>-25(1971)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1971/01/20/DailyHistory.html">-21(1971)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-21</td>
+        <td class='match'>51(2006)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2006/01/21/DailyHistory.html">51(2006)</a></td>
+        <td class='noop'>-16(1934)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1934/01/21/DailyHistory.html">unk(1934)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-22</td>
+        <td class='match'>47(1957)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1957/01/22/DailyHistory.html">47(1957)</a></td>
+        <td class='miss'>-29(2005)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/2005/01/22/DailyHistory.html">-24(2005)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-23</td>
+        <td class='match'>51(1957)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1957/01/23/DailyHistory.html">51(1957)</a></td>
+        <td class='miss'>-15(1976)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1976/01/23/DailyHistory.html">-14(1976)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-24</td>
+        <td class='miss'>54(1999)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1999/01/24/DailyHistory.html">53(1999)</a></td>
+        <td class='noop'>-23(1948)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1948/01/24/DailyHistory.html">unk(1948)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-25</td>
+        <td class='match'>51(2010)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2010/01/25/DailyHistory.html">51(2010)</a></td>
+        <td class='match'>-19(2009)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2009/01/25/DailyHistory.html">-19(2009)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-26</td>
+        <td class='miss'>53(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1986/01/26/DailyHistory.html">52(1986)</a></td>
+        <td class='match'>-26(2009)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2009/01/26/DailyHistory.html">-26(2009)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-27</td>
+        <td class='match'>57(1974)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1974/01/27/DailyHistory.html">57(1974)</a></td>
+        <td class='miss'>-21(1994)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1994/01/27/DailyHistory.html">-20(1994)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-28</td>
+        <td class='match'>49(2006)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2006/01/28/DailyHistory.html">49(2006)</a></td>
+        <td class='noop'>-22(1935)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1935/01/28/DailyHistory.html">unk(1935)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-29</td>
+        <td class='noop'>46(1950)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1950/01/29/DailyHistory.html">unk(1950)</a></td>
+        <td class='miss'>-20(1971)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1971/01/29/DailyHistory.html">-19(1971)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-30</td>
+        <td class='match'>52(2013)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2013/01/30/DailyHistory.html">52(2013)</a></td>
+        <td class='miss'>-16(1952)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1952/01/30/DailyHistory.html">-13(1952)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-31</td>
+        <td class='match'>54(2013)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2013/01/31/DailyHistory.html">54(2013)</a></td>
+        <td class='noop'>-18(1934)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1934/01/31/DailyHistory.html">unk(1934)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-01</td>
+        <td class='miss'>58(1989)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1989/02/01/DailyHistory.html">57(1989)</a></td>
+        <td class='miss'>-22(1971)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1971/02/01/DailyHistory.html">-6(1971)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-02</td>
+        <td class='match'>54(1976)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1976/02/02/DailyHistory.html">54(1976)</a></td>
+        <td class='miss'>-30(1962)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1962/02/02/DailyHistory.html">-29(1962)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-03</td>
+        <td class='match'>54(1991)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1991/02/03/DailyHistory.html">54(1991)</a></td>
+        <td class='noop'>-20(1948)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1948/02/03/DailyHistory.html">unk(1948)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-04</td>
+        <td class='match'>51(2016)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2016/02/04/DailyHistory.html">51(2016)</a></td>
+        <td class='match'>-26(1971)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1971/02/04/DailyHistory.html">-26(1971)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-05</td>
+        <td class='match'>51(2006)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2006/02/05/DailyHistory.html">51(2006)</a></td>
+        <td class='noop'>-18(1946)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1946/02/05/DailyHistory.html">unk(1946)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-06</td>
+        <td class='miss'>45(1999)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1999/02/06/DailyHistory.html">28(1999)</a></td>
+        <td class='noop'>-22(1934)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1934/02/06/DailyHistory.html">unk(1934)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-07</td>
+        <td class='match'>46(2005)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2005/02/07/DailyHistory.html">46(2005)</a></td>
+        <td class='match'>-27(1993)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1993/02/07/DailyHistory.html">-27(1993)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-08</td>
+        <td class='match'>47(2009)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2009/02/08/DailyHistory.html">47(2009)</a></td>
+        <td class='noop'>-19(1934)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1934/02/08/DailyHistory.html">unk(1934)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-09</td>
+        <td class='match'>51(1990)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1990/02/09/DailyHistory.html">51(1990)</a></td>
+        <td class='noop'>-24(1934)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1934/02/09/DailyHistory.html">unk(1934)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-10</td>
+        <td class='match'>48(2001)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2001/02/10/DailyHistory.html">48(2001)</a></td>
+        <td class='noop'>-32(1948)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1948/02/10/DailyHistory.html">unk(1948)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-11</td>
+        <td class='match'>54(1966)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1966/02/11/DailyHistory.html">54(1966)</a></td>
+        <td class='noop'>-29(1948)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1948/02/11/DailyHistory.html">unk(1948)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-12</td>
+        <td class='match'>55(1981)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1981/02/12/DailyHistory.html">55(1981)</a></td>
+        <td class='match'>-17(1967)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1967/02/12/DailyHistory.html">-17(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-13</td>
+        <td class='noop'>51(1937)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1937/02/13/DailyHistory.html">unk(1937)</a></td>
+        <td class='noop'>-20(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/02/13/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-14</td>
+        <td class='noop'>51(1937)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1937/02/14/DailyHistory.html">unk(1937)</a></td>
+        <td class='match'>-23(2015)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2015/02/14/DailyHistory.html">-23(2015)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-15</td>
+        <td class='miss'>48(1972)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1972/02/15/DailyHistory.html">45(1972)</a></td>
+        <td class='miss'>-25(1943)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1943/02/15/DailyHistory.html">-21(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-16</td>
+        <td class='match'>52(2006)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2006/02/16/DailyHistory.html">52(2006)</a></td>
+        <td class='miss'>-27(1943)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1943/02/16/DailyHistory.html">-22(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-17</td>
+        <td class='miss'>58(1981)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1981/02/17/DailyHistory.html">57(1981)</a></td>
+        <td class='noop'>-23(1934)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1934/02/17/DailyHistory.html">unk(1934)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-18</td>
+        <td class='match'>55(1981)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1981/02/18/DailyHistory.html">55(1981)</a></td>
+        <td class='noop'>-16(1934)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1934/02/18/DailyHistory.html">unk(1934)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-19</td>
+        <td class='miss'>56(1954)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1954/02/19/DailyHistory.html">55(1954)</a></td>
+        <td class='match'>-13(1967)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1967/02/19/DailyHistory.html">-13(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-20</td>
+        <td class='miss'>58(1994)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1994/02/20/DailyHistory.html">57(1994)</a></td>
+        <td class='match'>-16(1966)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1966/02/20/DailyHistory.html">-16(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-21</td>
+        <td class='noop'>60(1937)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1937/02/21/DailyHistory.html">unk(1937)</a></td>
+        <td class='noop'>-15(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/02/21/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-22</td>
+        <td class='noop'>56(1937)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1937/02/22/DailyHistory.html">unk(1937)</a></td>
+        <td class='miss'>-12(1963)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1963/02/22/DailyHistory.html">-11(1963)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-23</td>
+        <td class='match'>57(1984)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1984/02/23/DailyHistory.html">57(1984)</a></td>
+        <td class='noop'>-18(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/02/23/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-24</td>
+        <td class='noop'>53(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1930/02/24/DailyHistory.html">unk(1930)</a></td>
+        <td class='noop'>-26(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/02/24/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-25</td>
+        <td class='match'>59(1984)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1984/02/25/DailyHistory.html">59(1984)</a></td>
+        <td class='noop'>-11(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/02/25/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-26</td>
+        <td class='noop'>51(1931)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1931/02/26/DailyHistory.html">unk(1931)</a></td>
+        <td class='noop'>-15(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/02/26/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-27</td>
+        <td class='match'>54(1976)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1976/02/27/DailyHistory.html">54(1976)</a></td>
+        <td class='match'>-17(1963)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1963/02/27/DailyHistory.html">-17(1963)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-28</td>
+        <td class='match'>50(1954)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1954/02/28/DailyHistory.html">50(1954)</a></td>
+        <td class='match'>-16(2015)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2015/02/28/DailyHistory.html">-16(2015)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-29</td>
+        <td class='match'>53(2016)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2016/02/29/DailyHistory.html">53(2016)</a></td>
+        <td class='match'>-16(2008)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2008/02/29/DailyHistory.html">-16(2008)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-01</td>
+        <td class='match'>53(1974)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1974/03/01/DailyHistory.html">53(1974)</a></td>
+        <td class='match'>-14(2015)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2015/03/01/DailyHistory.html">-14(2015)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-02</td>
+        <td class='match'>54(1991)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1991/03/02/DailyHistory.html">54(1991)</a></td>
+        <td class='miss'>-16(2001)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/2001/03/02/DailyHistory.html">-14(2001)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-03</td>
+        <td class='match'>53(1964)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1964/03/03/DailyHistory.html">53(1964)</a></td>
+        <td class='noop'>-9(1950)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1950/03/03/DailyHistory.html">unk(1950)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-04</td>
+        <td class='match'>55(1974)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1974/03/04/DailyHistory.html">55(1974)</a></td>
+        <td class='match'>-15(2011)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2011/03/04/DailyHistory.html">-15(2011)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-05</td>
+        <td class='noop'>55(1934)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1934/03/05/DailyHistory.html">unk(1934)</a></td>
+        <td class='miss'>-9(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1948/03/05/DailyHistory.html">-4(1948)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-06</td>
+        <td class='noop'>57(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1930/03/06/DailyHistory.html">unk(1930)</a></td>
+        <td class='match'>-14(2015)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2015/03/06/DailyHistory.html">-14(2015)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-07</td>
+        <td class='match'>64(1974)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1974/03/07/DailyHistory.html">64(1974)</a></td>
+        <td class='miss'>-10(1989)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1989/03/07/DailyHistory.html">-9(1989)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-08</td>
+        <td class='match'>59(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2012/03/08/DailyHistory.html">59(2012)</a></td>
+        <td class='match'>-11(2007)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2007/03/08/DailyHistory.html">-11(2007)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-09</td>
+        <td class='match'>59(2016)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2016/03/09/DailyHistory.html">59(2016)</a></td>
+        <td class='match'>-11(2007)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2007/03/09/DailyHistory.html">-11(2007)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-10</td>
+        <td class='miss'>62(1977)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1977/03/10/DailyHistory.html">61(1977)</a></td>
+        <td class='miss'>-10(1972)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1972/03/10/DailyHistory.html">-9(1972)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-11</td>
+        <td class='miss'>65(1977)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1977/03/11/DailyHistory.html">64(1977)</a></td>
+        <td class='miss'>-12(2005)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/2005/03/11/DailyHistory.html">-9(2005)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-12</td>
+        <td class='match'>62(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2012/03/12/DailyHistory.html">62(2012)</a></td>
+        <td class='noop'>-4(1941)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1941/03/12/DailyHistory.html">unk(1941)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-13</td>
+        <td class='noop'>59(1927)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1927/03/13/DailyHistory.html">unk(1927)</a></td>
+        <td class='noop'>-13(1941)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1941/03/13/DailyHistory.html">unk(1941)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-14</td>
+        <td class='noop'>56(1927)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1927/03/14/DailyHistory.html">unk(1927)</a></td>
+        <td class='miss'>-12(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1948/03/14/DailyHistory.html">-5(1948)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-15</td>
+        <td class='miss'>59(1945)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1945/03/15/DailyHistory.html">60(1945)</a></td>
+        <td class='noop'>-4(1926)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1926/03/15/DailyHistory.html">unk(1926)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-16</td>
+        <td class='match'>60(2010)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2010/03/16/DailyHistory.html">60(2010)</a></td>
+        <td class='match'>1(1956)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1956/03/16/DailyHistory.html">1(1956)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-17</td>
+        <td class='noop'>62(1936)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1936/03/17/DailyHistory.html">unk(1936)</a></td>
+        <td class='match'>1(1967)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1967/03/17/DailyHistory.html">1(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-18</td>
+        <td class='match'>76(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2012/03/18/DailyHistory.html">76(2012)</a></td>
+        <td class='match'>-6(1967)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1967/03/18/DailyHistory.html">-6(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-19</td>
+        <td class='match'>68(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2012/03/19/DailyHistory.html">68(2012)</a></td>
+        <td class='miss'>-10(1993)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1993/03/19/DailyHistory.html">-9(1993)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-20</td>
+        <td class='match'>78(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2012/03/20/DailyHistory.html">78(2012)</a></td>
+        <td class='noop'>-3(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1939/03/20/DailyHistory.html">unk(1939)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-21</td>
+        <td class='match'>83(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2012/03/21/DailyHistory.html">83(2012)</a></td>
+        <td class='miss'>2(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1986/03/21/DailyHistory.html">1(1986)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-22</td>
+        <td class='match'>84(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2012/03/22/DailyHistory.html">84(2012)</a></td>
+        <td class='noop'>7(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/03/22/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-23</td>
+        <td class='miss'>67(1953)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1953/03/23/DailyHistory.html">66(1953)</a></td>
+        <td class='noop'>1(1934)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1934/03/23/DailyHistory.html">unk(1934)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-24</td>
+        <td class='noop'>66(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1938/03/24/DailyHistory.html">unk(1938)</a></td>
+        <td class='noop'>4(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/03/24/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-25</td>
+        <td class='match'>66(1987)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1987/03/25/DailyHistory.html">66(1987)</a></td>
+        <td class='match'>0(2014)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2014/03/25/DailyHistory.html">0(2014)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-26</td>
+        <td class='noop'>65(1946)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1946/03/26/DailyHistory.html">unk(1946)</a></td>
+        <td class='miss'>2(1960)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1960/03/26/DailyHistory.html">1(1960)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-27</td>
+        <td class='match'>70(1993)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1993/03/27/DailyHistory.html">70(1993)</a></td>
+        <td class='match'>9(1975)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1975/03/27/DailyHistory.html">9(1975)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-28</td>
+        <td class='miss'>65(1989)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1989/03/28/DailyHistory.html">64(1989)</a></td>
+        <td class='miss'>9(1974)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1974/03/28/DailyHistory.html">12(1974)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-29</td>
+        <td class='noop'>79(1946)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1946/03/29/DailyHistory.html">unk(1946)</a></td>
+        <td class='match'>6(1974)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1974/03/29/DailyHistory.html">6(1974)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-30</td>
+        <td class='match'>71(1977)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1977/03/30/DailyHistory.html">71(1977)</a></td>
+        <td class='miss'>13(1943)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1943/03/30/DailyHistory.html">15(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-31</td>
+        <td class='miss'>69(2006)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/2006/03/31/DailyHistory.html">68(2006)</a></td>
+        <td class='match'>9(1969)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1969/03/31/DailyHistory.html">9(1969)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-01</td>
+        <td class='match'>64(1986)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1986/04/01/DailyHistory.html">64(1986)</a></td>
+        <td class='noop'>4(1928)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1928/04/01/DailyHistory.html">unk(1928)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-02</td>
+        <td class='noop'>69(1945)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1945/04/02/DailyHistory.html">unk(1945)</a></td>
+        <td class='match'>14(1964)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1964/04/02/DailyHistory.html">14(1964)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-03</td>
+        <td class='match'>70(2010)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2010/04/03/DailyHistory.html">70(2010)</a></td>
+        <td class='miss'>11(1954)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1954/04/03/DailyHistory.html">10(1954)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-04</td>
+        <td class='match'>77(2010)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2010/04/04/DailyHistory.html">77(2010)</a></td>
+        <td class='match'>7(1954)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1954/04/04/DailyHistory.html">7(1954)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-05</td>
+        <td class='match'>73(1991)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1991/04/05/DailyHistory.html">73(1991)</a></td>
+        <td class='miss'>11(1954)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1954/04/05/DailyHistory.html">10(1954)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-06</td>
+        <td class='match'>70(1991)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1991/04/06/DailyHistory.html">70(1991)</a></td>
+        <td class='noop'>7(1928)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1928/04/06/DailyHistory.html">unk(1928)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-07</td>
+        <td class='noop'>70(1928)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1928/04/07/DailyHistory.html">unk(1928)</a></td>
+        <td class='miss'>14(1943)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1943/04/07/DailyHistory.html">15(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-08</td>
+        <td class='noop'>74(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/04/08/DailyHistory.html">unk(1929)</a></td>
+        <td class='miss'>16(1972)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1972/04/08/DailyHistory.html">17(1972)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-09</td>
+        <td class='noop'>68(1945)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1945/04/09/DailyHistory.html">unk(1945)</a></td>
+        <td class='match'>16(1977)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1977/04/09/DailyHistory.html">16(1977)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-10</td>
+        <td class='noop'>68(1931)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1931/04/10/DailyHistory.html">unk(1931)</a></td>
+        <td class='match'>14(1977)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1977/04/10/DailyHistory.html">14(1977)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-11</td>
+        <td class='noop'>82(1945)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1945/04/11/DailyHistory.html">unk(1945)</a></td>
+        <td class='noop'>15(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1938/04/11/DailyHistory.html">unk(1938)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-12</td>
+        <td class='noop'>84(1945)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1945/04/12/DailyHistory.html">unk(1945)</a></td>
+        <td class='noop'>10(1926)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1926/04/12/DailyHistory.html">unk(1926)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-13</td>
+        <td class='noop'>82(1945)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1945/04/13/DailyHistory.html">unk(1945)</a></td>
+        <td class='noop'>13(1926)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1926/04/13/DailyHistory.html">unk(1926)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-14</td>
+        <td class='miss'>74(1949)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1949/04/14/DailyHistory.html">69(1949)</a></td>
+        <td class='match'>17(1992)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1992/04/14/DailyHistory.html">17(1992)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-15</td>
+        <td class='miss'>74(2003)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/2003/04/15/DailyHistory.html">73(2003)</a></td>
+        <td class='noop'>16(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/04/15/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-16</td>
+        <td class='match'>77(1973)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1973/04/16/DailyHistory.html">77(1973)</a></td>
+        <td class='miss'>17(1943)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1943/04/16/DailyHistory.html">20(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-17</td>
+        <td class='match'>83(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2012/04/17/DailyHistory.html">83(2012)</a></td>
+        <td class='noop'>17(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1930/04/17/DailyHistory.html">unk(1930)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-18</td>
+        <td class='match'>86(1976)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1976/04/18/DailyHistory.html">86(1976)</a></td>
+        <td class='miss'>17(2003)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/2003/04/18/DailyHistory.html">18(2003)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-19</td>
+        <td class='noop'>85(1927)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1927/04/19/DailyHistory.html">unk(1927)</a></td>
+        <td class='noop'>18(1926)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1926/04/19/DailyHistory.html">unk(1926)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-20</td>
+        <td class='noop'>89(1927)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1927/04/20/DailyHistory.html">unk(1927)</a></td>
+        <td class='noop'>21(1947)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1947/04/20/DailyHistory.html">unk(1947)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-21</td>
+        <td class='match'>79(1957)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1957/04/21/DailyHistory.html">79(1957)</a></td>
+        <td class='miss'>22(1944)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1944/04/21/DailyHistory.html">27(1944)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-22</td>
+        <td class='miss'>76(1977)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1977/04/22/DailyHistory.html">75(1977)</a></td>
+        <td class='match'>21(2013)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2013/04/22/DailyHistory.html">21(2013)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-23</td>
+        <td class='match'>83(2007)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2007/04/23/DailyHistory.html">83(2007)</a></td>
+        <td class='miss'>22(1944)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1944/04/23/DailyHistory.html">27(1944)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-24</td>
+        <td class='miss'>79(1942)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1942/04/24/DailyHistory.html">78(1942)</a></td>
+        <td class='miss'>22(1944)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1944/04/24/DailyHistory.html">31(1944)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-25</td>
+        <td class='miss'>79(1942)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1942/04/25/DailyHistory.html">82(1942)</a></td>
+        <td class='match'>21(1965)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1965/04/25/DailyHistory.html">21(1965)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-26</td>
+        <td class='miss'>76(1991)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1991/04/26/DailyHistory.html">75(1991)</a></td>
+        <td class='noop'>24(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/04/26/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-27</td>
+        <td class='match'>78(1970)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1970/04/27/DailyHistory.html">78(1970)</a></td>
+        <td class='match'>21(2016)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2016/04/27/DailyHistory.html">21(2016)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-28</td>
+        <td class='match'>90(2009)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2009/04/28/DailyHistory.html">90(2009)</a></td>
+        <td class='noop'>23(1947)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1947/04/28/DailyHistory.html">unk(1947)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-29</td>
+        <td class='noop'>85(1935)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1935/04/29/DailyHistory.html">unk(1935)</a></td>
+        <td class='noop'>18(1947)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1947/04/29/DailyHistory.html">unk(1947)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-30</td>
+        <td class='match'>84(2004)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2004/04/30/DailyHistory.html">84(2004)</a></td>
+        <td class='miss'>23(1943)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1943/04/30/DailyHistory.html">27(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-01</td>
+        <td class='match'>79(2010)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2010/05/01/DailyHistory.html">79(2010)</a></td>
+        <td class='miss'>23(1943)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1943/05/01/DailyHistory.html">30(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-02</td>
+        <td class='match'>90(2001)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2001/05/02/DailyHistory.html">90(2001)</a></td>
+        <td class='miss'>23(1943)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1943/05/02/DailyHistory.html">25(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-03</td>
+        <td class='match'>91(2001)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2001/05/03/DailyHistory.html">91(2001)</a></td>
+        <td class='noop'>23(1946)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1946/05/03/DailyHistory.html">unk(1946)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-04</td>
+        <td class='noop'>87(1937)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1937/05/04/DailyHistory.html">unk(1937)</a></td>
+        <td class='noop'>26(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1939/05/04/DailyHistory.html">unk(1939)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-05</td>
+        <td class='match'>87(1944)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1944/05/05/DailyHistory.html">87(1944)</a></td>
+        <td class='noop'>27(1946)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1946/05/05/DailyHistory.html">unk(1946)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-06</td>
+        <td class='noop'>87(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1930/05/06/DailyHistory.html">unk(1930)</a></td>
+        <td class='noop'>29(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/05/06/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-07</td>
+        <td class='noop'>86(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1930/05/07/DailyHistory.html">unk(1930)</a></td>
+        <td class='miss'>28(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1966/05/07/DailyHistory.html">33(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-08</td>
+        <td class='match'>87(1957)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1957/05/08/DailyHistory.html">87(1957)</a></td>
+        <td class='match'>27(1966)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1966/05/08/DailyHistory.html">27(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-09</td>
+        <td class='match'>91(1979)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1979/05/09/DailyHistory.html">91(1979)</a></td>
+        <td class='noop'>26(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/05/09/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-10</td>
+        <td class='match'>87(2007)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2007/05/10/DailyHistory.html">87(2007)</a></td>
+        <td class='noop'>26(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/05/10/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-11</td>
+        <td class='miss'>83(2001)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/2001/05/11/DailyHistory.html">82(2001)</a></td>
+        <td class='match'>28(1956)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1956/05/11/DailyHistory.html">28(1956)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-12</td>
+        <td class='miss'>83(1991)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1991/05/12/DailyHistory.html">82(1991)</a></td>
+        <td class='noop'>29(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/05/12/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-13</td>
+        <td class='match'>81(1991)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1991/05/13/DailyHistory.html">81(1991)</a></td>
+        <td class='noop'>25(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1939/05/13/DailyHistory.html">unk(1939)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-14</td>
+        <td class='match'>87(1961)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1961/05/14/DailyHistory.html">87(1961)</a></td>
+        <td class='noop'>28(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/05/14/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-15</td>
+        <td class='miss'>85(2004)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/2004/05/15/DailyHistory.html">84(2004)</a></td>
+        <td class='noop'>27(1947)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1947/05/15/DailyHistory.html">unk(1947)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-16</td>
+        <td class='noop'>94(1932)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1932/05/16/DailyHistory.html">unk(1932)</a></td>
+        <td class='noop'>27(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1939/05/16/DailyHistory.html">unk(1939)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-17</td>
+        <td class='noop'>90(1932)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1932/05/17/DailyHistory.html">unk(1932)</a></td>
+        <td class='noop'>28(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1939/05/17/DailyHistory.html">unk(1939)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-18</td>
+        <td class='noop'>87(1936)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1936/05/18/DailyHistory.html">unk(1936)</a></td>
+        <td class='miss'>31(1983)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1983/05/18/DailyHistory.html">30(1983)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-19</td>
+        <td class='miss'>89(1962)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1962/05/19/DailyHistory.html">88(1962)</a></td>
+        <td class='match'>32(1991)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1991/05/19/DailyHistory.html">32(1991)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-20</td>
+        <td class='miss'>86(1996)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1996/05/20/DailyHistory.html">73(1996)</a></td>
+        <td class='miss'>30(1944)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1944/05/20/DailyHistory.html">36(1944)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-21</td>
+        <td class='miss'>92(1992)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1992/05/21/DailyHistory.html">91(1992)</a></td>
+        <td class='noop'>32(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1939/05/21/DailyHistory.html">unk(1939)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-22</td>
+        <td class='match'>96(1992)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1992/05/22/DailyHistory.html">96(1992)</a></td>
+        <td class='noop'>30(1936)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1936/05/22/DailyHistory.html">unk(1936)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-23</td>
+        <td class='match'>91(1992)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1992/05/23/DailyHistory.html">91(1992)</a></td>
+        <td class='noop'>31(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/05/23/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-24</td>
+        <td class='match'>91(1964)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1964/05/24/DailyHistory.html">91(1964)</a></td>
+        <td class='match'>32(1956)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1956/05/24/DailyHistory.html">32(1956)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-25</td>
+        <td class='match'>92(2007)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2007/05/25/DailyHistory.html">92(2007)</a></td>
+        <td class='miss'>31(1956)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1956/05/25/DailyHistory.html">30(1956)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-26</td>
+        <td class='noop'>88(1933)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1933/05/26/DailyHistory.html">unk(1933)</a></td>
+        <td class='match'>32(2009)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2009/05/26/DailyHistory.html">32(2009)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-27</td>
+        <td class='noop'>89(1933)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1933/05/27/DailyHistory.html">unk(1933)</a></td>
+        <td class='miss'>31(1969)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1969/05/27/DailyHistory.html">30(1969)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-28</td>
+        <td class='match'>90(1959)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1959/05/28/DailyHistory.html">90(1959)</a></td>
+        <td class='match'>33(1994)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1994/05/28/DailyHistory.html">33(1994)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-29</td>
+        <td class='noop'>94(1931)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1931/05/29/DailyHistory.html">unk(1931)</a></td>
+        <td class='match'>33(1970)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1970/05/29/DailyHistory.html">33(1970)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-30</td>
+        <td class='noop'>93(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/05/30/DailyHistory.html">unk(1929)</a></td>
+        <td class='noop'>34(1941)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1941/05/30/DailyHistory.html">unk(1941)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-31</td>
+        <td class='noop'>93(1937)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1937/05/31/DailyHistory.html">unk(1937)</a></td>
+        <td class='noop'>34(1941)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1941/05/31/DailyHistory.html">unk(1941)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-01</td>
+        <td class='noop'>96(1937)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1937/06/01/DailyHistory.html">unk(1937)</a></td>
+        <td class='noop'>35(1945)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1945/06/01/DailyHistory.html">unk(1945)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-02</td>
+        <td class='noop'>96(1937)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1937/06/02/DailyHistory.html">unk(1937)</a></td>
+        <td class='noop'>32(1945)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1945/06/02/DailyHistory.html">unk(1945)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-03</td>
+        <td class='noop'>88(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1930/06/03/DailyHistory.html">unk(1930)</a></td>
+        <td class='noop'>29(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1939/06/03/DailyHistory.html">unk(1939)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-04</td>
+        <td class='noop'>92(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1930/06/04/DailyHistory.html">unk(1930)</a></td>
+        <td class='miss'>30(1944)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1944/06/04/DailyHistory.html">36(1944)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-05</td>
+        <td class='noop'>91(1934)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1934/06/05/DailyHistory.html">unk(1934)</a></td>
+        <td class='miss'>38(2004)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/2004/06/05/DailyHistory.html">37(2004)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-06</td>
+        <td class='noop'>92(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1930/06/06/DailyHistory.html">unk(1930)</a></td>
+        <td class='match'>37(1964)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1964/06/06/DailyHistory.html">37(1964)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-07</td>
+        <td class='match'>91(1999)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1999/06/07/DailyHistory.html">91(1999)</a></td>
+        <td class='match'>36(2015)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2015/06/07/DailyHistory.html">36(2015)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-08</td>
+        <td class='noop'>92(1933)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1933/06/08/DailyHistory.html">unk(1933)</a></td>
+        <td class='miss'>35(2002)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/2002/06/08/DailyHistory.html">37(2002)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-09</td>
+        <td class='match'>96(1984)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1984/06/09/DailyHistory.html">96(1984)</a></td>
+        <td class='miss'>35(1943)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1943/06/09/DailyHistory.html">41(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-10</td>
+        <td class='noop'>91(1950)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1950/06/10/DailyHistory.html">unk(1950)</a></td>
+        <td class='miss'>40(1975)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1975/06/10/DailyHistory.html">39(1975)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-11</td>
+        <td class='miss'>91(1942)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1942/06/11/DailyHistory.html">88(1942)</a></td>
+        <td class='miss'>37(1983)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1983/06/11/DailyHistory.html">45(1983)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-12</td>
+        <td class='miss'>92(1942)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1942/06/12/DailyHistory.html">91(1942)</a></td>
+        <td class='miss'>38(1972)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1972/06/12/DailyHistory.html">39(1972)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-13</td>
+        <td class='match'>91(1984)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1984/06/13/DailyHistory.html">91(1984)</a></td>
+        <td class='match'>39(1976)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1976/06/13/DailyHistory.html">39(1976)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-14</td>
+        <td class='match'>95(1993)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1993/06/14/DailyHistory.html">95(1993)</a></td>
+        <td class='miss'>35(1944)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1944/06/14/DailyHistory.html">40(1944)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-15</td>
+        <td class='match'>95(2001)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2001/06/15/DailyHistory.html">95(2001)</a></td>
+        <td class='noop'>40(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/06/15/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-16</td>
+        <td class='noop'>95(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1930/06/16/DailyHistory.html">unk(1930)</a></td>
+        <td class='noop'>38(1926)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1926/06/16/DailyHistory.html">unk(1926)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-17</td>
+        <td class='match'>91(1994)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1994/06/17/DailyHistory.html">91(1994)</a></td>
+        <td class='noop'>37(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/06/17/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-18</td>
+        <td class='miss'>94(1994)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1994/06/18/DailyHistory.html">93(1994)</a></td>
+        <td class='noop'>36(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1939/06/18/DailyHistory.html">unk(1939)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-19</td>
+        <td class='miss'>91(1949)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1949/06/19/DailyHistory.html">89(1949)</a></td>
+        <td class='miss'>34(1944)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1944/06/19/DailyHistory.html">41(1944)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-20</td>
+        <td class='noop'>95(1931)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1931/06/20/DailyHistory.html">unk(1931)</a></td>
+        <td class='noop'>34(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1939/06/20/DailyHistory.html">unk(1939)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-21</td>
+        <td class='noop'>96(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1938/06/21/DailyHistory.html">unk(1938)</a></td>
+        <td class='noop'>38(1926)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1926/06/21/DailyHistory.html">unk(1926)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-22</td>
+        <td class='noop'>97(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1938/06/22/DailyHistory.html">unk(1938)</a></td>
+        <td class='noop'>36(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/06/22/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-23</td>
+        <td class='noop'>97(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1938/06/23/DailyHistory.html">unk(1938)</a></td>
+        <td class='noop'>42(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/06/23/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-24</td>
+        <td class='match'>93(1963)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1963/06/24/DailyHistory.html">93(1963)</a></td>
+        <td class='noop'>43(1941)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1941/06/24/DailyHistory.html">unk(1941)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-25</td>
+        <td class='match'>95(2005)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2005/06/25/DailyHistory.html">95(2005)</a></td>
+        <td class='noop'>39(1941)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1941/06/25/DailyHistory.html">unk(1941)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-26</td>
+        <td class='noop'>93(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1930/06/26/DailyHistory.html">unk(1930)</a></td>
+        <td class='match'>42(1979)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1979/06/26/DailyHistory.html">42(1979)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-27</td>
+        <td class='noop'>98(1941)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1941/06/27/DailyHistory.html">unk(1941)</a></td>
+        <td class='miss'>43(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1948/06/27/DailyHistory.html">51(1948)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-28</td>
+        <td class='miss'>94(1991)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1991/06/28/DailyHistory.html">93(1991)</a></td>
+        <td class='noop'>40(1927)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1927/06/28/DailyHistory.html">unk(1927)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-29</td>
+        <td class='miss'>95(1944)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1944/06/29/DailyHistory.html">97(1944)</a></td>
+        <td class='match'>44(1970)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1970/06/29/DailyHistory.html">44(1970)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-30</td>
+        <td class='noop'>96(1933)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1933/06/30/DailyHistory.html">unk(1933)</a></td>
+        <td class='noop'>42(1936)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1936/06/30/DailyHistory.html">unk(1936)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-01</td>
+        <td class='match'>92(1971)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1971/07/01/DailyHistory.html">92(1971)</a></td>
+        <td class='miss'>45(1943)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1943/07/01/DailyHistory.html">49(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-02</td>
+        <td class='noop'>93(1941)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1941/07/02/DailyHistory.html">unk(1941)</a></td>
+        <td class='miss'>41(1943)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1943/07/02/DailyHistory.html">47(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-03</td>
+        <td class='miss'>97(1949)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1949/07/03/DailyHistory.html">94(1949)</a></td>
+        <td class='noop'>40(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/07/03/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-04</td>
+        <td class='miss'>99(1949)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1949/07/04/DailyHistory.html">87(1949)</a></td>
+        <td class='noop'>43(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/07/04/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-05</td>
+        <td class='noop'>95(1935)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1935/07/05/DailyHistory.html">unk(1935)</a></td>
+        <td class='miss'>42(1944)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1944/07/05/DailyHistory.html">52(1944)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-06</td>
+        <td class='noop'>95(1935)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1935/07/06/DailyHistory.html">unk(1935)</a></td>
+        <td class='noop'>42(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/07/06/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-07</td>
+        <td class='match'>95(1993)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1993/07/07/DailyHistory.html">95(1993)</a></td>
+        <td class='match'>41(1969)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1969/07/07/DailyHistory.html">41(1969)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-08</td>
+        <td class='noop'>97(1937)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1937/07/08/DailyHistory.html">unk(1937)</a></td>
+        <td class='match'>44(1969)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1969/07/08/DailyHistory.html">44(1969)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-09</td>
+        <td class='noop'>96(1937)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1937/07/09/DailyHistory.html">unk(1937)</a></td>
+        <td class='match'>41(1969)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1969/07/09/DailyHistory.html">41(1969)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-10</td>
+        <td class='noop'>96(1937)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1937/07/10/DailyHistory.html">unk(1937)</a></td>
+        <td class='miss'>44(1942)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1942/07/10/DailyHistory.html">48(1942)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-11</td>
+        <td class='noop'>94(1935)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1935/07/11/DailyHistory.html">unk(1935)</a></td>
+        <td class='miss'>47(2002)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/2002/07/11/DailyHistory.html">48(2002)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-12</td>
+        <td class='noop'>96(1935)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1935/07/12/DailyHistory.html">unk(1935)</a></td>
+        <td class='noop'>42(1945)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1945/07/12/DailyHistory.html">unk(1945)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-13</td>
+        <td class='miss'>94(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1948/07/13/DailyHistory.html">81(1948)</a></td>
+        <td class='match'>44(1971)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1971/07/13/DailyHistory.html">44(1971)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-14</td>
+        <td class='match'>93(2006)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2006/07/14/DailyHistory.html">93(2006)</a></td>
+        <td class='noop'>40(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/07/14/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-15</td>
+        <td class='miss'>94(1968)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1968/07/15/DailyHistory.html">93(1968)</a></td>
+        <td class='noop'>44(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/07/15/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-16</td>
+        <td class='miss'>94(1968)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1968/07/16/DailyHistory.html">93(1968)</a></td>
+        <td class='noop'>37(1946)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1946/07/16/DailyHistory.html">unk(1946)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-17</td>
+        <td class='match'>96(1999)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1999/07/17/DailyHistory.html">96(1999)</a></td>
+        <td class='noop'>41(1946)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1946/07/17/DailyHistory.html">unk(1946)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-18</td>
+        <td class='match'>93(1982)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1982/07/18/DailyHistory.html">93(1982)</a></td>
+        <td class='miss'>43(1944)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1944/07/18/DailyHistory.html">52(1944)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-19</td>
+        <td class='match'>95(1982)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1982/07/19/DailyHistory.html">95(1982)</a></td>
+        <td class='miss'>38(1944)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1944/07/19/DailyHistory.html">46(1944)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-20</td>
+        <td class='match'>96(1991)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1991/07/20/DailyHistory.html">96(1991)</a></td>
+        <td class='miss'>41(1943)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1943/07/20/DailyHistory.html">47(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-21</td>
+        <td class='match'>95(1994)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1994/07/21/DailyHistory.html">95(1994)</a></td>
+        <td class='noop'>44(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/07/21/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-22</td>
+        <td class='match'>97(2011)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2011/07/22/DailyHistory.html">97(2011)</a></td>
+        <td class='miss'>46(1944)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1944/07/22/DailyHistory.html">51(1944)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-23</td>
+        <td class='miss'>94(1955)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1955/07/23/DailyHistory.html">93(1955)</a></td>
+        <td class='match'>50(1992)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1992/07/23/DailyHistory.html">50(1992)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-24</td>
+        <td class='noop'>96(1941)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1941/07/24/DailyHistory.html">unk(1941)</a></td>
+        <td class='miss'>47(2002)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/2002/07/24/DailyHistory.html">48(2002)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-25</td>
+        <td class='noop'>98(1941)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1941/07/25/DailyHistory.html">unk(1941)</a></td>
+        <td class='miss'>44(2002)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/2002/07/25/DailyHistory.html">46(2002)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-26</td>
+        <td class='match'>96(1963)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1963/07/26/DailyHistory.html">96(1963)</a></td>
+        <td class='noop'>44(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/07/26/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-27</td>
+        <td class='miss'>94(1963)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1963/07/27/DailyHistory.html">93(1963)</a></td>
+        <td class='noop'>42(1946)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1946/07/27/DailyHistory.html">unk(1946)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-28</td>
+        <td class='miss'>96(1949)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1949/07/28/DailyHistory.html">95(1949)</a></td>
+        <td class='noop'>43(1946)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1946/07/28/DailyHistory.html">unk(1946)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-29</td>
+        <td class='miss'>98(1949)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1949/07/29/DailyHistory.html">93(1949)</a></td>
+        <td class='match'>46(1987)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1987/07/29/DailyHistory.html">46(1987)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-30</td>
+        <td class='miss'>99(1949)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1949/07/30/DailyHistory.html">97(1949)</a></td>
+        <td class='match'>46(1968)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1968/07/30/DailyHistory.html">46(1968)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-31</td>
+        <td class='miss'>97(1949)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1949/07/31/DailyHistory.html">78(1949)</a></td>
+        <td class='noop'>44(1927)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1927/07/31/DailyHistory.html">unk(1927)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-01</td>
+        <td class='match'>91(1975)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1975/08/01/DailyHistory.html">91(1975)</a></td>
+        <td class='miss'>47(1998)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1998/08/01/DailyHistory.html">48(1998)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-02</td>
+        <td class='match'>102(1975)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1975/08/02/DailyHistory.html">102(1975)</a></td>
+        <td class='noop'>40(1941)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1941/08/02/DailyHistory.html">unk(1941)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-03</td>
+        <td class='noop'>94(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1938/08/03/DailyHistory.html">unk(1938)</a></td>
+        <td class='noop'>42(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/08/03/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-04</td>
+        <td class='noop'>94(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1938/08/04/DailyHistory.html">unk(1938)</a></td>
+        <td class='noop'>47(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/08/04/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-05</td>
+        <td class='miss'>95(1944)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1944/08/05/DailyHistory.html">94(1944)</a></td>
+        <td class='match'>46(1970)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1970/08/05/DailyHistory.html">46(1970)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-06</td>
+        <td class='noop'>97(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1938/08/06/DailyHistory.html">unk(1938)</a></td>
+        <td class='miss'>43(1942)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1942/08/06/DailyHistory.html">50(1942)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-07</td>
+        <td class='noop'>97(1937)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1937/08/07/DailyHistory.html">unk(1937)</a></td>
+        <td class='miss'>43(1942)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1942/08/07/DailyHistory.html">57(1942)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-08</td>
+        <td class='noop'>98(1935)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1935/08/08/DailyHistory.html">unk(1935)</a></td>
+        <td class='miss'>41(1943)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1943/08/08/DailyHistory.html">47(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-09</td>
+        <td class='miss'>95(1949)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1949/08/09/DailyHistory.html">91(1949)</a></td>
+        <td class='miss'>42(1944)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1944/08/09/DailyHistory.html">49(1944)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-10</td>
+        <td class='miss'>95(1949)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1949/08/10/DailyHistory.html">83(1949)</a></td>
+        <td class='noop'>44(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/08/10/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-11</td>
+        <td class='miss'>99(1944)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1944/08/11/DailyHistory.html">98(1944)</a></td>
+        <td class='noop'>44(1927)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1927/08/11/DailyHistory.html">unk(1927)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-12</td>
+        <td class='miss'>100(1944)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1944/08/12/DailyHistory.html">98(1944)</a></td>
+        <td class='match'>46(1968)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1968/08/12/DailyHistory.html">46(1968)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-13</td>
+        <td class='match'>95(2002)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2002/08/13/DailyHistory.html">95(2002)</a></td>
+        <td class='noop'>40(1946)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1946/08/13/DailyHistory.html">unk(1946)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-14</td>
+        <td class='miss'>103(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1948/08/14/DailyHistory.html">77(1948)</a></td>
+        <td class='match'>43(1964)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1964/08/14/DailyHistory.html">43(1964)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-15</td>
+        <td class='match'>97(1944)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1944/08/15/DailyHistory.html">97(1944)</a></td>
+        <td class='noop'>38(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/08/15/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-16</td>
+        <td class='miss'>98(1944)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1944/08/16/DailyHistory.html">93(1944)</a></td>
+        <td class='noop'>41(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/08/16/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-17</td>
+        <td class='noop'>100(1935)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1935/08/17/DailyHistory.html">unk(1935)</a></td>
+        <td class='match'>44(1963)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1963/08/17/DailyHistory.html">44(1963)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-18</td>
+        <td class='noop'>103(1935)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1935/08/18/DailyHistory.html">unk(1935)</a></td>
+        <td class='match'>45(1957)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1957/08/18/DailyHistory.html">45(1957)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-19</td>
+        <td class='noop'>104(1935)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1935/08/19/DailyHistory.html">unk(1935)</a></td>
+        <td class='noop'>43(1926)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1926/08/19/DailyHistory.html">unk(1926)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-20</td>
+        <td class='noop'>94(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1938/08/20/DailyHistory.html">unk(1938)</a></td>
+        <td class='miss'>42(1944)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1944/08/20/DailyHistory.html">49(1944)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-21</td>
+        <td class='noop'>95(1937)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1937/08/21/DailyHistory.html">unk(1937)</a></td>
+        <td class='noop'>38(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/08/21/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-22</td>
+        <td class='miss'>103(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1948/08/22/DailyHistory.html">88(1948)</a></td>
+        <td class='noop'>39(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/08/22/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-23</td>
+        <td class='noop'>92(1933)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1933/08/23/DailyHistory.html">unk(1933)</a></td>
+        <td class='noop'>37(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/08/23/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-24</td>
+        <td class='miss'>91(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1948/08/24/DailyHistory.html">85(1948)</a></td>
+        <td class='noop'>38(1945)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1945/08/24/DailyHistory.html">unk(1945)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-25</td>
+        <td class='miss'>95(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1948/08/25/DailyHistory.html">93(1948)</a></td>
+        <td class='miss'>29(1942)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1942/08/25/DailyHistory.html">43(1942)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-26</td>
+        <td class='miss'>98(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1948/08/26/DailyHistory.html">95(1948)</a></td>
+        <td class='miss'>35(1942)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1942/08/26/DailyHistory.html">41(1942)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-27</td>
+        <td class='miss'>99(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1948/08/27/DailyHistory.html">92(1948)</a></td>
+        <td class='noop'>32(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/08/27/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-28</td>
+        <td class='miss'>98(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1948/08/28/DailyHistory.html">91(1948)</a></td>
+        <td class='noop'>32(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/08/28/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-29</td>
+        <td class='miss'>97(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1948/08/29/DailyHistory.html">92(1948)</a></td>
+        <td class='noop'>36(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/08/29/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-30</td>
+        <td class='noop'>95(1937)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1937/08/30/DailyHistory.html">unk(1937)</a></td>
+        <td class='miss'>37(1942)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1942/08/30/DailyHistory.html">45(1942)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-31</td>
+        <td class='match'>97(2010)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2010/08/31/DailyHistory.html">97(2010)</a></td>
+        <td class='noop'>37(1946)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1946/08/31/DailyHistory.html">unk(1946)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-01</td>
+        <td class='noop'>95(1937)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1937/09/01/DailyHistory.html">unk(1937)</a></td>
+        <td class='match'>37(2002)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2002/09/01/DailyHistory.html">37(2002)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-02</td>
+        <td class='match'>94(2010)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2010/09/02/DailyHistory.html">94(2010)</a></td>
+        <td class='miss'>40(1991)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1991/09/02/DailyHistory.html">39(1991)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-03</td>
+        <td class='noop'>94(1937)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1937/09/03/DailyHistory.html">unk(1937)</a></td>
+        <td class='noop'>37(1926)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1926/09/03/DailyHistory.html">unk(1926)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-04</td>
+        <td class='noop'>93(1937)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1937/09/04/DailyHistory.html">unk(1937)</a></td>
+        <td class='noop'>36(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1938/09/04/DailyHistory.html">unk(1938)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-05</td>
+        <td class='miss'>92(1983)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1983/09/05/DailyHistory.html">91(1983)</a></td>
+        <td class='noop'>34(1946)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1946/09/05/DailyHistory.html">unk(1946)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-06</td>
+        <td class='miss'>91(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1948/09/06/DailyHistory.html">88(1948)</a></td>
+        <td class='miss'>33(2000)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/2000/09/06/DailyHistory.html">35(2000)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-07</td>
+        <td class='noop'>99(1945)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1945/09/07/DailyHistory.html">unk(1945)</a></td>
+        <td class='miss'>33(1942)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1942/09/07/DailyHistory.html">40(1942)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-08</td>
+        <td class='miss'>92(1960)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1960/09/08/DailyHistory.html">91(1960)</a></td>
+        <td class='match'>39(1984)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1984/09/08/DailyHistory.html">39(1984)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-09</td>
+        <td class='match'>97(2002)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2002/09/09/DailyHistory.html">97(2002)</a></td>
+        <td class='noop'>36(1937)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1937/09/09/DailyHistory.html">unk(1937)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-10</td>
+        <td class='match'>95(2002)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2002/09/10/DailyHistory.html">95(2002)</a></td>
+        <td class='noop'>32(1928)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1928/09/10/DailyHistory.html">unk(1928)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-11</td>
+        <td class='noop'>93(1931)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1931/09/11/DailyHistory.html">unk(1931)</a></td>
+        <td class='match'>37(2009)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2009/09/11/DailyHistory.html">37(2009)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-12</td>
+        <td class='noop'>91(1931)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1931/09/12/DailyHistory.html">unk(1931)</a></td>
+        <td class='noop'>34(1946)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1946/09/12/DailyHistory.html">unk(1946)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-13</td>
+        <td class='noop'>87(1932)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1932/09/13/DailyHistory.html">unk(1932)</a></td>
+        <td class='noop'>28(1946)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1946/09/13/DailyHistory.html">unk(1946)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-14</td>
+        <td class='miss'>97(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1948/09/14/DailyHistory.html">72(1948)</a></td>
+        <td class='noop'>30(1946)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1946/09/14/DailyHistory.html">unk(1946)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-15</td>
+        <td class='noop'>97(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1939/09/15/DailyHistory.html">unk(1939)</a></td>
+        <td class='match'>34(1963)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1963/09/15/DailyHistory.html">34(1963)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-16</td>
+        <td class='noop'>97(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1939/09/16/DailyHistory.html">unk(1939)</a></td>
+        <td class='match'>33(1959)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1959/09/16/DailyHistory.html">33(1959)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-17</td>
+        <td class='match'>88(1991)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1991/09/17/DailyHistory.html">88(1991)</a></td>
+        <td class='noop'>30(1945)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1945/09/17/DailyHistory.html">unk(1945)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-18</td>
+        <td class='match'>87(1992)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1992/09/18/DailyHistory.html">87(1992)</a></td>
+        <td class='noop'>29(1941)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1941/09/18/DailyHistory.html">unk(1941)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-19</td>
+        <td class='match'>87(1968)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1968/09/19/DailyHistory.html">87(1968)</a></td>
+        <td class='miss'>28(1943)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1943/09/19/DailyHistory.html">31(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-20</td>
+        <td class='miss'>88(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1948/09/20/DailyHistory.html">62(1948)</a></td>
+        <td class='noop'>27(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/09/20/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-21</td>
+        <td class='match'>90(1965)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1965/09/21/DailyHistory.html">90(1965)</a></td>
+        <td class='noop'>27(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/09/21/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-22</td>
+        <td class='match'>90(1965)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1965/09/22/DailyHistory.html">90(1965)</a></td>
+        <td class='noop'>30(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/09/22/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-23</td>
+        <td class='match'>80(1989)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1989/09/23/DailyHistory.html">80(1989)</a></td>
+        <td class='noop'>29(1945)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1945/09/23/DailyHistory.html">unk(1945)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-24</td>
+        <td class='noop'>88(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1930/09/24/DailyHistory.html">unk(1930)</a></td>
+        <td class='match'>28(1963)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1963/09/24/DailyHistory.html">28(1963)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-25</td>
+        <td class='noop'>88(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1930/09/25/DailyHistory.html">unk(1930)</a></td>
+        <td class='miss'>27(1944)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1944/09/25/DailyHistory.html">31(1944)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-26</td>
+        <td class='match'>91(2007)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2007/09/26/DailyHistory.html">91(2007)</a></td>
+        <td class='match'>29(2009)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2009/09/26/DailyHistory.html">29(2009)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-27</td>
+        <td class='miss'>91(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1948/09/27/DailyHistory.html">79(1948)</a></td>
+        <td class='noop'>24(1947)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1947/09/27/DailyHistory.html">unk(1947)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-28</td>
+        <td class='match'>84(2014)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2014/09/28/DailyHistory.html">84(2014)</a></td>
+        <td class='noop'>24(1947)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1947/09/28/DailyHistory.html">unk(1947)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-29</td>
+        <td class='miss'>82(1952)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1952/09/29/DailyHistory.html">80(1952)</a></td>
+        <td class='miss'>23(2000)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/2000/09/29/DailyHistory.html">25(2000)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-30</td>
+        <td class='miss'>86(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1948/09/30/DailyHistory.html">84(1948)</a></td>
+        <td class='miss'>27(1942)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1942/09/30/DailyHistory.html">33(1942)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-01</td>
+        <td class='miss'>85(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1948/10/01/DailyHistory.html">72(1948)</a></td>
+        <td class='noop'>26(1928)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1928/10/01/DailyHistory.html">unk(1928)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-02</td>
+        <td class='match'>84(1968)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1968/10/02/DailyHistory.html">84(1968)</a></td>
+        <td class='miss'>29(1992)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1992/10/02/DailyHistory.html">28(1992)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-03</td>
+        <td class='match'>77(2000)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2000/10/03/DailyHistory.html">77(2000)</a></td>
+        <td class='noop'>27(1947)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1947/10/03/DailyHistory.html">unk(1947)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-04</td>
+        <td class='match'>78(2001)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2001/10/04/DailyHistory.html">78(2001)</a></td>
+        <td class='miss'>27(1942)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1942/10/04/DailyHistory.html">33(1942)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-05</td>
+        <td class='noop'>81(1946)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1946/10/05/DailyHistory.html">unk(1946)</a></td>
+        <td class='noop'>22(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/10/05/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-06</td>
+        <td class='noop'>84(1946)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1946/10/06/DailyHistory.html">unk(1946)</a></td>
+        <td class='miss'>25(1998)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1998/10/06/DailyHistory.html">27(1998)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-07</td>
+        <td class='noop'>84(1946)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1946/10/07/DailyHistory.html">unk(1946)</a></td>
+        <td class='match'>25(1965)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1965/10/07/DailyHistory.html">25(1965)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-08</td>
+        <td class='match'>80(2011)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2011/10/08/DailyHistory.html">80(2011)</a></td>
+        <td class='noop'>23(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1938/10/08/DailyHistory.html">unk(1938)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-09</td>
+        <td class='match'>84(2011)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2011/10/09/DailyHistory.html">84(2011)</a></td>
+        <td class='noop'>22(1946)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1946/10/09/DailyHistory.html">unk(1946)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-10</td>
+        <td class='miss'>88(1949)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1949/10/10/DailyHistory.html">70(1949)</a></td>
+        <td class='miss'>22(1952)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1952/10/10/DailyHistory.html">32(1952)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-11</td>
+        <td class='noop'>80(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1930/10/11/DailyHistory.html">unk(1930)</a></td>
+        <td class='miss'>22(1952)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1952/10/11/DailyHistory.html">27(1952)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-12</td>
+        <td class='noop'>88(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1930/10/12/DailyHistory.html">unk(1930)</a></td>
+        <td class='noop'>20(1945)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1945/10/12/DailyHistory.html">unk(1945)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-13</td>
+        <td class='noop'>92(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1930/10/13/DailyHistory.html">unk(1930)</a></td>
+        <td class='match'>24(1987)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1987/10/13/DailyHistory.html">24(1987)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-14</td>
+        <td class='noop'>89(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1930/10/14/DailyHistory.html">unk(1930)</a></td>
+        <td class='match'>23(1993)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1993/10/14/DailyHistory.html">23(1993)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-15</td>
+        <td class='noop'>85(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1930/10/15/DailyHistory.html">unk(1930)</a></td>
+        <td class='miss'>22(1980)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1980/10/15/DailyHistory.html">21(1980)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-16</td>
+        <td class='match'>86(1968)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1968/10/16/DailyHistory.html">86(1968)</a></td>
+        <td class='noop'>19(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1939/10/16/DailyHistory.html">unk(1939)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-17</td>
+        <td class='miss'>85(1968)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1968/10/17/DailyHistory.html">84(1968)</a></td>
+        <td class='noop'>14(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/10/17/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-18</td>
+        <td class='noop'>84(1947)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1947/10/18/DailyHistory.html">unk(1947)</a></td>
+        <td class='noop'>23(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/10/18/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-19</td>
+        <td class='miss'>82(1963)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1963/10/19/DailyHistory.html">81(1963)</a></td>
+        <td class='noop'>17(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1939/10/19/DailyHistory.html">unk(1939)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-20</td>
+        <td class='miss'>76(1949)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1949/10/20/DailyHistory.html">64(1949)</a></td>
+        <td class='match'>21(2008)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2008/10/20/DailyHistory.html">21(2008)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-21</td>
+        <td class='noop'>72(1936)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1936/10/21/DailyHistory.html">unk(1936)</a></td>
+        <td class='match'>19(1972)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1972/10/21/DailyHistory.html">19(1972)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-22</td>
+        <td class='match'>84(1979)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1979/10/22/DailyHistory.html">84(1979)</a></td>
+        <td class='miss'>20(1959)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1959/10/22/DailyHistory.html">19(1959)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-23</td>
+        <td class='noop'>78(1947)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1947/10/23/DailyHistory.html">unk(1947)</a></td>
+        <td class='noop'>20(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/10/23/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-24</td>
+        <td class='miss'>76(1963)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1963/10/24/DailyHistory.html">75(1963)</a></td>
+        <td class='match'>19(1969)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1969/10/24/DailyHistory.html">19(1969)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-25</td>
+        <td class='match'>77(1963)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1963/10/25/DailyHistory.html">77(1963)</a></td>
+        <td class='noop'>21(1947)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1947/10/25/DailyHistory.html">unk(1947)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-26</td>
+        <td class='match'>78(1963)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1963/10/26/DailyHistory.html">78(1963)</a></td>
+        <td class='match'>21(1993)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1993/10/26/DailyHistory.html">21(1993)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-27</td>
+        <td class='match'>75(1963)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1963/10/27/DailyHistory.html">75(1963)</a></td>
+        <td class='miss'>22(1998)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1998/10/27/DailyHistory.html">21(1998)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-28</td>
+        <td class='miss'>76(1989)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1989/10/28/DailyHistory.html">75(1989)</a></td>
+        <td class='noop'>20(1941)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1941/10/28/DailyHistory.html">unk(1941)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-29</td>
+        <td class='match'>73(1989)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1989/10/29/DailyHistory.html">73(1989)</a></td>
+        <td class='noop'>15(1941)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1941/10/29/DailyHistory.html">unk(1941)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-30</td>
+        <td class='match'>73(1989)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1989/10/30/DailyHistory.html">73(1989)</a></td>
+        <td class='noop'>11(1941)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1941/10/30/DailyHistory.html">unk(1941)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-31</td>
+        <td class='match'>71(1956)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1956/10/31/DailyHistory.html">71(1956)</a></td>
+        <td class='miss'>16(1944)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1944/10/31/DailyHistory.html">20(1944)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-01</td>
+        <td class='match'>71(1974)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1974/11/01/DailyHistory.html">71(1974)</a></td>
+        <td class='noop'>18(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/11/01/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-02</td>
+        <td class='miss'>67(1979)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1979/11/02/DailyHistory.html">66(1979)</a></td>
+        <td class='noop'>17(1947)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1947/11/02/DailyHistory.html">unk(1947)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-03</td>
+        <td class='miss'>67(1990)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1990/11/03/DailyHistory.html">66(1990)</a></td>
+        <td class='match'>19(1965)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1965/11/03/DailyHistory.html">19(1965)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-04</td>
+        <td class='match'>72(1990)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1990/11/04/DailyHistory.html">72(1990)</a></td>
+        <td class='noop'>15(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1939/11/04/DailyHistory.html">unk(1939)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-05</td>
+        <td class='noop'>71(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1938/11/05/DailyHistory.html">unk(1938)</a></td>
+        <td class='noop'>17(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1939/11/05/DailyHistory.html">unk(1939)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-06</td>
+        <td class='noop'>75(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1938/11/06/DailyHistory.html">unk(1938)</a></td>
+        <td class='match'>18(1953)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1953/11/06/DailyHistory.html">18(1953)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-07</td>
+        <td class='match'>66(1975)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1975/11/07/DailyHistory.html">66(1975)</a></td>
+        <td class='match'>17(2002)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2002/11/07/DailyHistory.html">17(2002)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-08</td>
+        <td class='noop'>73(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1938/11/08/DailyHistory.html">unk(1938)</a></td>
+        <td class='miss'>18(2002)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/2002/11/08/DailyHistory.html">19(2002)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-09</td>
+        <td class='noop'>65(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1938/11/09/DailyHistory.html">unk(1938)</a></td>
+        <td class='match'>17(1992)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1992/11/09/DailyHistory.html">17(1992)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-10</td>
+        <td class='noop'>68(1931)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1931/11/10/DailyHistory.html">unk(1931)</a></td>
+        <td class='match'>14(1992)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1992/11/10/DailyHistory.html">14(1992)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-11</td>
+        <td class='miss'>65(2002)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/2002/11/11/DailyHistory.html">64(2002)</a></td>
+        <td class='miss'>16(1995)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1995/11/11/DailyHistory.html">32(1995)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-12</td>
+        <td class='match'>66(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2012/11/12/DailyHistory.html">66(2012)</a></td>
+        <td class='miss'>14(1999)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1999/11/12/DailyHistory.html">16(1999)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-13</td>
+        <td class='match'>62(2010)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2010/11/13/DailyHistory.html">62(2010)</a></td>
+        <td class='noop'>10(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1939/11/13/DailyHistory.html">unk(1939)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-14</td>
+        <td class='miss'>63(1951)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1951/11/14/DailyHistory.html">60(1951)</a></td>
+        <td class='miss'>11(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1986/11/14/DailyHistory.html">10(1986)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-15</td>
+        <td class='match'>64(1958)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1958/11/15/DailyHistory.html">64(1958)</a></td>
+        <td class='match'>12(1971)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1971/11/15/DailyHistory.html">12(1971)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-16</td>
+        <td class='miss'>67(1990)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1990/11/16/DailyHistory.html">66(1990)</a></td>
+        <td class='noop'>8(1933)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1933/11/16/DailyHistory.html">unk(1933)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-17</td>
+        <td class='match'>64(2006)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2006/11/17/DailyHistory.html">64(2006)</a></td>
+        <td class='noop'>8(1933)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1933/11/17/DailyHistory.html">unk(1933)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-18</td>
+        <td class='match'>69(1987)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1987/11/18/DailyHistory.html">69(1987)</a></td>
+        <td class='miss'>8(1943)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1943/11/18/DailyHistory.html">13(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-19</td>
+        <td class='miss'>65(1953)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1953/11/19/DailyHistory.html">64(1953)</a></td>
+        <td class='noop'>8(1936)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1936/11/19/DailyHistory.html">unk(1936)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-20</td>
+        <td class='match'>72(1953)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1953/11/20/DailyHistory.html">72(1953)</a></td>
+        <td class='noop'>6(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1939/11/20/DailyHistory.html">unk(1939)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-21</td>
+        <td class='miss'>65(1991)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1991/11/21/DailyHistory.html">64(1991)</a></td>
+        <td class='noop'>11(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1939/11/21/DailyHistory.html">unk(1939)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-22</td>
+        <td class='noop'>72(1931)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1931/11/22/DailyHistory.html">unk(1931)</a></td>
+        <td class='miss'>11(1978)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1978/11/22/DailyHistory.html">10(1978)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-23</td>
+        <td class='noop'>68(1931)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1931/11/23/DailyHistory.html">unk(1931)</a></td>
+        <td class='noop'>7(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/11/23/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-24</td>
+        <td class='noop'>65(1931)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1931/11/24/DailyHistory.html">unk(1931)</a></td>
+        <td class='match'>1(1989)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1989/11/24/DailyHistory.html">1(1989)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-25</td>
+        <td class='match'>63(1953)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1953/11/25/DailyHistory.html">63(1953)</a></td>
+        <td class='noop'>4(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1939/11/25/DailyHistory.html">unk(1939)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-26</td>
+        <td class='match'>60(1953)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1953/11/26/DailyHistory.html">60(1953)</a></td>
+        <td class='noop'>-1(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1939/11/26/DailyHistory.html">unk(1939)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-27</td>
+        <td class='match'>59(1979)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1979/11/27/DailyHistory.html">59(1979)</a></td>
+        <td class='noop'>3(1932)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1932/11/27/DailyHistory.html">unk(1932)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-28</td>
+        <td class='miss'>58(1959)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1959/11/28/DailyHistory.html">57(1959)</a></td>
+        <td class='match'>3(1987)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1987/11/28/DailyHistory.html">3(1987)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-29</td>
+        <td class='match'>60(1963)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1963/11/29/DailyHistory.html">60(1963)</a></td>
+        <td class='noop'>-3(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/11/29/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-30</td>
+        <td class='match'>63(1963)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1963/11/30/DailyHistory.html">63(1963)</a></td>
+        <td class='noop'>0(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/11/30/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-01</td>
+        <td class='match'>59(2001)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2001/12/01/DailyHistory.html">59(2001)</a></td>
+        <td class='miss'>2(1941)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1941/12/01/DailyHistory.html">3(1941)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-02</td>
+        <td class='noop'>59(1934)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1934/12/02/DailyHistory.html">unk(1934)</a></td>
+        <td class='noop'>-3(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/12/02/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-03</td>
+        <td class='match'>63(2009)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2009/12/03/DailyHistory.html">63(2009)</a></td>
+        <td class='noop'>-14(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/12/03/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-04</td>
+        <td class='miss'>65(1982)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1982/12/04/DailyHistory.html">64(1982)</a></td>
+        <td class='noop'>-24(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1940/12/04/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-05</td>
+        <td class='miss'>55(1973)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1973/12/05/DailyHistory.html">54(1973)</a></td>
+        <td class='noop'>-8(1926)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1926/12/05/DailyHistory.html">unk(1926)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-06</td>
+        <td class='match'>63(2001)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2001/12/06/DailyHistory.html">63(2001)</a></td>
+        <td class='miss'>-10(1963)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1963/12/06/DailyHistory.html">-9(1963)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-07</td>
+        <td class='miss'>65(1998)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1998/12/07/DailyHistory.html">64(1998)</a></td>
+        <td class='miss'>-15(1964)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1964/12/07/DailyHistory.html">-2(1964)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-08</td>
+        <td class='miss'>56(1974)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1974/12/08/DailyHistory.html">55(1974)</a></td>
+        <td class='miss'>-12(1964)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1964/12/08/DailyHistory.html">-8(1964)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-09</td>
+        <td class='miss'>58(1974)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1974/12/09/DailyHistory.html">57(1974)</a></td>
+        <td class='miss'>-10(1970)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1970/12/09/DailyHistory.html">-11(1970)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-10</td>
+        <td class='match'>56(2008)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2008/12/10/DailyHistory.html">56(2008)</a></td>
+        <td class='miss'>-12(1964)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1964/12/10/DailyHistory.html">-11(1964)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-11</td>
+        <td class='match'>59(1966)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1966/12/11/DailyHistory.html">59(1966)</a></td>
+        <td class='noop'>-19(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/12/11/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-12</td>
+        <td class='match'>53(1979)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1979/12/12/DailyHistory.html">53(1979)</a></td>
+        <td class='noop'>-20(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/12/12/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-13</td>
+        <td class='match'>57(2010)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2010/12/13/DailyHistory.html">57(2010)</a></td>
+        <td class='noop'>-17(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1929/12/13/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-14</td>
+        <td class='match'>52(1968)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1968/12/14/DailyHistory.html">52(1968)</a></td>
+        <td class='miss'>-20(1943)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1943/12/14/DailyHistory.html">-11(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-15</td>
+        <td class='match'>55(2008)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2008/12/15/DailyHistory.html">55(2008)</a></td>
+        <td class='miss'>-20(1943)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1943/12/15/DailyHistory.html">-13(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-16</td>
+        <td class='match'>55(2008)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2008/12/16/DailyHistory.html">55(2008)</a></td>
+        <td class='miss'>-27(1943)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1943/12/16/DailyHistory.html">-16(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-17</td>
+        <td class='miss'>60(2000)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/2000/12/17/DailyHistory.html">59(2000)</a></td>
+        <td class='miss'>-21(1943)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1943/12/17/DailyHistory.html">-12(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-18</td>
+        <td class='match'>53(1954)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1954/12/18/DailyHistory.html">53(1954)</a></td>
+        <td class='match'>-9(1980)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1980/12/18/DailyHistory.html">-9(1980)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-19</td>
+        <td class='noop'>56(1928)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1928/12/19/DailyHistory.html">unk(1928)</a></td>
+        <td class='miss'>-16(1942)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1942/12/19/DailyHistory.html">-14(1942)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-20</td>
+        <td class='miss'>54(1957)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1957/12/20/DailyHistory.html">53(1957)</a></td>
+        <td class='miss'>-21(1975)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1975/12/20/DailyHistory.html">-17(1975)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-21</td>
+        <td class='match'>59(1973)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1973/12/21/DailyHistory.html">59(1973)</a></td>
+        <td class='match'>-17(1980)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1980/12/21/DailyHistory.html">-17(1980)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-22</td>
+        <td class='noop'>55(1949)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1949/12/22/DailyHistory.html">unk(1949)</a></td>
+        <td class='match'>-23(1980)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1980/12/22/DailyHistory.html">-23(1980)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-23</td>
+        <td class='match'>59(1990)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1990/12/23/DailyHistory.html">59(1990)</a></td>
+        <td class='miss'>-16(1943)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1943/12/23/DailyHistory.html">-12(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-24</td>
+        <td class='miss'>56(2003)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/2003/12/24/DailyHistory.html">55(2003)</a></td>
+        <td class='miss'>-16(1943)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1943/12/24/DailyHistory.html">-18(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-25</td>
+        <td class='match'>54(2014)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2014/12/25/DailyHistory.html">54(2014)</a></td>
+        <td class='match'>-17(1975)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1975/12/25/DailyHistory.html">-17(1975)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-26</td>
+        <td class='miss'>57(1957)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1957/12/26/DailyHistory.html">51(1957)</a></td>
+        <td class='match'>-18(1980)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1980/12/26/DailyHistory.html">-18(1980)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-27</td>
+        <td class='match'>51(1957)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1957/12/27/DailyHistory.html">51(1957)</a></td>
+        <td class='match'>-15(1963)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1963/12/27/DailyHistory.html">-15(1963)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-28</td>
+        <td class='miss'>52(1982)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1982/12/28/DailyHistory.html">57(1982)</a></td>
+        <td class='noop'>-18(1933)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1933/12/28/DailyHistory.html">unk(1933)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-29</td>
+        <td class='match'>54(1982)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1982/12/29/DailyHistory.html">54(1982)</a></td>
+        <td class='noop'>-25(1933)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1933/12/29/DailyHistory.html">unk(1933)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-30</td>
+        <td class='miss'>47(1990)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KBGR/1990/12/30/DailyHistory.html">46(1990)</a></td>
+        <td class='match'>-23(1989)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/1989/12/30/DailyHistory.html">-23(1989)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-31</td>
+        <td class='noop'>53(1932)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KBGR/1932/12/31/DailyHistory.html">unk(1932)</a></td>
+        <td class='match'>-16(2013)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KBGR/2013/12/31/DailyHistory.html">-16(2013)</a></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

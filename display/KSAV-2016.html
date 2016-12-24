@@ -1,0 +1,2687 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        margin: 1em auto;
+        width: 640px;
+      }
+      h3 {
+        margin: 0 0 0.5em 0;
+        text-align: center;
+      }
+      div.fixed {
+        background: #fff;
+        box-shadow: 0px 1px 10px 0px rgba(230,230,230,1);
+        height: 9em;
+        padding: 0.5em 0 0.5em 0;
+        position: fixed;
+        top: 0;
+        text-align: center;
+        width: 640px;
+      }
+      div.meta {
+        text-align: left;
+        padding: 0 1em 0.5em 1em;
+      }
+      div.fixed span {
+        display: inline-block;
+        float: left;
+        font-weight: bold;
+        width: 144px;
+      }
+      div.fixed div span:first-child {
+        width: 64px;
+      }
+      div.half {
+        float: left;
+        width: 50%;
+      }
+      div.half ul {
+        margin: 0;
+        padding-left: 1em;
+      }
+      div.cols {
+        float: left;
+        padding: 0.5em 0 0 0;
+      }
+      table { 
+        border-collapse: collapse; 
+        margin-top: 10.5em; 
+        width: 100%; 
+      }
+      tr {
+        border-bottom: 1px solid #ccc;
+      }
+      tr:last-child {
+        border: none;
+      }
+      td { 
+        text-align: center; 
+        width: 144px; 
+      }
+      td:first-child { 
+        text-align: center; 
+        width: 64px; 
+      }
+      .match,
+      .match a,
+      .match a:visited {
+        color: #2c7bb6;
+      }
+      .miss,
+      .miss a,
+      .miss a:visited {
+        color: #d7191c;
+      }
+      .noop,
+      .noop a,
+      .noop a:visited {
+        color: #ccc;
+      }
+    </style>
+  </head>
+
+<body>
+  <div class='fixed'>
+    <div class='meta'>
+      <h3>
+        <a href="https://www.wunderground.com/history/airport/KSAV">KSAV</a> record temperature data from <a href="https://www.wunderground.com/">Weather Underground</a>
+      </h3>
+      <div class='half'>
+        <strong>Highs</strong>
+        <ul>
+          <li>Mismatches on <strong>184</strong> days
+          <li>Matches on <strong>84</strong> days
+          <li>Missing data for <strong>98</strong> days
+          <li>Biggest mismatch on 04-17 of 5 degrees.
+        </ul>
+      </div>
+      <div class='half'>
+        <strong>Lows</strong>
+        <ul>
+          <li>Mismatches on <strong>169</strong> days
+          <li>Matches on <strong>115</strong> days
+          <li>Missing data for <strong>82</strong> days
+          <li>Biggest mismatch on 02-11 of 25 degrees
+        </ul>
+      </div>
+    </div>
+    <div class='cols'>
+      <span>Date</span>
+      <span>Record High</span>
+      <span>Actual High</span>
+      <span>Record Low</span>
+      <span>Actual Low</span>
+    </div>
+  </div>
+  <table>
+    <tbody>
+      <tr>
+        <td class=''>01-01</td>
+        <td class='miss'>79(1985)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1985/01/01/DailyHistory.html">78(1985)</a></td>
+        <td class='match'>19(2001)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2001/01/01/DailyHistory.html">19(2001)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-02</td>
+        <td class='match'>79(1952)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1952/01/02/DailyHistory.html">79(1952)</a></td>
+        <td class='noop'>17(1928)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1928/01/02/DailyHistory.html">unk(1928)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-03</td>
+        <td class='match'>79(1952)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1952/01/03/DailyHistory.html">79(1952)</a></td>
+        <td class='miss'>18(2001)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/2001/01/03/DailyHistory.html">19(2001)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-04</td>
+        <td class='miss'>80(2004)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/2004/01/04/DailyHistory.html">79(2004)</a></td>
+        <td class='noop'>16(1887)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1887/01/04/DailyHistory.html">unk(1887)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-05</td>
+        <td class='miss'>81(2004)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/2004/01/05/DailyHistory.html">79(2004)</a></td>
+        <td class='noop'>17(1920)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1920/01/05/DailyHistory.html">unk(1920)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-06</td>
+        <td class='noop'>78(1922)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1922/01/06/DailyHistory.html">unk(1922)</a></td>
+        <td class='miss'>17(1959)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1959/01/06/DailyHistory.html">18(1959)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-07</td>
+        <td class='match'>79(1991)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1991/01/07/DailyHistory.html">79(1991)</a></td>
+        <td class='match'>19(2014)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2014/01/07/DailyHistory.html">19(2014)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-08</td>
+        <td class='match'>79(1989)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1989/01/08/DailyHistory.html">79(1989)</a></td>
+        <td class='match'>15(1970)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1970/01/08/DailyHistory.html">15(1970)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-09</td>
+        <td class='miss'>77(1965)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1965/01/09/DailyHistory.html">75(1965)</a></td>
+        <td class='match'>10(1970)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1970/01/09/DailyHistory.html">10(1970)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-10</td>
+        <td class='miss'>81(1949)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1949/01/10/DailyHistory.html">80(1949)</a></td>
+        <td class='match'>12(1970)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1970/01/10/DailyHistory.html">12(1970)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-11</td>
+        <td class='match'>83(1949)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1949/01/11/DailyHistory.html">83(1949)</a></td>
+        <td class='match'>12(1982)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1982/01/11/DailyHistory.html">12(1982)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-12</td>
+        <td class='match'>81(2013)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2013/01/12/DailyHistory.html">81(2013)</a></td>
+        <td class='noop'>12(1886)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1886/01/12/DailyHistory.html">unk(1886)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-13</td>
+        <td class='miss'>81(1972)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1972/01/13/DailyHistory.html">78(1972)</a></td>
+        <td class='miss'>14(1981)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1981/01/13/DailyHistory.html">15(1981)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-14</td>
+        <td class='match'>81(2013)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2013/01/14/DailyHistory.html">81(2013)</a></td>
+        <td class='match'>18(2011)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2011/01/14/DailyHistory.html">18(2011)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-15</td>
+        <td class='match'>81(2013)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2013/01/15/DailyHistory.html">81(2013)</a></td>
+        <td class='match'>18(1964)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1964/01/15/DailyHistory.html">18(1964)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-16</td>
+        <td class='match'>82(2013)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2013/01/16/DailyHistory.html">82(2013)</a></td>
+        <td class='noop'>18(1893)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1893/01/16/DailyHistory.html">unk(1893)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-17</td>
+        <td class='noop'>81(1943)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1943/01/17/DailyHistory.html">unk(1943)</a></td>
+        <td class='match'>16(1977)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1977/01/17/DailyHistory.html">16(1977)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-18</td>
+        <td class='noop'>81(1937)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1937/01/18/DailyHistory.html">unk(1937)</a></td>
+        <td class='miss'>20(1957)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1957/01/18/DailyHistory.html">21(1957)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-19</td>
+        <td class='miss'>79(1990)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1990/01/19/DailyHistory.html">78(1990)</a></td>
+        <td class='match'>16(1977)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1977/01/19/DailyHistory.html">16(1977)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-20</td>
+        <td class='match'>77(1951)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1951/01/20/DailyHistory.html">77(1951)</a></td>
+        <td class='miss'>14(1985)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1985/01/20/DailyHistory.html">16(1985)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-21</td>
+        <td class='match'>81(1954)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1954/01/21/DailyHistory.html">81(1954)</a></td>
+        <td class='match'>3(1985)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1985/01/21/DailyHistory.html">3(1985)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-22</td>
+        <td class='noop'>80(1937)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1937/01/22/DailyHistory.html">unk(1937)</a></td>
+        <td class='miss'>17(1961)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1961/01/22/DailyHistory.html">18(1961)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-23</td>
+        <td class='miss'>82(2002)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/2002/01/23/DailyHistory.html">81(2002)</a></td>
+        <td class='match'>19(1960)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1960/01/23/DailyHistory.html">19(1960)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-24</td>
+        <td class='miss'>80(1974)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1974/01/24/DailyHistory.html">79(1974)</a></td>
+        <td class='match'>17(2003)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2003/01/24/DailyHistory.html">17(2003)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-25</td>
+        <td class='miss'>82(1949)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1949/01/25/DailyHistory.html">81(1949)</a></td>
+        <td class='match'>19(1963)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1963/01/25/DailyHistory.html">19(1963)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-26</td>
+        <td class='miss'>81(1962)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1962/01/26/DailyHistory.html">80(1962)</a></td>
+        <td class='noop'>16(1905)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1905/01/26/DailyHistory.html">unk(1905)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-27</td>
+        <td class='miss'>81(1974)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1974/01/27/DailyHistory.html">80(1974)</a></td>
+        <td class='miss'>17(1985)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1985/01/27/DailyHistory.html">19(1985)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-28</td>
+        <td class='miss'>82(1957)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1957/01/28/DailyHistory.html">81(1957)</a></td>
+        <td class='miss'>13(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1986/01/28/DailyHistory.html">12(1986)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-29</td>
+        <td class='miss'>84(1957)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1957/01/29/DailyHistory.html">82(1957)</a></td>
+        <td class='noop'>17(1897)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1897/01/29/DailyHistory.html">unk(1897)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-30</td>
+        <td class='match'>84(2016)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2016/01/30/DailyHistory.html">84(2016)</a></td>
+        <td class='miss'>9(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1966/01/30/DailyHistory.html">10(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>01-31</td>
+        <td class='miss'>83(1957)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1957/01/31/DailyHistory.html">82(1957)</a></td>
+        <td class='match'>16(1966)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1966/01/31/DailyHistory.html">16(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-01</td>
+        <td class='miss'>85(2002)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/2002/02/01/DailyHistory.html">84(2002)</a></td>
+        <td class='miss'>23(1965)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1965/02/01/DailyHistory.html">26(1965)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-02</td>
+        <td class='miss'>81(1950)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1950/02/02/DailyHistory.html">80(1950)</a></td>
+        <td class='noop'>18(1917)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1917/02/02/DailyHistory.html">unk(1917)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-03</td>
+        <td class='miss'>83(1989)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1989/02/03/DailyHistory.html">82(1989)</a></td>
+        <td class='noop'>13(1917)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1917/02/03/DailyHistory.html">unk(1917)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-04</td>
+        <td class='match'>81(1957)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1957/02/04/DailyHistory.html">81(1957)</a></td>
+        <td class='miss'>17(1970)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1970/02/04/DailyHistory.html">18(1970)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-05</td>
+        <td class='match'>82(1957)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1957/02/05/DailyHistory.html">82(1957)</a></td>
+        <td class='noop'>15(1917)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1917/02/05/DailyHistory.html">unk(1917)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-06</td>
+        <td class='match'>82(2008)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2008/02/06/DailyHistory.html">82(2008)</a></td>
+        <td class='miss'>19(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1966/02/06/DailyHistory.html">21(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-07</td>
+        <td class='noop'>81(1904)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1904/02/07/DailyHistory.html">unk(1904)</a></td>
+        <td class='match'>21(1978)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1978/02/07/DailyHistory.html">21(1978)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-08</td>
+        <td class='noop'>82(1921)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1921/02/08/DailyHistory.html">unk(1921)</a></td>
+        <td class='noop'>12(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1895/02/08/DailyHistory.html">unk(1895)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-09</td>
+        <td class='miss'>83(1957)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1957/02/09/DailyHistory.html">82(1957)</a></td>
+        <td class='noop'>17(1895)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1895/02/09/DailyHistory.html">unk(1895)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-10</td>
+        <td class='miss'>82(1959)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1959/02/10/DailyHistory.html">81(1959)</a></td>
+        <td class='match'>19(1971)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1971/02/10/DailyHistory.html">19(1971)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-11</td>
+        <td class='noop'>83(1932)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1932/02/11/DailyHistory.html">unk(1932)</a></td>
+        <td class='miss'>20(1991)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1991/02/11/DailyHistory.html">45(1991)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-12</td>
+        <td class='miss'>83(1965)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1965/02/12/DailyHistory.html">79(1965)</a></td>
+        <td class='miss'>19(1973)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1973/02/12/DailyHistory.html">20(1973)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-13</td>
+        <td class='noop'>80(1922)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1922/02/13/DailyHistory.html">unk(1922)</a></td>
+        <td class='noop'>8(1899)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1899/02/13/DailyHistory.html">unk(1899)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-14</td>
+        <td class='miss'>82(1959)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1959/02/14/DailyHistory.html">81(1959)</a></td>
+        <td class='noop'>10(1899)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1899/02/14/DailyHistory.html">unk(1899)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-15</td>
+        <td class='miss'>82(1989)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1989/02/15/DailyHistory.html">81(1989)</a></td>
+        <td class='noop'>21(1943)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1943/02/15/DailyHistory.html">unk(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-16</td>
+        <td class='miss'>86(1989)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1989/02/16/DailyHistory.html">84(1989)</a></td>
+        <td class='match'>21(1991)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1991/02/16/DailyHistory.html">21(1991)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-17</td>
+        <td class='noop'>81(1927)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1927/02/17/DailyHistory.html">unk(1927)</a></td>
+        <td class='miss'>15(1958)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1958/02/17/DailyHistory.html">16(1958)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-18</td>
+        <td class='miss'>83(1975)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1975/02/18/DailyHistory.html">82(1975)</a></td>
+        <td class='miss'>14(1958)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1958/02/18/DailyHistory.html">15(1958)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-19</td>
+        <td class='noop'>84(1891)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1891/02/19/DailyHistory.html">unk(1891)</a></td>
+        <td class='match'>19(1958)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1958/02/19/DailyHistory.html">19(1958)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-20</td>
+        <td class='miss'>84(1991)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1991/02/20/DailyHistory.html">82(1991)</a></td>
+        <td class='match'>21(2015)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2015/02/20/DailyHistory.html">21(2015)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-21</td>
+        <td class='miss'>83(1991)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1991/02/21/DailyHistory.html">82(1991)</a></td>
+        <td class='noop'>21(1896)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1896/02/21/DailyHistory.html">unk(1896)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-22</td>
+        <td class='miss'>83(1962)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1962/02/22/DailyHistory.html">82(1962)</a></td>
+        <td class='noop'>25(1896)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1896/02/22/DailyHistory.html">unk(1896)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-23</td>
+        <td class='match'>84(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2012/02/23/DailyHistory.html">84(2012)</a></td>
+        <td class='miss'>23(1978)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1978/02/23/DailyHistory.html">24(1978)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-24</td>
+        <td class='match'>86(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2012/02/24/DailyHistory.html">86(2012)</a></td>
+        <td class='miss'>25(1989)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1989/02/24/DailyHistory.html">26(1989)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-25</td>
+        <td class='miss'>82(1985)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1985/02/25/DailyHistory.html">81(1985)</a></td>
+        <td class='miss'>19(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1967/02/25/DailyHistory.html">21(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-26</td>
+        <td class='match'>84(1996)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1996/02/26/DailyHistory.html">84(1996)</a></td>
+        <td class='match'>16(1967)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1967/02/26/DailyHistory.html">16(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-27</td>
+        <td class='miss'>85(1997)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1997/02/27/DailyHistory.html">82(1997)</a></td>
+        <td class='match'>21(1974)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1974/02/27/DailyHistory.html">21(1974)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-28</td>
+        <td class='miss'>86(1962)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1962/02/28/DailyHistory.html">84(1962)</a></td>
+        <td class='miss'>20(2002)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/2002/02/28/DailyHistory.html">21(2002)</a></td>
+      </tr>
+      <tr>
+        <td class=''>02-29</td>
+        <td class='match'>84(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2012/02/29/DailyHistory.html">84(2012)</a></td>
+        <td class='noop'>26(1884)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1884/02/29/DailyHistory.html">unk(1884)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-01</td>
+        <td class='noop'>86(1918)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1918/03/01/DailyHistory.html">unk(1918)</a></td>
+        <td class='match'>23(2002)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2002/03/01/DailyHistory.html">23(2002)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-02</td>
+        <td class='miss'>86(1951)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1951/03/02/DailyHistory.html">84(1951)</a></td>
+        <td class='match'>24(1980)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1980/03/02/DailyHistory.html">24(1980)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-03</td>
+        <td class='miss'>85(1951)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1951/03/03/DailyHistory.html">82(1951)</a></td>
+        <td class='miss'>20(1980)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1980/03/03/DailyHistory.html">21(1980)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-04</td>
+        <td class='miss'>84(1953)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1953/03/04/DailyHistory.html">82(1953)</a></td>
+        <td class='match'>26(1960)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1960/03/04/DailyHistory.html">26(1960)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-05</td>
+        <td class='miss'>86(1955)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1955/03/05/DailyHistory.html">84(1955)</a></td>
+        <td class='match'>25(1960)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1960/03/05/DailyHistory.html">25(1960)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-06</td>
+        <td class='miss'>85(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1967/03/06/DailyHistory.html">82(1967)</a></td>
+        <td class='miss'>20(1960)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1960/03/06/DailyHistory.html">21(1960)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-07</td>
+        <td class='match'>86(1961)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1961/03/07/DailyHistory.html">86(1961)</a></td>
+        <td class='miss'>25(1954)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1954/03/07/DailyHistory.html">27(1954)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-08</td>
+        <td class='miss'>86(1951)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1951/03/08/DailyHistory.html">84(1951)</a></td>
+        <td class='noop'>24(1899)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1899/03/08/DailyHistory.html">unk(1899)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-09</td>
+        <td class='miss'>88(1974)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1974/03/09/DailyHistory.html">87(1974)</a></td>
+        <td class='match'>24(1996)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1996/03/09/DailyHistory.html">24(1996)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-10</td>
+        <td class='miss'>91(1974)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1974/03/10/DailyHistory.html">90(1974)</a></td>
+        <td class='noop'>24(1932)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1932/03/10/DailyHistory.html">unk(1932)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-11</td>
+        <td class='miss'>87(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1967/03/11/DailyHistory.html">86(1967)</a></td>
+        <td class='match'>28(1969)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1969/03/11/DailyHistory.html">28(1969)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-12</td>
+        <td class='miss'>90(1955)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1955/03/12/DailyHistory.html">89(1955)</a></td>
+        <td class='match'>26(1969)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1969/03/12/DailyHistory.html">26(1969)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-13</td>
+        <td class='match'>89(1955)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1955/03/13/DailyHistory.html">89(1955)</a></td>
+        <td class='miss'>24(1998)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1998/03/13/DailyHistory.html">26(1998)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-14</td>
+        <td class='miss'>87(1973)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1973/03/14/DailyHistory.html">86(1973)</a></td>
+        <td class='miss'>27(1960)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1960/03/14/DailyHistory.html">28(1960)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-15</td>
+        <td class='match'>87(1982)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1982/03/15/DailyHistory.html">87(1982)</a></td>
+        <td class='miss'>25(1993)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1993/03/15/DailyHistory.html">26(1993)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-16</td>
+        <td class='miss'>87(1977)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1977/03/16/DailyHistory.html">86(1977)</a></td>
+        <td class='noop'>26(1890)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1890/03/16/DailyHistory.html">unk(1890)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-17</td>
+        <td class='noop'>89(1945)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1945/03/17/DailyHistory.html">unk(1945)</a></td>
+        <td class='miss'>29(1954)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1954/03/17/DailyHistory.html">30(1954)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-18</td>
+        <td class='match'>90(1963)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1963/03/18/DailyHistory.html">90(1963)</a></td>
+        <td class='match'>32(1971)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1971/03/18/DailyHistory.html">32(1971)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-19</td>
+        <td class='miss'>89(1963)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1963/03/19/DailyHistory.html">88(1963)</a></td>
+        <td class='noop'>27(1892)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1892/03/19/DailyHistory.html">unk(1892)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-20</td>
+        <td class='noop'>90(1907)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1907/03/20/DailyHistory.html">unk(1907)</a></td>
+        <td class='noop'>32(1923)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1923/03/20/DailyHistory.html">unk(1923)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-21</td>
+        <td class='noop'>91(1935)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1935/03/21/DailyHistory.html">unk(1935)</a></td>
+        <td class='miss'>26(1956)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1956/03/21/DailyHistory.html">28(1956)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-22</td>
+        <td class='noop'>93(1907)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1907/03/22/DailyHistory.html">unk(1907)</a></td>
+        <td class='miss'>29(1958)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1958/03/22/DailyHistory.html">30(1958)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-23</td>
+        <td class='noop'>94(1907)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1907/03/23/DailyHistory.html">unk(1907)</a></td>
+        <td class='match'>30(1986)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1986/03/23/DailyHistory.html">30(1986)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-24</td>
+        <td class='noop'>92(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1929/03/24/DailyHistory.html">unk(1929)</a></td>
+        <td class='miss'>31(1968)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1968/03/24/DailyHistory.html">30(1968)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-25</td>
+        <td class='noop'>89(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1929/03/25/DailyHistory.html">unk(1929)</a></td>
+        <td class='miss'>31(1968)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1968/03/25/DailyHistory.html">32(1968)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-26</td>
+        <td class='noop'>88(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1929/03/26/DailyHistory.html">unk(1929)</a></td>
+        <td class='miss'>34(1979)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1979/03/26/DailyHistory.html">35(1979)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-27</td>
+        <td class='miss'>86(1994)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1994/03/27/DailyHistory.html">84(1994)</a></td>
+        <td class='miss'>26(1955)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1955/03/27/DailyHistory.html">27(1955)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-28</td>
+        <td class='noop'>89(1907)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1907/03/28/DailyHistory.html">unk(1907)</a></td>
+        <td class='miss'>33(1955)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1955/03/28/DailyHistory.html">34(1955)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-29</td>
+        <td class='noop'>90(1907)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1907/03/29/DailyHistory.html">unk(1907)</a></td>
+        <td class='miss'>29(1955)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1955/03/29/DailyHistory.html">30(1955)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-30</td>
+        <td class='noop'>91(1907)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1907/03/30/DailyHistory.html">unk(1907)</a></td>
+        <td class='miss'>32(1955)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1955/03/30/DailyHistory.html">35(1955)</a></td>
+      </tr>
+      <tr>
+        <td class=''>03-31</td>
+        <td class='match'>90(1954)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1954/03/31/DailyHistory.html">90(1954)</a></td>
+        <td class='miss'>29(1964)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1964/03/31/DailyHistory.html">30(1964)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-01</td>
+        <td class='match'>90(1974)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1974/04/01/DailyHistory.html">90(1974)</a></td>
+        <td class='miss'>32(1987)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1987/04/01/DailyHistory.html">33(1987)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-02</td>
+        <td class='noop'>91(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1940/04/02/DailyHistory.html">unk(1940)</a></td>
+        <td class='noop'>33(1881)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1881/04/02/DailyHistory.html">unk(1881)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-03</td>
+        <td class='noop'>90(1946)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1946/04/03/DailyHistory.html">unk(1946)</a></td>
+        <td class='miss'>33(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1966/04/03/DailyHistory.html">41(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-04</td>
+        <td class='miss'>91(1963)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1963/04/04/DailyHistory.html">90(1963)</a></td>
+        <td class='miss'>34(1971)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1971/04/04/DailyHistory.html">37(1971)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-05</td>
+        <td class='miss'>90(1988)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1988/04/05/DailyHistory.html">89(1988)</a></td>
+        <td class='noop'>34(1891)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1891/04/05/DailyHistory.html">unk(1891)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-06</td>
+        <td class='miss'>90(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1967/04/06/DailyHistory.html">89(1967)</a></td>
+        <td class='noop'>35(1891)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1891/04/06/DailyHistory.html">unk(1891)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-07</td>
+        <td class='miss'>92(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1967/04/07/DailyHistory.html">91(1967)</a></td>
+        <td class='miss'>35(1950)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1950/04/07/DailyHistory.html">36(1950)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-08</td>
+        <td class='match'>90(1999)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1999/04/08/DailyHistory.html">90(1999)</a></td>
+        <td class='match'>28(2007)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2007/04/08/DailyHistory.html">28(2007)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-09</td>
+        <td class='match'>91(2011)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2011/04/09/DailyHistory.html">91(2011)</a></td>
+        <td class='match'>31(2007)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2007/04/09/DailyHistory.html">31(2007)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-10</td>
+        <td class='noop'>91(1908)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1908/04/10/DailyHistory.html">unk(1908)</a></td>
+        <td class='miss'>34(1996)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1996/04/10/DailyHistory.html">37(1996)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-11</td>
+        <td class='match'>90(2011)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2011/04/11/DailyHistory.html">90(2011)</a></td>
+        <td class='miss'>34(1960)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1960/04/11/DailyHistory.html">35(1960)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-12</td>
+        <td class='miss'>88(1965)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1965/04/12/DailyHistory.html">87(1965)</a></td>
+        <td class='miss'>35(1989)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1989/04/12/DailyHistory.html">36(1989)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-13</td>
+        <td class='miss'>91(1981)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1981/04/13/DailyHistory.html">90(1981)</a></td>
+        <td class='noop'>36(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1940/04/13/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-14</td>
+        <td class='noop'>90(1922)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1922/04/14/DailyHistory.html">unk(1922)</a></td>
+        <td class='noop'>36(1907)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1907/04/14/DailyHistory.html">unk(1907)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-15</td>
+        <td class='miss'>92(1972)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1972/04/15/DailyHistory.html">90(1972)</a></td>
+        <td class='miss'>34(1950)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1950/04/15/DailyHistory.html">37(1950)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-16</td>
+        <td class='miss'>92(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1967/04/16/DailyHistory.html">90(1967)</a></td>
+        <td class='miss'>32(1962)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1962/04/16/DailyHistory.html">33(1962)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-17</td>
+        <td class='miss'>95(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1967/04/17/DailyHistory.html">90(1967)</a></td>
+        <td class='miss'>36(1962)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1962/04/17/DailyHistory.html">37(1962)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-18</td>
+        <td class='miss'>93(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1967/04/18/DailyHistory.html">91(1967)</a></td>
+        <td class='miss'>36(1999)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1999/04/18/DailyHistory.html">37(1999)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-19</td>
+        <td class='miss'>92(1968)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1968/04/19/DailyHistory.html">90(1968)</a></td>
+        <td class='match'>35(1983)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1983/04/19/DailyHistory.html">35(1983)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-20</td>
+        <td class='noop'>94(1925)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1925/04/20/DailyHistory.html">unk(1925)</a></td>
+        <td class='miss'>34(1983)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1983/04/20/DailyHistory.html">35(1983)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-21</td>
+        <td class='miss'>92(1968)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1968/04/21/DailyHistory.html">91(1968)</a></td>
+        <td class='miss'>36(1953)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1953/04/21/DailyHistory.html">37(1953)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-22</td>
+        <td class='miss'>92(1988)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1988/04/22/DailyHistory.html">91(1988)</a></td>
+        <td class='miss'>40(1962)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1962/04/22/DailyHistory.html">41(1962)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-23</td>
+        <td class='miss'>92(1980)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1980/04/23/DailyHistory.html">91(1980)</a></td>
+        <td class='miss'>38(1993)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1993/04/23/DailyHistory.html">39(1993)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-24</td>
+        <td class='miss'>94(1958)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1958/04/24/DailyHistory.html">93(1958)</a></td>
+        <td class='miss'>38(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1986/04/24/DailyHistory.html">37(1986)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-25</td>
+        <td class='miss'>94(1958)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1958/04/25/DailyHistory.html">93(1958)</a></td>
+        <td class='match'>39(2005)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2005/04/25/DailyHistory.html">39(2005)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-26</td>
+        <td class='miss'>92(1989)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1989/04/26/DailyHistory.html">91(1989)</a></td>
+        <td class='noop'>38(1910)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1910/04/26/DailyHistory.html">unk(1910)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-27</td>
+        <td class='miss'>95(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1986/04/27/DailyHistory.html">93(1986)</a></td>
+        <td class='match'>42(2001)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2001/04/27/DailyHistory.html">42(2001)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-28</td>
+        <td class='noop'>93(1942)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1942/04/28/DailyHistory.html">unk(1942)</a></td>
+        <td class='noop'>42(1898)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1898/04/28/DailyHistory.html">unk(1898)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-29</td>
+        <td class='match'>93(2002)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2002/04/29/DailyHistory.html">93(2002)</a></td>
+        <td class='match'>39(1967)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1967/04/29/DailyHistory.html">39(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>04-30</td>
+        <td class='match'>93(1987)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1987/04/30/DailyHistory.html">93(1987)</a></td>
+        <td class='miss'>43(1993)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1993/04/30/DailyHistory.html">44(1993)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-01</td>
+        <td class='miss'>94(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1986/05/01/DailyHistory.html">93(1986)</a></td>
+        <td class='miss'>45(1996)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1996/05/01/DailyHistory.html">46(1996)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-02</td>
+        <td class='miss'>96(1990)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1990/05/02/DailyHistory.html">95(1990)</a></td>
+        <td class='match'>39(1963)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1963/05/02/DailyHistory.html">39(1963)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-03</td>
+        <td class='miss'>94(1951)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1951/05/03/DailyHistory.html">93(1951)</a></td>
+        <td class='noop'>47(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1939/05/03/DailyHistory.html">unk(1939)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-04</td>
+        <td class='noop'>96(1902)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1902/05/04/DailyHistory.html">unk(1902)</a></td>
+        <td class='miss'>40(1971)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1971/05/04/DailyHistory.html">42(1971)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-05</td>
+        <td class='match'>95(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2012/05/05/DailyHistory.html">95(2012)</a></td>
+        <td class='miss'>44(1997)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1997/05/05/DailyHistory.html">45(1997)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-06</td>
+        <td class='miss'>96(1952)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1952/05/06/DailyHistory.html">95(1952)</a></td>
+        <td class='match'>46(1957)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1957/05/06/DailyHistory.html">46(1957)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-07</td>
+        <td class='miss'>94(1977)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1977/05/07/DailyHistory.html">91(1977)</a></td>
+        <td class='match'>48(2005)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2005/05/07/DailyHistory.html">48(2005)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-08</td>
+        <td class='miss'>96(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1986/05/08/DailyHistory.html">95(1986)</a></td>
+        <td class='match'>43(1989)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1989/05/08/DailyHistory.html">43(1989)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-09</td>
+        <td class='match'>95(1962)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1962/05/09/DailyHistory.html">95(1962)</a></td>
+        <td class='miss'>47(1954)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1954/05/09/DailyHistory.html">50(1954)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-10</td>
+        <td class='noop'>94(1889)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1889/05/10/DailyHistory.html">unk(1889)</a></td>
+        <td class='miss'>46(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1967/05/10/DailyHistory.html">50(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-11</td>
+        <td class='miss'>97(1955)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1955/05/11/DailyHistory.html">96(1955)</a></td>
+        <td class='miss'>44(1997)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1997/05/11/DailyHistory.html">45(1997)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-12</td>
+        <td class='noop'>95(1905)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1905/05/12/DailyHistory.html">unk(1905)</a></td>
+        <td class='miss'>44(1969)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1969/05/12/DailyHistory.html">48(1969)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-13</td>
+        <td class='miss'>95(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1967/05/13/DailyHistory.html">93(1967)</a></td>
+        <td class='match'>46(1960)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1960/05/13/DailyHistory.html">46(1960)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-14</td>
+        <td class='miss'>98(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1967/05/14/DailyHistory.html">95(1967)</a></td>
+        <td class='match'>48(2013)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2013/05/14/DailyHistory.html">48(2013)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-15</td>
+        <td class='match'>98(1995)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1995/05/15/DailyHistory.html">98(1995)</a></td>
+        <td class='match'>51(2002)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2002/05/15/DailyHistory.html">51(2002)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-16</td>
+        <td class='noop'>95(1915)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1915/05/16/DailyHistory.html">unk(1915)</a></td>
+        <td class='miss'>50(1954)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1954/05/16/DailyHistory.html">51(1954)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-17</td>
+        <td class='noop'>97(1899)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1899/05/17/DailyHistory.html">unk(1899)</a></td>
+        <td class='match'>48(1984)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1984/05/17/DailyHistory.html">48(1984)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-18</td>
+        <td class='noop'>97(1899)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1899/05/18/DailyHistory.html">unk(1899)</a></td>
+        <td class='miss'>49(1984)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1984/05/18/DailyHistory.html">50(1984)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-19</td>
+        <td class='miss'>97(1996)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1996/05/19/DailyHistory.html">95(1996)</a></td>
+        <td class='match'>48(1976)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1976/05/19/DailyHistory.html">48(1976)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-20</td>
+        <td class='match'>96(2006)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2006/05/20/DailyHistory.html">96(2006)</a></td>
+        <td class='noop'>44(1894)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1894/05/20/DailyHistory.html">unk(1894)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-21</td>
+        <td class='match'>98(1962)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1962/05/21/DailyHistory.html">98(1962)</a></td>
+        <td class='match'>46(2002)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2002/05/21/DailyHistory.html">46(2002)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-22</td>
+        <td class='noop'>99(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1938/05/22/DailyHistory.html">unk(1938)</a></td>
+        <td class='miss'>49(1981)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1981/05/22/DailyHistory.html">50(1981)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-23</td>
+        <td class='match'>99(2011)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2011/05/23/DailyHistory.html">99(2011)</a></td>
+        <td class='miss'>50(2002)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/2002/05/23/DailyHistory.html">51(2002)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-24</td>
+        <td class='miss'>98(1953)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1953/05/24/DailyHistory.html">97(1953)</a></td>
+        <td class='miss'>51(1954)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1954/05/24/DailyHistory.html">53(1954)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-25</td>
+        <td class='miss'>100(1953)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1953/05/25/DailyHistory.html">99(1953)</a></td>
+        <td class='miss'>49(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1967/05/25/DailyHistory.html">51(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-26</td>
+        <td class='match'>100(1953)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1953/05/26/DailyHistory.html">100(1953)</a></td>
+        <td class='miss'>49(1979)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1979/05/26/DailyHistory.html">48(1979)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-27</td>
+        <td class='match'>98(1962)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1962/05/27/DailyHistory.html">98(1962)</a></td>
+        <td class='miss'>53(1961)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1961/05/27/DailyHistory.html">54(1961)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-28</td>
+        <td class='match'>96(1964)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1964/05/28/DailyHistory.html">96(1964)</a></td>
+        <td class='match'>48(1961)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1961/05/28/DailyHistory.html">48(1961)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-29</td>
+        <td class='noop'>98(1945)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1945/05/29/DailyHistory.html">unk(1945)</a></td>
+        <td class='match'>55(1961)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1961/05/29/DailyHistory.html">55(1961)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-30</td>
+        <td class='noop'>101(1898)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1898/05/30/DailyHistory.html">unk(1898)</a></td>
+        <td class='match'>53(1971)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1971/05/30/DailyHistory.html">53(1971)</a></td>
+      </tr>
+      <tr>
+        <td class=''>05-31</td>
+        <td class='noop'>101(1945)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1945/05/31/DailyHistory.html">unk(1945)</a></td>
+        <td class='miss'>49(1984)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1984/05/31/DailyHistory.html">48(1984)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-01</td>
+        <td class='miss'>103(1953)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1953/06/01/DailyHistory.html">100(1953)</a></td>
+        <td class='noop'>50(1889)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1889/06/01/DailyHistory.html">unk(1889)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-02</td>
+        <td class='miss'>104(1985)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1985/06/02/DailyHistory.html">102(1985)</a></td>
+        <td class='miss'>53(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1966/06/02/DailyHistory.html">55(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-03</td>
+        <td class='miss'>103(1985)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1985/06/03/DailyHistory.html">102(1985)</a></td>
+        <td class='miss'>53(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1966/06/03/DailyHistory.html">54(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-04</td>
+        <td class='miss'>100(1985)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1985/06/04/DailyHistory.html">99(1985)</a></td>
+        <td class='miss'>56(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1966/06/04/DailyHistory.html">57(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-05</td>
+        <td class='noop'>101(1943)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1943/06/05/DailyHistory.html">unk(1943)</a></td>
+        <td class='match'>55(1954)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1954/06/05/DailyHistory.html">55(1954)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-06</td>
+        <td class='noop'>102(1943)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1943/06/06/DailyHistory.html">unk(1943)</a></td>
+        <td class='match'>55(2006)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2006/06/06/DailyHistory.html">55(2006)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-07</td>
+        <td class='match'>98(1986)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1986/06/07/DailyHistory.html">98(1986)</a></td>
+        <td class='match'>55(2006)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2006/06/07/DailyHistory.html">55(2006)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-08</td>
+        <td class='miss'>100(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1986/06/08/DailyHistory.html">99(1986)</a></td>
+        <td class='match'>55(1998)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1998/06/08/DailyHistory.html">55(1998)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-09</td>
+        <td class='miss'>102(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1986/06/09/DailyHistory.html">99(1986)</a></td>
+        <td class='match'>57(1997)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1997/06/09/DailyHistory.html">57(1997)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-10</td>
+        <td class='noop'>100(1941)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1941/06/10/DailyHistory.html">unk(1941)</a></td>
+        <td class='noop'>54(1913)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1913/06/10/DailyHistory.html">unk(1913)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-11</td>
+        <td class='miss'>99(1964)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1964/06/11/DailyHistory.html">97(1964)</a></td>
+        <td class='noop'>53(1913)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1913/06/11/DailyHistory.html">unk(1913)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-12</td>
+        <td class='miss'>100(1977)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1977/06/12/DailyHistory.html">99(1977)</a></td>
+        <td class='noop'>49(1913)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1913/06/12/DailyHistory.html">unk(1913)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-13</td>
+        <td class='match'>102(2011)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2011/06/13/DailyHistory.html">102(2011)</a></td>
+        <td class='noop'>55(1913)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1913/06/13/DailyHistory.html">unk(1913)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-14</td>
+        <td class='match'>102(2010)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2010/06/14/DailyHistory.html">102(2010)</a></td>
+        <td class='noop'>59(1903)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1903/06/14/DailyHistory.html">unk(1903)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-15</td>
+        <td class='miss'>102(1971)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1971/06/15/DailyHistory.html">100(1971)</a></td>
+        <td class='noop'>59(1933)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1933/06/15/DailyHistory.html">unk(1933)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-16</td>
+        <td class='miss'>101(1981)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1981/06/16/DailyHistory.html">100(1981)</a></td>
+        <td class='miss'>53(1955)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1955/06/16/DailyHistory.html">55(1955)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-17</td>
+        <td class='noop'>101(1944)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1944/06/17/DailyHistory.html">unk(1944)</a></td>
+        <td class='match'>57(1961)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1961/06/17/DailyHistory.html">57(1961)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-18</td>
+        <td class='noop'>102(1944)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1944/06/18/DailyHistory.html">unk(1944)</a></td>
+        <td class='noop'>58(1899)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1899/06/18/DailyHistory.html">unk(1899)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-19</td>
+        <td class='noop'>100(1887)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1887/06/19/DailyHistory.html">unk(1887)</a></td>
+        <td class='match'>57(1961)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1961/06/19/DailyHistory.html">57(1961)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-20</td>
+        <td class='miss'>102(1990)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1990/06/20/DailyHistory.html">100(1990)</a></td>
+        <td class='miss'>58(1965)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1965/06/20/DailyHistory.html">59(1965)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-21</td>
+        <td class='miss'>102(1981)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1981/06/21/DailyHistory.html">100(1981)</a></td>
+        <td class='miss'>59(1965)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1965/06/21/DailyHistory.html">61(1965)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-22</td>
+        <td class='miss'>101(1981)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1981/06/22/DailyHistory.html">99(1981)</a></td>
+        <td class='miss'>59(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1966/06/22/DailyHistory.html">60(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-23</td>
+        <td class='miss'>102(1981)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1981/06/23/DailyHistory.html">100(1981)</a></td>
+        <td class='miss'>60(1965)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1965/06/23/DailyHistory.html">63(1965)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-24</td>
+        <td class='noop'>103(1944)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1944/06/24/DailyHistory.html">unk(1944)</a></td>
+        <td class='noop'>59(1947)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1947/06/24/DailyHistory.html">unk(1947)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-25</td>
+        <td class='miss'>102(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1948/06/25/DailyHistory.html">101(1948)</a></td>
+        <td class='noop'>59(1889)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1889/06/25/DailyHistory.html">unk(1889)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-26</td>
+        <td class='miss'>103(1952)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1952/06/26/DailyHistory.html">102(1952)</a></td>
+        <td class='match'>63(1979)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1979/06/26/DailyHistory.html">63(1979)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-27</td>
+        <td class='miss'>103(1952)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1952/06/27/DailyHistory.html">102(1952)</a></td>
+        <td class='match'>61(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2012/06/27/DailyHistory.html">61(2012)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-28</td>
+        <td class='match'>100(1998)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1998/06/28/DailyHistory.html">100(1998)</a></td>
+        <td class='match'>63(2012)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2012/06/28/DailyHistory.html">63(2012)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-29</td>
+        <td class='miss'>101(1959)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1959/06/29/DailyHistory.html">100(1959)</a></td>
+        <td class='miss'>62(1988)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1988/06/29/DailyHistory.html">63(1988)</a></td>
+      </tr>
+      <tr>
+        <td class=''>06-30</td>
+        <td class='match'>102(1998)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1998/06/30/DailyHistory.html">102(1998)</a></td>
+        <td class='miss'>59(1958)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1958/06/30/DailyHistory.html">61(1958)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-01</td>
+        <td class='miss'>102(1990)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1990/07/01/DailyHistory.html">100(1990)</a></td>
+        <td class='miss'>64(1955)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1955/07/01/DailyHistory.html">66(1955)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-02</td>
+        <td class='noop'>101(1931)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1931/07/02/DailyHistory.html">unk(1931)</a></td>
+        <td class='miss'>63(1975)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1975/07/02/DailyHistory.html">64(1975)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-03</td>
+        <td class='miss'>98(1960)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1960/07/03/DailyHistory.html">97(1960)</a></td>
+        <td class='match'>62(2010)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2010/07/03/DailyHistory.html">62(2010)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-04</td>
+        <td class='miss'>99(1954)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1954/07/04/DailyHistory.html">98(1954)</a></td>
+        <td class='noop'>61(1933)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1933/07/04/DailyHistory.html">unk(1933)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-05</td>
+        <td class='noop'>100(1902)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1902/07/05/DailyHistory.html">unk(1902)</a></td>
+        <td class='noop'>63(1947)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1947/07/05/DailyHistory.html">unk(1947)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-06</td>
+        <td class='miss'>102(1980)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1980/07/06/DailyHistory.html">100(1980)</a></td>
+        <td class='match'>64(1964)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1964/07/06/DailyHistory.html">64(1964)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-07</td>
+        <td class='miss'>101(1977)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1977/07/07/DailyHistory.html">99(1977)</a></td>
+        <td class='miss'>61(1964)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1964/07/07/DailyHistory.html">63(1964)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-08</td>
+        <td class='miss'>101(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1986/07/08/DailyHistory.html">100(1986)</a></td>
+        <td class='match'>62(1972)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1972/07/08/DailyHistory.html">62(1972)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-09</td>
+        <td class='miss'>103(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1986/07/09/DailyHistory.html">102(1986)</a></td>
+        <td class='match'>61(1972)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1972/07/09/DailyHistory.html">61(1972)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-10</td>
+        <td class='noop'>102(1879)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1879/07/10/DailyHistory.html">unk(1879)</a></td>
+        <td class='miss'>63(2006)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/2006/07/10/DailyHistory.html">64(2006)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-11</td>
+        <td class='miss'>103(1980)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1980/07/11/DailyHistory.html">102(1980)</a></td>
+        <td class='noop'>64(1898)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1898/07/11/DailyHistory.html">unk(1898)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-12</td>
+        <td class='noop'>105(1879)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1879/07/12/DailyHistory.html">unk(1879)</a></td>
+        <td class='miss'>63(1963)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1963/07/12/DailyHistory.html">64(1963)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-13</td>
+        <td class='miss'>104(1980)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1980/07/13/DailyHistory.html">102(1980)</a></td>
+        <td class='noop'>63(1918)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1918/07/13/DailyHistory.html">unk(1918)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-14</td>
+        <td class='miss'>103(1981)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1981/07/14/DailyHistory.html">100(1981)</a></td>
+        <td class='match'>66(1974)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1974/07/14/DailyHistory.html">66(1974)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-15</td>
+        <td class='miss'>101(1981)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1981/07/15/DailyHistory.html">99(1981)</a></td>
+        <td class='miss'>65(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1967/07/15/DailyHistory.html">69(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-16</td>
+        <td class='miss'>101(1993)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1993/07/16/DailyHistory.html">100(1993)</a></td>
+        <td class='match'>62(1967)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1967/07/16/DailyHistory.html">62(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-17</td>
+        <td class='noop'>101(1887)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1887/07/17/DailyHistory.html">unk(1887)</a></td>
+        <td class='miss'>64(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1967/07/17/DailyHistory.html">66(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-18</td>
+        <td class='miss'>102(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1986/07/18/DailyHistory.html">100(1986)</a></td>
+        <td class='miss'>67(2001)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/2001/07/18/DailyHistory.html">66(2001)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-19</td>
+        <td class='miss'>104(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1986/07/19/DailyHistory.html">102(1986)</a></td>
+        <td class='miss'>65(1956)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1956/07/19/DailyHistory.html">70(1956)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-20</td>
+        <td class='miss'>105(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1986/07/20/DailyHistory.html">104(1986)</a></td>
+        <td class='noop'>64(1910)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1910/07/20/DailyHistory.html">unk(1910)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-21</td>
+        <td class='noop'>103(1942)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1942/07/21/DailyHistory.html">unk(1942)</a></td>
+        <td class='noop'>64(1910)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1910/07/21/DailyHistory.html">unk(1910)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-22</td>
+        <td class='miss'>103(1977)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1977/07/22/DailyHistory.html">102(1977)</a></td>
+        <td class='noop'>62(1929)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1929/07/22/DailyHistory.html">unk(1929)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-23</td>
+        <td class='miss'>103(1952)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1952/07/23/DailyHistory.html">102(1952)</a></td>
+        <td class='miss'>61(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1966/07/23/DailyHistory.html">62(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-24</td>
+        <td class='miss'>104(1952)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1952/07/24/DailyHistory.html">102(1952)</a></td>
+        <td class='match'>64(2007)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2007/07/24/DailyHistory.html">64(2007)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-25</td>
+        <td class='miss'>101(1952)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1952/07/25/DailyHistory.html">100(1952)</a></td>
+        <td class='match'>66(1977)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1977/07/25/DailyHistory.html">66(1977)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-26</td>
+        <td class='match'>102(2010)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2010/07/26/DailyHistory.html">102(2010)</a></td>
+        <td class='noop'>65(1911)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1911/07/26/DailyHistory.html">unk(1911)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-27</td>
+        <td class='noop'>100(1936)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1936/07/27/DailyHistory.html">unk(1936)</a></td>
+        <td class='noop'>66(1911)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1911/07/27/DailyHistory.html">unk(1911)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-28</td>
+        <td class='match'>102(1949)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1949/07/28/DailyHistory.html">102(1949)</a></td>
+        <td class='noop'>64(1920)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1920/07/28/DailyHistory.html">unk(1920)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-29</td>
+        <td class='miss'>103(1993)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1993/07/29/DailyHistory.html">102(1993)</a></td>
+        <td class='noop'>64(1920)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1920/07/29/DailyHistory.html">unk(1920)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-30</td>
+        <td class='noop'>101(1896)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1896/07/30/DailyHistory.html">unk(1896)</a></td>
+        <td class='match'>66(1954)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1954/07/30/DailyHistory.html">66(1954)</a></td>
+      </tr>
+      <tr>
+        <td class=''>07-31</td>
+        <td class='miss'>101(1990)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1990/07/31/DailyHistory.html">100(1990)</a></td>
+        <td class='match'>64(1997)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1997/07/31/DailyHistory.html">64(1997)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-01</td>
+        <td class='match'>102(1999)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1999/08/01/DailyHistory.html">102(1999)</a></td>
+        <td class='match'>66(1966)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1966/08/01/DailyHistory.html">66(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-02</td>
+        <td class='miss'>101(1980)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1980/08/02/DailyHistory.html">100(1980)</a></td>
+        <td class='miss'>65(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1966/08/02/DailyHistory.html">66(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-03</td>
+        <td class='miss'>99(1953)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1953/08/03/DailyHistory.html">98(1953)</a></td>
+        <td class='miss'>68(1965)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1965/08/03/DailyHistory.html">69(1965)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-04</td>
+        <td class='miss'>101(1954)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1954/08/04/DailyHistory.html">100(1954)</a></td>
+        <td class='noop'>65(1912)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1912/08/04/DailyHistory.html">unk(1912)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-05</td>
+        <td class='miss'>104(1954)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1954/08/05/DailyHistory.html">102(1954)</a></td>
+        <td class='noop'>64(1912)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1912/08/05/DailyHistory.html">unk(1912)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-06</td>
+        <td class='match'>102(2008)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2008/08/06/DailyHistory.html">102(2008)</a></td>
+        <td class='noop'>66(1889)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1889/08/06/DailyHistory.html">unk(1889)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-07</td>
+        <td class='noop'>100(1899)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1899/08/07/DailyHistory.html">unk(1899)</a></td>
+        <td class='miss'>62(2004)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/2004/08/07/DailyHistory.html">63(2004)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-08</td>
+        <td class='match'>100(2011)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2011/08/08/DailyHistory.html">100(2011)</a></td>
+        <td class='match'>61(2004)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2004/08/08/DailyHistory.html">61(2004)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-09</td>
+        <td class='match'>99(1986)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1986/08/09/DailyHistory.html">99(1986)</a></td>
+        <td class='match'>64(2002)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2002/08/09/DailyHistory.html">64(2002)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-10</td>
+        <td class='miss'>100(1987)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1987/08/10/DailyHistory.html">97(1987)</a></td>
+        <td class='noop'>63(1879)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1879/08/10/DailyHistory.html">unk(1879)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-11</td>
+        <td class='match'>100(2011)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2011/08/11/DailyHistory.html">100(2011)</a></td>
+        <td class='miss'>64(1989)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1989/08/11/DailyHistory.html">68(1989)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-12</td>
+        <td class='match'>100(1999)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1999/08/12/DailyHistory.html">100(1999)</a></td>
+        <td class='match'>63(1989)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1989/08/12/DailyHistory.html">63(1989)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-13</td>
+        <td class='miss'>98(1957)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1957/08/13/DailyHistory.html">97(1957)</a></td>
+        <td class='match'>64(1979)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1979/08/13/DailyHistory.html">64(1979)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-14</td>
+        <td class='noop'>102(1925)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1925/08/14/DailyHistory.html">unk(1925)</a></td>
+        <td class='miss'>62(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1967/08/14/DailyHistory.html">64(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-15</td>
+        <td class='noop'>100(1918)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1918/08/15/DailyHistory.html">unk(1918)</a></td>
+        <td class='match'>62(1967)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1967/08/15/DailyHistory.html">62(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-16</td>
+        <td class='match'>100(1954)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1954/08/16/DailyHistory.html">100(1954)</a></td>
+        <td class='miss'>63(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1967/08/16/DailyHistory.html">64(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-17</td>
+        <td class='miss'>102(1954)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1954/08/17/DailyHistory.html">100(1954)</a></td>
+        <td class='match'>64(1967)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1967/08/17/DailyHistory.html">64(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-18</td>
+        <td class='miss'>100(1995)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1995/08/18/DailyHistory.html">99(1995)</a></td>
+        <td class='match'>66(1960)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1960/08/18/DailyHistory.html">66(1960)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-19</td>
+        <td class='noop'>99(1900)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1900/08/19/DailyHistory.html">unk(1900)</a></td>
+        <td class='match'>64(1960)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1960/08/19/DailyHistory.html">64(1960)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-20</td>
+        <td class='noop'>102(1900)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1900/08/20/DailyHistory.html">unk(1900)</a></td>
+        <td class='miss'>65(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1948/08/20/DailyHistory.html">67(1948)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-21</td>
+        <td class='noop'>101(1902)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1902/08/21/DailyHistory.html">unk(1902)</a></td>
+        <td class='match'>62(1961)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1961/08/21/DailyHistory.html">62(1961)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-22</td>
+        <td class='miss'>100(1983)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1983/08/22/DailyHistory.html">98(1983)</a></td>
+        <td class='noop'>62(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1930/08/22/DailyHistory.html">unk(1930)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-23</td>
+        <td class='match'>100(2014)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2014/08/23/DailyHistory.html">100(2014)</a></td>
+        <td class='noop'>60(1930)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1930/08/23/DailyHistory.html">unk(1930)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-24</td>
+        <td class='noop'>101(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1938/08/24/DailyHistory.html">unk(1938)</a></td>
+        <td class='miss'>62(1953)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1953/08/24/DailyHistory.html">63(1953)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-25</td>
+        <td class='noop'>99(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1938/08/25/DailyHistory.html">unk(1938)</a></td>
+        <td class='miss'>62(1997)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1997/08/25/DailyHistory.html">63(1997)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-26</td>
+        <td class='noop'>99(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1938/08/26/DailyHistory.html">unk(1938)</a></td>
+        <td class='miss'>63(1952)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1952/08/26/DailyHistory.html">64(1952)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-27</td>
+        <td class='noop'>102(1938)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1938/08/27/DailyHistory.html">unk(1938)</a></td>
+        <td class='miss'>61(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1966/08/27/DailyHistory.html">62(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-28</td>
+        <td class='noop'>99(1903)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1903/08/28/DailyHistory.html">unk(1903)</a></td>
+        <td class='noop'>60(1927)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1927/08/28/DailyHistory.html">unk(1927)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-29</td>
+        <td class='miss'>98(1983)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1983/08/29/DailyHistory.html">97(1983)</a></td>
+        <td class='match'>57(1986)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1986/08/29/DailyHistory.html">57(1986)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-30</td>
+        <td class='match'>98(1948)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1948/08/30/DailyHistory.html">98(1948)</a></td>
+        <td class='match'>61(1986)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1986/08/30/DailyHistory.html">61(1986)</a></td>
+      </tr>
+      <tr>
+        <td class=''>08-31</td>
+        <td class='match'>99(1998)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1998/08/31/DailyHistory.html">99(1998)</a></td>
+        <td class='miss'>61(1999)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1999/08/31/DailyHistory.html">63(1999)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-01</td>
+        <td class='match'>97(1957)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1957/09/01/DailyHistory.html">97(1957)</a></td>
+        <td class='match'>60(1999)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1999/09/01/DailyHistory.html">60(1999)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-02</td>
+        <td class='noop'>100(1912)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1912/09/02/DailyHistory.html">unk(1912)</a></td>
+        <td class='miss'>58(1999)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1999/09/02/DailyHistory.html">59(1999)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-03</td>
+        <td class='noop'>100(1944)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1944/09/03/DailyHistory.html">unk(1944)</a></td>
+        <td class='miss'>59(1954)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1954/09/03/DailyHistory.html">60(1954)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-04</td>
+        <td class='noop'>102(1925)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1925/09/04/DailyHistory.html">unk(1925)</a></td>
+        <td class='noop'>62(1887)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1887/09/04/DailyHistory.html">unk(1887)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-05</td>
+        <td class='noop'>99(1944)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1944/09/05/DailyHistory.html">unk(1944)</a></td>
+        <td class='miss'>54(1997)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1997/09/05/DailyHistory.html">55(1997)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-06</td>
+        <td class='noop'>97(1941)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1941/09/06/DailyHistory.html">unk(1941)</a></td>
+        <td class='match'>55(1997)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1997/09/06/DailyHistory.html">55(1997)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-07</td>
+        <td class='noop'>99(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1939/09/07/DailyHistory.html">unk(1939)</a></td>
+        <td class='miss'>57(1997)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1997/09/07/DailyHistory.html">59(1997)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-08</td>
+        <td class='noop'>99(1925)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1925/09/08/DailyHistory.html">unk(1925)</a></td>
+        <td class='match'>58(2011)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2011/09/08/DailyHistory.html">58(2011)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-09</td>
+        <td class='noop'>100(1925)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1925/09/09/DailyHistory.html">unk(1925)</a></td>
+        <td class='miss'>58(1956)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1956/09/09/DailyHistory.html">59(1956)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-10</td>
+        <td class='noop'>100(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1939/09/10/DailyHistory.html">unk(1939)</a></td>
+        <td class='miss'>54(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1966/09/10/DailyHistory.html">55(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-11</td>
+        <td class='miss'>98(1983)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1983/09/11/DailyHistory.html">97(1983)</a></td>
+        <td class='miss'>54(1956)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1956/09/11/DailyHistory.html">55(1956)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-12</td>
+        <td class='noop'>97(1933)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1933/09/12/DailyHistory.html">unk(1933)</a></td>
+        <td class='noop'>54(1917)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1917/09/12/DailyHistory.html">unk(1917)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-13</td>
+        <td class='miss'>96(1991)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1991/09/13/DailyHistory.html">93(1991)</a></td>
+        <td class='miss'>56(1964)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1964/09/13/DailyHistory.html">59(1964)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-14</td>
+        <td class='miss'>96(1991)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1991/09/14/DailyHistory.html">95(1991)</a></td>
+        <td class='miss'>54(1964)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1964/09/14/DailyHistory.html">55(1964)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-15</td>
+        <td class='miss'>97(1972)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1972/09/15/DailyHistory.html">93(1972)</a></td>
+        <td class='miss'>56(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1967/09/15/DailyHistory.html">55(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-16</td>
+        <td class='miss'>98(1980)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1980/09/16/DailyHistory.html">97(1980)</a></td>
+        <td class='miss'>54(2001)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/2001/09/16/DailyHistory.html">55(2001)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-17</td>
+        <td class='miss'>97(1972)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1972/09/17/DailyHistory.html">95(1972)</a></td>
+        <td class='miss'>56(2001)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/2001/09/17/DailyHistory.html">55(2001)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-18</td>
+        <td class='noop'>100(1931)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1931/09/18/DailyHistory.html">unk(1931)</a></td>
+        <td class='noop'>56(1910)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1910/09/18/DailyHistory.html">unk(1910)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-19</td>
+        <td class='noop'>98(1942)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1942/09/19/DailyHistory.html">unk(1942)</a></td>
+        <td class='match'>48(1981)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1981/09/19/DailyHistory.html">48(1981)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-20</td>
+        <td class='noop'>99(1925)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1925/09/20/DailyHistory.html">unk(1925)</a></td>
+        <td class='miss'>51(1981)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1981/09/20/DailyHistory.html">52(1981)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-21</td>
+        <td class='noop'>100(1925)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1925/09/21/DailyHistory.html">unk(1925)</a></td>
+        <td class='noop'>46(1897)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1897/09/21/DailyHistory.html">unk(1897)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-22</td>
+        <td class='noop'>100(1925)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1925/09/22/DailyHistory.html">unk(1925)</a></td>
+        <td class='noop'>46(1897)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1897/09/22/DailyHistory.html">unk(1897)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-23</td>
+        <td class='miss'>94(1980)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1980/09/23/DailyHistory.html">93(1980)</a></td>
+        <td class='miss'>49(1983)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1983/09/23/DailyHistory.html">50(1983)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-24</td>
+        <td class='miss'>96(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1986/09/24/DailyHistory.html">93(1986)</a></td>
+        <td class='miss'>47(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1967/09/24/DailyHistory.html">50(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-25</td>
+        <td class='miss'>95(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1986/09/25/DailyHistory.html">93(1986)</a></td>
+        <td class='match'>50(1990)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1990/09/25/DailyHistory.html">50(1990)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-26</td>
+        <td class='miss'>95(1961)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1961/09/26/DailyHistory.html">93(1961)</a></td>
+        <td class='noop'>51(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1940/09/26/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-27</td>
+        <td class='miss'>96(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1986/09/27/DailyHistory.html">95(1986)</a></td>
+        <td class='noop'>50(1940)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1940/09/27/DailyHistory.html">unk(1940)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-28</td>
+        <td class='miss'>98(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1986/09/28/DailyHistory.html">97(1986)</a></td>
+        <td class='miss'>50(1962)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1962/09/28/DailyHistory.html">51(1962)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-29</td>
+        <td class='match'>95(2016)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2016/09/29/DailyHistory.html">95(2016)</a></td>
+        <td class='miss'>50(1962)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1962/09/29/DailyHistory.html">51(1962)</a></td>
+      </tr>
+      <tr>
+        <td class=''>09-30</td>
+        <td class='noop'>95(1904)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1904/09/30/DailyHistory.html">unk(1904)</a></td>
+        <td class='match'>43(1967)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1967/09/30/DailyHistory.html">43(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-01</td>
+        <td class='miss'>94(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1986/10/01/DailyHistory.html">93(1986)</a></td>
+        <td class='match'>44(1967)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1967/10/01/DailyHistory.html">44(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-02</td>
+        <td class='match'>97(1986)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1986/10/02/DailyHistory.html">97(1986)</a></td>
+        <td class='noop'>41(1876)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1876/10/02/DailyHistory.html">unk(1876)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-03</td>
+        <td class='miss'>96(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1986/10/03/DailyHistory.html">95(1986)</a></td>
+        <td class='match'>44(1974)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1974/10/03/DailyHistory.html">44(1974)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-04</td>
+        <td class='match'>95(1986)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1986/10/04/DailyHistory.html">95(1986)</a></td>
+        <td class='match'>37(1974)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1974/10/04/DailyHistory.html">37(1974)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-05</td>
+        <td class='miss'>96(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1986/10/05/DailyHistory.html">95(1986)</a></td>
+        <td class='miss'>43(1987)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1987/10/05/DailyHistory.html">44(1987)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-06</td>
+        <td class='miss'>94(1951)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1951/10/06/DailyHistory.html">93(1951)</a></td>
+        <td class='miss'>44(1985)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1985/10/06/DailyHistory.html">45(1985)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-07</td>
+        <td class='miss'>94(1951)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1951/10/07/DailyHistory.html">93(1951)</a></td>
+        <td class='miss'>44(1964)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1964/10/07/DailyHistory.html">45(1964)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-08</td>
+        <td class='noop'>94(1925)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1925/10/08/DailyHistory.html">unk(1925)</a></td>
+        <td class='miss'>42(1991)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1991/10/08/DailyHistory.html">43(1991)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-09</td>
+        <td class='match'>93(2009)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2009/10/09/DailyHistory.html">93(2009)</a></td>
+        <td class='miss'>40(2000)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/2000/10/09/DailyHistory.html">41(2000)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-10</td>
+        <td class='noop'>92(1941)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1941/10/10/DailyHistory.html">unk(1941)</a></td>
+        <td class='miss'>36(2000)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/2000/10/10/DailyHistory.html">37(2000)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-11</td>
+        <td class='match'>89(2014)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2014/10/11/DailyHistory.html">89(2014)</a></td>
+        <td class='miss'>40(2000)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/2000/10/11/DailyHistory.html">39(2000)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-12</td>
+        <td class='noop'>91(1939)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1939/10/12/DailyHistory.html">unk(1939)</a></td>
+        <td class='miss'>40(2000)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/2000/10/12/DailyHistory.html">39(2000)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-13</td>
+        <td class='noop'>89(1919)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1919/10/13/DailyHistory.html">unk(1919)</a></td>
+        <td class='miss'>43(1976)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1976/10/13/DailyHistory.html">44(1976)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-14</td>
+        <td class='miss'>88(1985)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1985/10/14/DailyHistory.html">87(1985)</a></td>
+        <td class='match'>37(1988)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1988/10/14/DailyHistory.html">37(1988)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-15</td>
+        <td class='noop'>90(1925)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1925/10/15/DailyHistory.html">unk(1925)</a></td>
+        <td class='miss'>41(1988)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1988/10/15/DailyHistory.html">43(1988)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-16</td>
+        <td class='noop'>90(1941)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1941/10/16/DailyHistory.html">unk(1941)</a></td>
+        <td class='miss'>41(1961)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1961/10/16/DailyHistory.html">42(1961)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-17</td>
+        <td class='noop'>91(1925)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1925/10/17/DailyHistory.html">unk(1925)</a></td>
+        <td class='match'>39(1954)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1954/10/17/DailyHistory.html">39(1954)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-18</td>
+        <td class='match'>89(2007)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2007/10/18/DailyHistory.html">89(2007)</a></td>
+        <td class='miss'>40(1977)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1977/10/18/DailyHistory.html">39(1977)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-19</td>
+        <td class='miss'>88(1972)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1972/10/19/DailyHistory.html">87(1972)</a></td>
+        <td class='match'>40(2009)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2009/10/19/DailyHistory.html">40(2009)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-20</td>
+        <td class='miss'>88(1969)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1969/10/20/DailyHistory.html">84(1969)</a></td>
+        <td class='match'>37(1996)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1996/10/20/DailyHistory.html">37(1996)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-21</td>
+        <td class='noop'>90(1943)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1943/10/21/DailyHistory.html">unk(1943)</a></td>
+        <td class='noop'>36(1913)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1913/10/21/DailyHistory.html">unk(1913)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-22</td>
+        <td class='noop'>88(1943)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1943/10/22/DailyHistory.html">unk(1943)</a></td>
+        <td class='miss'>38(1976)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1976/10/22/DailyHistory.html">37(1976)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-23</td>
+        <td class='noop'>89(1941)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1941/10/23/DailyHistory.html">unk(1941)</a></td>
+        <td class='match'>37(1998)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1998/10/23/DailyHistory.html">37(1998)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-24</td>
+        <td class='noop'>89(1927)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1927/10/24/DailyHistory.html">unk(1927)</a></td>
+        <td class='noop'>36(1937)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1937/10/24/DailyHistory.html">unk(1937)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-25</td>
+        <td class='match'>87(2001)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2001/10/25/DailyHistory.html">87(2001)</a></td>
+        <td class='miss'>33(1965)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1965/10/25/DailyHistory.html">36(1965)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-26</td>
+        <td class='noop'>87(1944)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1944/10/26/DailyHistory.html">unk(1944)</a></td>
+        <td class='miss'>34(1962)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1962/10/26/DailyHistory.html">35(1962)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-27</td>
+        <td class='match'>90(2014)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2014/10/27/DailyHistory.html">90(2014)</a></td>
+        <td class='miss'>32(1962)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1962/10/27/DailyHistory.html">34(1962)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-28</td>
+        <td class='match'>88(2010)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2010/10/28/DailyHistory.html">88(2010)</a></td>
+        <td class='miss'>33(1957)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1957/10/28/DailyHistory.html">34(1957)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-29</td>
+        <td class='miss'>87(1996)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1996/10/29/DailyHistory.html">86(1996)</a></td>
+        <td class='match'>30(1976)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1976/10/29/DailyHistory.html">30(1976)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-30</td>
+        <td class='match'>86(2016)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2016/10/30/DailyHistory.html">86(2016)</a></td>
+        <td class='match'>28(1952)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1952/10/30/DailyHistory.html">28(1952)</a></td>
+      </tr>
+      <tr>
+        <td class=''>10-31</td>
+        <td class='match'>87(2016)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2016/10/31/DailyHistory.html">87(2016)</a></td>
+        <td class='miss'>35(1954)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1954/10/31/DailyHistory.html">37(1954)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-01</td>
+        <td class='miss'>89(1961)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1961/11/01/DailyHistory.html">88(1961)</a></td>
+        <td class='miss'>32(1954)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1954/11/01/DailyHistory.html">33(1954)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-02</td>
+        <td class='miss'>88(1961)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1961/11/02/DailyHistory.html">87(1961)</a></td>
+        <td class='miss'>33(1954)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1954/11/02/DailyHistory.html">35(1954)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-03</td>
+        <td class='miss'>85(1961)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1961/11/03/DailyHistory.html">84(1961)</a></td>
+        <td class='miss'>24(1954)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1954/11/03/DailyHistory.html">26(1954)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-04</td>
+        <td class='miss'>85(1973)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1973/11/04/DailyHistory.html">82(1973)</a></td>
+        <td class='match'>27(1966)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1966/11/04/DailyHistory.html">27(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-05</td>
+        <td class='miss'>85(2003)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/2003/11/05/DailyHistory.html">84(2003)</a></td>
+        <td class='miss'>30(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1966/11/05/DailyHistory.html">32(1966)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-06</td>
+        <td class='miss'>85(2003)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/2003/11/06/DailyHistory.html">84(2003)</a></td>
+        <td class='match'>30(1976)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1976/11/06/DailyHistory.html">30(1976)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-07</td>
+        <td class='miss'>86(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1986/11/07/DailyHistory.html">84(1986)</a></td>
+        <td class='miss'>29(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1967/11/07/DailyHistory.html">30(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-08</td>
+        <td class='miss'>86(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1986/11/08/DailyHistory.html">84(1986)</a></td>
+        <td class='match'>27(1967)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1967/11/08/DailyHistory.html">27(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-09</td>
+        <td class='miss'>86(1986)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1986/11/09/DailyHistory.html">84(1986)</a></td>
+        <td class='miss'>26(1976)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1976/11/09/DailyHistory.html">27(1976)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-10</td>
+        <td class='miss'>84(1966)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1966/11/10/DailyHistory.html">82(1966)</a></td>
+        <td class='match'>30(1967)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1967/11/10/DailyHistory.html">30(1967)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-11</td>
+        <td class='miss'>85(2002)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/2002/11/11/DailyHistory.html">84(2002)</a></td>
+        <td class='miss'>31(1968)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1968/11/11/DailyHistory.html">32(1968)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-12</td>
+        <td class='match'>84(1986)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1986/11/12/DailyHistory.html">84(1986)</a></td>
+        <td class='match'>30(1987)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1987/11/12/DailyHistory.html">30(1987)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-13</td>
+        <td class='miss'>83(1972)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1972/11/13/DailyHistory.html">82(1972)</a></td>
+        <td class='miss'>29(1968)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1968/11/13/DailyHistory.html">28(1968)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-14</td>
+        <td class='miss'>83(1993)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1993/11/14/DailyHistory.html">82(1993)</a></td>
+        <td class='match'>28(1968)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1968/11/14/DailyHistory.html">28(1968)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-15</td>
+        <td class='miss'>85(1955)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1955/11/15/DailyHistory.html">84(1955)</a></td>
+        <td class='match'>26(1969)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1969/11/15/DailyHistory.html">26(1969)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-16</td>
+        <td class='miss'>85(1958)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1958/11/16/DailyHistory.html">84(1958)</a></td>
+        <td class='miss'>25(1969)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1969/11/16/DailyHistory.html">26(1969)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-17</td>
+        <td class='miss'>85(1964)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1964/11/17/DailyHistory.html">82(1964)</a></td>
+        <td class='match'>28(1970)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1970/11/17/DailyHistory.html">28(1970)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-18</td>
+        <td class='miss'>83(1958)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1958/11/18/DailyHistory.html">82(1958)</a></td>
+        <td class='miss'>29(1951)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1951/11/18/DailyHistory.html">30(1951)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-19</td>
+        <td class='noop'>85(1942)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1942/11/19/DailyHistory.html">unk(1942)</a></td>
+        <td class='match'>26(2014)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2014/11/19/DailyHistory.html">26(2014)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-20</td>
+        <td class='noop'>83(1942)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1942/11/20/DailyHistory.html">unk(1942)</a></td>
+        <td class='noop'>24(1914)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1914/11/20/DailyHistory.html">unk(1914)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-21</td>
+        <td class='noop'>82(1942)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1942/11/21/DailyHistory.html">unk(1942)</a></td>
+        <td class='miss'>24(1951)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1951/11/21/DailyHistory.html">25(1951)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-22</td>
+        <td class='miss'>82(1997)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1997/11/22/DailyHistory.html">81(1997)</a></td>
+        <td class='miss'>23(2000)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/2000/11/22/DailyHistory.html">24(2000)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-23</td>
+        <td class='noop'>82(1941)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1941/11/23/DailyHistory.html">unk(1941)</a></td>
+        <td class='miss'>26(1956)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1956/11/23/DailyHistory.html">27(1956)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-24</td>
+        <td class='miss'>83(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1967/11/24/DailyHistory.html">80(1967)</a></td>
+        <td class='miss'>20(1970)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1970/11/24/DailyHistory.html">19(1970)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-25</td>
+        <td class='miss'>83(1973)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1973/11/25/DailyHistory.html">82(1973)</a></td>
+        <td class='miss'>15(1950)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1950/11/25/DailyHistory.html">16(1950)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-26</td>
+        <td class='miss'>84(1973)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1973/11/26/DailyHistory.html">82(1973)</a></td>
+        <td class='match'>21(1950)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1950/11/26/DailyHistory.html">21(1950)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-27</td>
+        <td class='miss'>82(1973)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1973/11/27/DailyHistory.html">81(1973)</a></td>
+        <td class='noop'>28(1903)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1903/11/27/DailyHistory.html">unk(1903)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-28</td>
+        <td class='miss'>83(1990)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1990/11/28/DailyHistory.html">82(1990)</a></td>
+        <td class='miss'>24(1956)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1956/11/28/DailyHistory.html">25(1956)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-29</td>
+        <td class='miss'>82(1985)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1985/11/29/DailyHistory.html">81(1985)</a></td>
+        <td class='miss'>25(1955)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1955/11/29/DailyHistory.html">26(1955)</a></td>
+      </tr>
+      <tr>
+        <td class=''>11-30</td>
+        <td class='match'>83(2016)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2016/11/30/DailyHistory.html">83(2016)</a></td>
+        <td class='miss'>20(1959)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1959/11/30/DailyHistory.html">21(1959)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-01</td>
+        <td class='match'>82(1982)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1982/12/01/DailyHistory.html">82(1982)</a></td>
+        <td class='miss'>23(1955)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1955/12/01/DailyHistory.html">24(1955)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-02</td>
+        <td class='miss'>82(1982)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1982/12/02/DailyHistory.html">80(1982)</a></td>
+        <td class='noop'>20(1876)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1876/12/02/DailyHistory.html">unk(1876)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-03</td>
+        <td class='match'>82(1991)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1991/12/03/DailyHistory.html">82(1991)</a></td>
+        <td class='miss'>22(1960)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1960/12/03/DailyHistory.html">21(1960)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-04</td>
+        <td class='miss'>82(1955)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1955/12/04/DailyHistory.html">81(1955)</a></td>
+        <td class='miss'>22(1960)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1960/12/04/DailyHistory.html">21(1960)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-05</td>
+        <td class='match'>82(2013)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2013/12/05/DailyHistory.html">82(2013)</a></td>
+        <td class='match'>21(2000)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2000/12/05/DailyHistory.html">21(2000)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-06</td>
+        <td class='match'>83(2013)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2013/12/06/DailyHistory.html">83(2013)</a></td>
+        <td class='noop'>23(1937)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1937/12/06/DailyHistory.html">unk(1937)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-07</td>
+        <td class='miss'>82(1978)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1978/12/07/DailyHistory.html">80(1978)</a></td>
+        <td class='noop'>18(1937)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1937/12/07/DailyHistory.html">unk(1937)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-08</td>
+        <td class='miss'>82(1978)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1978/12/08/DailyHistory.html">81(1978)</a></td>
+        <td class='miss'>20(1965)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1965/12/08/DailyHistory.html">21(1965)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-09</td>
+        <td class='miss'>82(1978)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1978/12/09/DailyHistory.html">81(1978)</a></td>
+        <td class='miss'>20(1968)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1968/12/09/DailyHistory.html">21(1968)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-10</td>
+        <td class='miss'>82(1972)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1972/12/10/DailyHistory.html">81(1972)</a></td>
+        <td class='miss'>23(1968)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1968/12/10/DailyHistory.html">24(1968)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-11</td>
+        <td class='miss'>83(1971)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1971/12/11/DailyHistory.html">81(1971)</a></td>
+        <td class='miss'>22(1981)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1981/12/11/DailyHistory.html">21(1981)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-12</td>
+        <td class='miss'>82(1961)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1961/12/12/DailyHistory.html">81(1961)</a></td>
+        <td class='miss'>17(1962)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1962/12/12/DailyHistory.html">19(1962)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-13</td>
+        <td class='miss'>81(1948)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1948/12/13/DailyHistory.html">79(1948)</a></td>
+        <td class='miss'>9(1962)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1962/12/13/DailyHistory.html">10(1962)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-14</td>
+        <td class='noop'>81(1931)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1931/12/14/DailyHistory.html">unk(1931)</a></td>
+        <td class='miss'>18(1960)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1960/12/14/DailyHistory.html">19(1960)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-15</td>
+        <td class='miss'>83(1971)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1971/12/15/DailyHistory.html">81(1971)</a></td>
+        <td class='match'>19(1962)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1962/12/15/DailyHistory.html">19(1962)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-16</td>
+        <td class='miss'>82(1971)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1971/12/16/DailyHistory.html">81(1971)</a></td>
+        <td class='match'>19(1968)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1968/12/16/DailyHistory.html">19(1968)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-17</td>
+        <td class='noop'>80(1924)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1924/12/17/DailyHistory.html">unk(1924)</a></td>
+        <td class='noop'>21(1943)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1943/12/17/DailyHistory.html">unk(1943)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-18</td>
+        <td class='miss'>82(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1967/12/18/DailyHistory.html">79(1967)</a></td>
+        <td class='match'>19(1953)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1953/12/18/DailyHistory.html">19(1953)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-19</td>
+        <td class='match'>78(1967)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1967/12/19/DailyHistory.html">78(1967)</a></td>
+        <td class='miss'>17(1953)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1953/12/19/DailyHistory.html">18(1953)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-20</td>
+        <td class='miss'>83(1967)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1967/12/20/DailyHistory.html">81(1967)</a></td>
+        <td class='match'>18(1981)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1981/12/20/DailyHistory.html">18(1981)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-21</td>
+        <td class='match'>81(2013)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2013/12/21/DailyHistory.html">81(2013)</a></td>
+        <td class='noop'>18(1901)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1901/12/21/DailyHistory.html">unk(1901)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-22</td>
+        <td class='match'>83(2013)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2013/12/22/DailyHistory.html">83(2013)</a></td>
+        <td class='miss'>20(1960)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1960/12/22/DailyHistory.html">21(1960)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-23</td>
+        <td class='match'>81(1956)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1956/12/23/DailyHistory.html">81(1956)</a></td>
+        <td class='match'>18(1989)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1989/12/23/DailyHistory.html">18(1989)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-24</td>
+        <td class='match'>83(2015)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2015/12/24/DailyHistory.html">83(2015)</a></td>
+        <td class='miss'>16(1983)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1983/12/24/DailyHistory.html">17(1983)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-25</td>
+        <td class='match'>82(2015)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2015/12/25/DailyHistory.html">82(2015)</a></td>
+        <td class='match'>10(1983)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/1983/12/25/DailyHistory.html">10(1983)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-26</td>
+        <td class='match'>82(2015)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2015/12/26/DailyHistory.html">82(2015)</a></td>
+        <td class='miss'>9(1983)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1983/12/26/DailyHistory.html">12(1983)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-27</td>
+        <td class='match'>80(2015)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2015/12/27/DailyHistory.html">80(2015)</a></td>
+        <td class='noop'>20(1935)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1935/12/27/DailyHistory.html">unk(1935)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-28</td>
+        <td class='match'>82(2015)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2015/12/28/DailyHistory.html">82(2015)</a></td>
+        <td class='noop'>21(1925)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1925/12/28/DailyHistory.html">unk(1925)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-29</td>
+        <td class='miss'>81(1984)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1984/12/29/DailyHistory.html">80(1984)</a></td>
+        <td class='noop'>12(1894)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1894/12/29/DailyHistory.html">unk(1894)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-30</td>
+        <td class='match'>83(2015)</td>
+        <td class='match'><a href="http://www.wunderground.com/history/airport/KSAV/2015/12/30/DailyHistory.html">83(2015)</a></td>
+        <td class='noop'>15(1917)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1917/12/30/DailyHistory.html">unk(1917)</a></td>
+      </tr>
+      <tr>
+        <td class=''>12-31</td>
+        <td class='miss'>80(1973)</td>
+        <td class='miss'><a href="http://www.wunderground.com/history/airport/KSAV/1973/12/31/DailyHistory.html">79(1973)</a></td>
+        <td class='noop'>17(1917)</td>
+        <td class='noop'><a href="http://www.wunderground.com/history/airport/KSAV/1917/12/31/DailyHistory.html">unk(1917)</a></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

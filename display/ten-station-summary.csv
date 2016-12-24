@@ -1,0 +1,11 @@
+stationID,place,mismatchesHighs,matchesHighs,missingHighs,mismatchesLows,matchesLows,missingLows,total
+KAMA,"Amarillo, TX",158,110,98,136,73,157,732
+KBWI,"Baltimore, MD",131,110,125,163,118,85,732
+KBGR,"Bangor, ME",93,155,118,115,92,159,732
+KBNO,"Burns, OR",94,120,152,149,143,74,732
+KCON,"Concord, NH",90,179,97,159,112,95,732
+KDSM,"Des Moines, IA",100,88,178,95,64,207,732
+KGJT,"Grand Junction, CO",177,90,99,151,84,131,732
+KGTF,"Great Falls, MT",134,88,144,151,64,151,732
+KLAN,"Lansing, MI",106,82,178,79,23,264,732
+KSAV,"Savannah, GA",184,84,98,169,115,82,732
