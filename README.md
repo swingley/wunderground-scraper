@@ -2,7 +2,7 @@
 
 The scripts here scrape minimum and maximum temperature records from Weather Underground for a single place as well as the "actual" or observed temperatures to verify that "records" match "actual" values in the Weather Underground historical archive. In most cases, Weather Underground's data for "record" temperatures do not match the "actual" temperatures in their database.
 
-[I wrote a blog post](https://derekswingley.com/) describing more of the "why" behind this. This started as me being curious and eventually turned into this repo.
+[I wrote a blog post](https://derekswingley.com/2016/12/23/weather-underground-historical-temperature-data-comparisons/) describing more of the "why" behind this. This started as me being curious and eventually turned into this repo.
 
 The main entry point for [Weather Underground](https://www.wunderground.com/)'s historical data is [https://www.wunderground.com/history/](https://www.wunderground.com/history/). 
 
